@@ -19,6 +19,7 @@ if global.option_texturefilter &&
 	)
 	gpu_set_texfilter(global.option_texturefilter)
 
+shader_set(shd_sonicfade) //solves an alpha issue
 draw_surface(application_surface, screen_x, screen_y)
 
 shader_set(shd_gui_brighten) //solves an alpha issue
