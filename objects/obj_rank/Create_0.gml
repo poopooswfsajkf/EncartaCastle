@@ -1,0 +1,54 @@
+state = 0
+white_fade_alpha = 0
+brown_alpha = 0
+image_index = image_number - 1
+image_speed = 0
+depth = -8
+prev_player_depth = obj_player.depth
+obj_player.depth = -9
+rank_score = 0
+rank_ix = 0
+rank_data = [
+	{sprite: spr_rankD},
+	{sprite: spr_rankC},
+	{sprite: spr_rankB},
+	{sprite: spr_rankA},
+	{sprite: spr_rankS},
+	{sprite: spr_rankP}
+]
+
+t_ystart = SCREEN_HEIGHT + 216
+var x_start = SCREEN_WIDTH - 437
+var offset = 89
+
+toppins = []
+
+var i = 0
+
+var t = global.level_data.toppins
+var toppin_list = [t.shroom, t.cheese, t.tomato, t.sausage, t.pineapple]
+
+repeat 5
+{
+	var s = {
+		x: x_start + (offset * i), 
+		y: t_ystart,
+		image_index: i,
+		image_yscale: 1,
+		image_blend: toppin_list[i] ? c_white : c_black
+	}
+	
+	array_push(toppins, s)
+	i++
+}
+
+toppin_ix = 0
+
+results = [
+	["HIGHSCORE: ", 0, false],
+	["TIME: ", 0, false],
+	["DAMAGE: ", 0, false],
+	["HIGHEST COMBO: ", 0, false]
+]
+
+result_ix = 0

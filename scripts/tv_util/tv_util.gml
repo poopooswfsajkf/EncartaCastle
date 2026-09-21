@@ -1,0 +1,60 @@
+function tv_expression(spr)
+{
+	switch (spr)
+	{
+		case spr_tv_idle:
+			state_togo = tv_states.normal
+			break;
+		case spr_tv_hurt:
+		case spr_tv_bighurt1:
+		case spr_tv_bighurt2:
+		case spr_tv_bighurt3:
+		case spr_tv_bighurt4:
+		case spr_tv_bighurt5:
+		case spr_tv_bighurt6:
+		case spr_tv_bighurt7:
+		case spr_tv_bighurt8:
+		case spr_tv_bighurt9:
+		case spr_tv_bighurt10:
+		case spr_tv_collect:
+			state_togo = tv_states.expr
+			alarm[0] = 120
+			expr_sprite = spr
+			if spr == spr_tv_collect && irandom(100) >= 50
+				fmod_studio_event_instance_start(obj_player.voice_collect_snd)
+			break;
+		default:
+			state_togo = tv_states.expr
+			expr_sprite = spr
+			break;
+	}
+	state = tv_states.transition
+	t_index = 0
+}
+
+function tv_do_transfos(_state)
+{
+	var _tv_spr = spr_tv_idle
+	switch _state
+	{
+		default:
+			return;
+			break;
+		case states.fireass:
+			_tv_spr = spr_tv_fireass
+			break;
+		case states.ball:
+			_tv_spr = spr_tv_ball
+			break;
+	}
+	sprite_index = _tv_spr
+}
+
+
+function timer_add_text(_text = "ITS A TEST TEXT!!!"){
+	var text = {
+		t : _text,
+		y : obj_panictimer.y == (SCREEN_HEIGHT - 76) + 212 ? -800 : -100
+	}
+	array_push(obj_panictimer.textes, [text.t, text.y])
+}

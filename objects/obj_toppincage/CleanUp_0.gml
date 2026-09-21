@@ -1,0 +1,2 @@
+if event_desc != noone
+	fmod_studio_event_instance_stop(event_desc, FMOD_STUDIO_STOP_MODE.ALLOWFADEOUT)
