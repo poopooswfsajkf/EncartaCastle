@@ -7,6 +7,7 @@ bg_ix = 0
 prev_bg_ix = 0
 bg_spd = 0.5
 bg_alpha = 0
+bg_wave = 0
 
 types = {
 	slider: 0,

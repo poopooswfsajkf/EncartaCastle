@@ -1,6 +1,16 @@
-image_alpha = approach(image_alpha, fade ? fade + 0.2 : fade, 0.1)
-if image_alpha == 1.2
+fadeAlpha += (fade ? fadeadd : -fadeadd);
+
+if (fadeAlpha >= 30)
 {
-	room_goto(target_room)
-	fade = false
+    fadeAlpha = 30;
+    fade = false;
+
+    if (room != target_room)
+        room_goto(target_room);
+}
+
+if (!fade && fadeAlpha <= 0)
+{
+    fadeAlpha = 0;
+
 }

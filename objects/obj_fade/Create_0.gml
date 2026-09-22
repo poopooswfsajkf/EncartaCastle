@@ -5,3 +5,6 @@ pos = {
 }
 target_room = test_1
 depth = -10
+fadeAlpha = 30;
+fade = false;
+fadeadd = 2;

@@ -1,5 +1,5 @@
 draw_reset_color()
-draw_sprite_tiled(spr_optionbg, bg_ix, bg_inc, bg_inc)
+draw_sprite_tiled(spr_optionbg, bg_ix, bg_inc, bg_wave)
 
 if bg_alpha > 0
 {
@@ -8,6 +8,8 @@ if bg_alpha > 0
 }
 
 bg_inc--
+
+bg_wave = wave(-20, 20, 2.5, 20)
 
 if bg_inc <= -400
 	bg_inc = 0 - (-400 + bg_inc)
