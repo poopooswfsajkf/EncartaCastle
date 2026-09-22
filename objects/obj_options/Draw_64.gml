@@ -9,7 +9,7 @@ if bg_alpha > 0
 
 bg_inc--
 
-bg_wave = wave(-20, 20, 2.5, 20)
+bg_wave = wave(-40, 40, 2.5, 40)
 
 if bg_inc <= -400
 	bg_inc = 0 - (-400 + bg_inc)

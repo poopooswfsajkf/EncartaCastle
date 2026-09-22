@@ -389,6 +389,7 @@
     {"id":{"name":"player_taunt","path":"scripts/player_taunt/player_taunt.yy",},},
     {"id":{"name":"player_tumble","path":"scripts/player_tumble/player_tumble.yy",},},
     {"id":{"name":"player_util","path":"scripts/player_util/player_util.yy",},},
+    {"id":{"name":"player_wallbounce","path":"scripts/player_wallbounce/player_wallbounce.yy",},},
     {"id":{"name":"scr_pattern_utilities","path":"scripts/scr_pattern_utilities/scr_pattern_utilities.yy",},},
     {"id":{"name":"scr_retro_pal_swapper_utilities","path":"scripts/scr_retro_pal_swapper_utilities/scr_retro_pal_swapper_utilities.yy",},},
     {"id":{"name":"scr_retro_pal_swapper","path":"scripts/scr_retro_pal_swapper/scr_retro_pal_swapper.yy",},},

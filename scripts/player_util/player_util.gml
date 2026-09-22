@@ -298,7 +298,7 @@ function do_hurt(obj = noone)
 			var _name = "Peppino"
 			with obj_tv
 				tv_expression(asset_get_index($"spr_tv_bighurt{irandom_range(1, 10)}"))
-			do_tip($"\{s}You've hurt {_name} {global.hurtcounter} Times...")
+			do_tip($"\{s}You've hurt "_name} {global.hurtcounter} Times...")
 		}
 		else
 		{
@@ -374,3 +374,80 @@ function asset_get_variation(_name, _len, _start = 1)
 {
 	return asset_get_index(string_concat(_name, irandom_range(_start, _len)));
 }
+"")
+		}
+		else
+		{
+			with obj_tv
+				tv_expression(spr_tv_hurt)
+		}
+	}
+	else
+	{
+		if instance_exists(obj_bosscontroller)
+		{
+			with obj_bosscontroller.player
+			{
+				with instance_create(hphudpos.x, hphudpos.y, obj_hudhpdebris)
+				{
+					image_index = other.hpix
+					dopalette = true
+				}
+				hp--
+			}
+		}
+	}
+}
+
+function scr_hitwall(_x, _y)
+{
+	return place_meeting(_x, _y, obj_solid) || behind_collision(_x, _y, obj_slope) || behind_collision(_x, _y, obj_sideplatform)
+}
+
+function scr_goupwall(_size = 32)
+{
+	if !scr_hitwall(x + sign(hsp), y - _size)
+	{
+		x += sign(hsp)
+		var _o = 0
+		while scr_solid(x, y)
+		{
+			y--
+			_o++
+		}
+		obj_camera.cam_y_offset = _o
+		return true;
+	}
+	else
+		return false;
+}
+
+function scr_can_enter_door(_state)
+{
+	var _states = [states.taunt,
+				   states.tumble,
+				   states.ball,
+				   states.fireass,
+				   states.actor,
+				   states.bump,
+				   states.groundpound,
+				   states.backtohub]
+	
+	return !array_contains(_states, _state);
+}
+
+function scr_can_uncrouch()
+{
+	var prevmask = mask_index
+	mask_index = mask_player
+	var r = !scr_solid(x, y - 1)
+	mask_index = prevmask
+	return r;
+}
+
+//the asset name minus its number, how many entires there are, and an optional starting point, like 0 instead of 1
+function asset_get_variation(_name, _len, _start = 1)
+{
+	return asset_get_index(string_concat(_name, irandom_range(_start, _len)));
+}
+"

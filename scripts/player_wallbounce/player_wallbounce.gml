@@ -1,0 +1,47 @@
+function player_wallbounce()
+{
+	var _spd = 8
+	
+	movespeed = approach(movespeed, p_move != 0 ? p_move * _spd : 0, p_move != 0 ? 1 : 0.5)
+	
+	hsp = movespeed
+	
+	if !grounded
+	{
+
+
+	}
+	else if vsp >= 0
+	{
+		flash = 8
+
+
+		with create_effect(x, y, spr_crazyruneffect)
+		{
+			image_xscale = other.xscale
+			depth = -150
+		}
+		if 
+		{
+			if p_move != 0
+				xscale = p_move
+			state = states.mach3
+			movespeed = max(abs(movespeed), 12)
+			sprite_index = spr_player_mach3
+		}
+		else
+			state = states.normal
+	}
+	
+
+	
+	image_speed = 0.5
+	
+	
+	
+	do_taunt()
+	
+
+	
+
+}

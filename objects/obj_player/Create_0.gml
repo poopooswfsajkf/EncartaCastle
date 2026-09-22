@@ -53,6 +53,7 @@ movespeed = 0
 state = states.normal
 railmovespeed = 0
 raildir = 1
+walldampen = 0;
 image_speed = 0.35
 prevstate = state
 xscale = 1

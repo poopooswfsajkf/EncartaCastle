@@ -39,8 +39,7 @@ function cc_draw_keyboard_key(_x, _y, key, _prevfont, _prevalign, _prevcolor, _p
 	var key_str = ""
 	var ix = -1
 	
-	try
-		key_str = global.keycodes[0][key]
+	try = global.keycodes[0][key]
 	catch(_e)
 		key_str = "Undefined"
 	
@@ -111,8 +110,7 @@ function cc_draw_gamepad_key(_x, _y, key, _prevfont, _prevalign, _prevcolor, _pr
 	var key_str = ""
 	var ix = -1
 	
-	try
-		key_str = global.keycodes[1][key]
+	try = global.keycodes[1][key]
 	catch(_e)
 		key_str = "Undefined"
 	

@@ -107,12 +107,16 @@ function player_mach3()
 	if ((!grounded || scr_slope(x, y + 1)) && scr_hitwall(x + xscale, y))
 	{
 		{
-			wallspeed = movespeed
-			if (movespeed < 1)
-				wallspeed = 1
-			else
-				movespeed = wallspeed
-			state = states.climbwall
+
+	
+			movespeed = 0
+			vsp = -17 + wallbouncedampen
+			wallbouncedampen += 2.55
+			state = states.wallbounce
+			sprite_index = spr_playerN_wallbounce
+			scr_sound_3d(sfx_N_wallkick, x, y)
+
+		
 		}
 	}
 	else if grounded && scr_hitwall(x + xscale, y) && !place_meeting(x + xscale, y, obj_metalblock)
