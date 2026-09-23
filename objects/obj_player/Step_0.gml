@@ -51,6 +51,9 @@ else if hitstun >= 0
 		image_speed = prev_image_speed
 }
 
+if grounded
+wallbouncedampen = 0;
+
 if (state != states.normal)
 {
 	breakdance_secret.buffer = 0

@@ -1,49 +1,61 @@
 function cc_draw_key(_x, _y, key)
 {
-	if key == vk_nokey
+	if (key == vk_nokey)
 		return;
 	
-	var _prevfont = draw_get_font()
-	var _prevalign = {h: draw_get_halign(), v: draw_get_valign()}
-	var _prevcolor = draw_get_color()
-	var _prevalpha = draw_get_alpha()
+	var _prevfont = draw_get_font();
+	var _prevalign = {h: draw_get_halign(), v: draw_get_valign()};
+	var _prevcolor = draw_get_color();
+	var _prevalpha = draw_get_alpha();
 	
-	var _func = cc_draw_keyboard_key
-	if global.input_type == INPUT_TYPE.CONTROLLER
-		_func = cc_draw_gamepad_key
+	var _func = cc_draw_keyboard_key;
 	
-	_func(_x, _y, key, _prevfont, _prevalign, _prevcolor, _prevalpha)
+	if (global.input_type == INPUT_TYPE.CONTROLLER)
+		_func = cc_draw_gamepad_key;
+	
+	_func(_x, _y, key, _prevfont, _prevalign, _prevcolor, _prevalpha);
 }
 
-function cc_draw_key_arr(_x, _y, _key) //draw a key without needing a check in every draw event
+
+function cc_draw_key_arr(_x, _y, _key)
 {
-	if is_array(_key)
+	if (is_array(_key))
 	{
-		var _w = sprite_get_width(spr_fontkey)
-		_x -= ((array_length(_key) - 1) * _w) / 2
+		var _w = sprite_get_width(spr_fontkey);
+		_x -= ((array_length(_key) - 1) * _w) / 2;
+		
 		for (var i = 0; i < array_length(_key); i++)
 		{
-		    cc_draw_key(_x, _y, _key[i])
-			_x += _w
+			cc_draw_key(_x, _y, _key[i]);
+			_x += _w;
 		}
 	}
 	else
-		cc_draw_key(_x, _y, _key)
+	{
+		cc_draw_key(_x, _y, _key);
+	}
 }
+
 
 function cc_draw_keyboard_key(_x, _y, key, _prevfont, _prevalign, _prevcolor, _prevalpha)
 {
-	if is_string(key) //check if its just "#"
-		key = ord(key)
+	if (is_string(key))
+		key = ord(key);
 	
-	var key_str = ""
-	var ix = -1
+	var key_str = "";
+	var ix = -1;
 	
-	try = global.keycodes[0][key]
-	catch(_e)
-		key_str = "Undefined"
+	// Get keyboard key name
+	if (key >= 0 && key < array_length(global.keycodes[0]))
+		key_str = global.keycodes[0][key];
+	else
+		key_str = "Undefined";
 	
-	var specialkeys = [ //make sure these comply with scr_keytostring's naming conventions
+	// Remove newline characters
+	key_str = string_replace_all(key_str, "\n", "");
+	key_str = string_replace_all(key_str, "\r", "");
+	
+	var specialkeys = [
 		"Undefined",
 		"Shift",
 		"Control",
@@ -55,66 +67,114 @@ function cc_draw_keyboard_key(_x, _y, key, _prevfont, _prevalign, _prevcolor, _p
 		"Escape",
 		"Backspace",
 		"Enter"
-	]
+	];
 	
-	for (var i = 0; i < array_length(specialkeys); i++) 
+	for (var i = 0; i < array_length(specialkeys); i++)
 	{
-		if key_str == specialkeys[i]
+		if (key_str == specialkeys[i])
 		{
-		   ix = i
-		   break;
+			ix = i;
+			break;
 		}
 	}
 	
-	switch _prevalign.h
+	switch (_prevalign.h)
 	{
 		case fa_center:
 		case fa_middle:
-			_x -= sprite_get_width(spr_fontkey) / 2
+			_x -= sprite_get_width(spr_fontkey) / 2;
 			break;
+			
 		case fa_right:
-			_x -= sprite_get_width(spr_fontkey)
+			_x -= sprite_get_width(spr_fontkey);
 			break;
 	}
 	
-	switch _prevalign.v
+	switch (_prevalign.v)
 	{
 		case fa_center:
 		case fa_middle:
-			_y -= sprite_get_height(spr_fontkey) / 2
+			_y -= sprite_get_height(spr_fontkey) / 2;
 			break;
+			
 		case fa_bottom:
-			_y -= sprite_get_height(spr_fontkey)
+			_y -= sprite_get_height(spr_fontkey);
 			break;
 	}
 	
-	if ix == -1
+	if (ix == -1)
 	{
-		draw_set_font(global.tutorialfont)
-		draw_set_align(fa_center, fa_middle)
-		draw_sprite_ext(spr_fontkey, 0, _x, _y, 1, 1, 0, _prevcolor, _prevalpha)
-		draw_set_color(c_black)
-		draw_text(_x + 16, _y + 18, string_upper(key_str))
-		draw_set_font(_prevfont)
-		draw_set_align(_prevalign.h, _prevalign.v)
-		draw_set_color(_prevcolor)
+		draw_set_font(global.tutorialfont);
+		draw_set_halign(fa_center);
+		draw_set_valign(fa_middle);
+		
+		draw_sprite_ext(
+			spr_fontkey,
+			0,
+			_x,
+			_y,
+			1,
+			1,
+			0,
+			_prevcolor,
+			_prevalpha
+		);
+		
+		draw_set_color(c_black);
+		draw_text(_x + 16, _y + 18, string_upper(key_str));
+		
+		draw_set_font(_prevfont);
+		draw_set_halign(_prevalign.h);
+		draw_set_valign(_prevalign.v);
+		draw_set_color(_prevcolor);
 	}
-	else if key_str == " "
-		draw_sprite_ext(spr_fontkey, 0, _x, _y, 1, 1, 0, _prevcolor, _prevalpha)
+	else if (key_str == " ")
+	{
+		draw_sprite_ext(
+			spr_fontkey,
+			0,
+			_x,
+			_y,
+			1,
+			1,
+			0,
+			_prevcolor,
+			_prevalpha
+		);
+	}
 	else
-		draw_sprite_ext(spr_fontkey_special, ix, _x, _y, 1, 1, 0, _prevcolor, _prevalpha)
+	{
+		draw_sprite_ext(
+			spr_fontkey_special,
+			ix,
+			_x,
+			_y,
+			1,
+			1,
+			0,
+			_prevcolor,
+			_prevalpha
+		);
+	}
 }
 
+
 function cc_draw_gamepad_key(_x, _y, key, _prevfont, _prevalign, _prevcolor, _prevalpha)
-{	
-	var key_str = ""
-	var ix = -1
+{
+	var key_str = "";
+	var ix = -1;
 	
-	try = global.keycodes[1][key]
-	catch(_e)
-		key_str = "Undefined"
+	// Get controller key name
+	if (key >= 0 && key < array_length(global.keycodes[1]))
+		key_str = global.keycodes[1][key];
+	else
+		key_str = "Undefined";
 	
-	var specialkeys = [ //make sure these comply with scr_keytostring's naming conventions
+	// Remove newline characters
+	key_str = string_replace_all(key_str, "\n", "");
+	key_str = string_replace_all(key_str, "\r", "");
+	
+	var specialkeys = [
 		"Undefined",
 		"Face 1",
 		"Face 2",
@@ -132,52 +192,93 @@ function cc_draw_gamepad_key(_x, _y, key, _prevfont, _prevalign, _prevcolor, _pr
 		"D-padLeft",
 		"Start",
 		"Select"
-	]
+	];
 	
-	for (var i = 0; i < array_length(specialkeys); i++) 
+	for (var i = 0; i < array_length(specialkeys); i++)
 	{
-		if key_str == specialkeys[i]
+		if (key_str == specialkeys[i])
 		{
-		   ix = i
-		   break;
+			ix = i;
+			break;
 		}
 	}
 	
-	switch _prevalign.h
+	switch (_prevalign.h)
 	{
 		case fa_center:
 		case fa_middle:
-			_x -= sprite_get_width(spr_fontkey) / 2
+			_x -= sprite_get_width(spr_fontkey) / 2;
 			break;
+			
 		case fa_right:
-			_x -= sprite_get_width(spr_fontkey)
+			_x -= sprite_get_width(spr_fontkey);
 			break;
 	}
 	
-	switch _prevalign.v
+	switch (_prevalign.v)
 	{
 		case fa_center:
 		case fa_middle:
-			_y -= sprite_get_height(spr_fontkey) / 2
+			_y -= sprite_get_height(spr_fontkey) / 2;
 			break;
+			
 		case fa_bottom:
-			_y -= sprite_get_height(spr_fontkey)
+			_y -= sprite_get_height(spr_fontkey);
 			break;
 	}
 	
-	if ix == -1
+	if (ix == -1)
 	{
-		draw_set_font(global.tutorialfont)
-		draw_set_align(fa_center, fa_middle)
-		draw_sprite_ext(spr_fontbutton, 0, _x, _y, 1, 1, 0, _prevcolor, _prevalpha)
-		draw_set_color(c_black)
-		draw_text(_x + 16, _y + 19, string_upper(key_str))
-		draw_set_font(_prevfont)
-		draw_set_align(_prevalign.h, _prevalign.v)
-		draw_set_color(_prevcolor)
+		draw_set_font(global.tutorialfont);
+		draw_set_halign(fa_center);
+		draw_set_valign(fa_middle);
+		
+		draw_sprite_ext(
+			spr_fontbutton,
+			0,
+			_x,
+			_y,
+			1,
+			1,
+			0,
+			_prevcolor,
+			_prevalpha
+		);
+		
+		draw_set_color(c_black);
+		draw_text(_x + 16, _y + 19, string_upper(key_str));
+		
+		draw_set_font(_prevfont);
+		draw_set_halign(_prevalign.h);
+		draw_set_valign(_prevalign.v);
+		draw_set_color(_prevcolor);
 	}
-	else if key_str == " "
-		draw_sprite_ext(spr_fontbutton, 0, _x, _y, 1, 1, 0, _prevcolor, _prevalpha)
+	else if (key_str == " ")
+	{
+		draw_sprite_ext(
+			spr_fontbutton,
+			0,
+			_x,
+			_y,
+			1,
+			1,
+			0,
+			_prevcolor,
+			_prevalpha
+		);
+	}
 	else
-		draw_sprite_ext(spr_fontbutton_special, ix, _x, _y, 1, 1, 0, _prevcolor, _prevalpha)
+	{
+		draw_sprite_ext(
+			spr_fontbutton_special,
+			ix,
+			_x,
+			_y,
+			1,
+			1,
+			0,
+			_prevcolor,
+			_prevalpha
+		);
+	}
 }

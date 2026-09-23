@@ -7,6 +7,7 @@ enum states
 	tumble,
 	climbwall,
 	slide,
+	wallbounce,
 	bump,
 	groundpound,
 	grab,

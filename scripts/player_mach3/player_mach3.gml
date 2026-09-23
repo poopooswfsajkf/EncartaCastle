@@ -113,8 +113,8 @@ function player_mach3()
 			vsp = -17 + wallbouncedampen
 			wallbouncedampen += 2.55
 			state = states.wallbounce
-			sprite_index = spr_playerN_wallbounce
-			scr_sound_3d(sfx_N_wallkick, x, y)
+			sprite_index = spr_player_mach3
+
 
 		
 		}
