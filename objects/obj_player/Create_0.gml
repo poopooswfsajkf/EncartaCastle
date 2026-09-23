@@ -52,6 +52,7 @@ coyote_time = 0
 movespeed = 0
 state = states.normal
 railmovespeed = 0
+wallbounce_mach3 = false;
 raildir = 1
 walldampen = 0;
 image_speed = 0.35
