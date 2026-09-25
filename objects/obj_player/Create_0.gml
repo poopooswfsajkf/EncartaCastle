@@ -19,6 +19,7 @@ player_states[states.mach3] = player_mach3;
 player_states[states.tumble] = player_tumble;
 player_states[states.slide] = player_slide;
 player_states[states.climbwall] = player_climbwall;
+player_states[states.wallbounce] = player_wallbounce;
 player_states[states.bump] = player_bump;
 player_states[states.groundpound] = player_groundpound;
 player_states[states.grab] = player_grab;
