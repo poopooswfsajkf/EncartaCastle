@@ -1,5 +1,11 @@
 image_blend = c_white
 
+//draw_text(x, y - 50, $"movespred: {obj_player.movespeed}")
+//draw_text(x, y - 70, $"vsp: {obj_player.vsp}")
+//draw_text(x, y - 90, $"hsp {obj_player.hsp}")
+//draw_text(x, y - 110, $"{obj_player.sprite_index}")
+//draw_text(x, y - 130, $"state: {obj_player.state}")
+
 var xx = x
 var yy = y
 
