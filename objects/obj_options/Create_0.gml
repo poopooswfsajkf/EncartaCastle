@@ -141,6 +141,12 @@ list_arr = [
 					instance_deactivate_object(obj_timer)
 				global.option_timerspeedrun = _val
 				quick_ini_write_real("globalsave.ini", "options", "timerspeedrun", _val)
+			}),
+					new add_option("option_camTilt", types.onoff, global.option_camTilt,
+			function(_val) {
+				global.option_camTilt = _val
+				display_reset(0, _val)
+				quick_ini_write_real("globalsave.ini", "options", "camTilt", _val)
 			})
 	],
 	[ //4 controls

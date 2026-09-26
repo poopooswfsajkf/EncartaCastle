@@ -6,7 +6,7 @@
   "name":"generic_functions_util",
   "parent":{
     "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "path":"folders/Objects/Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

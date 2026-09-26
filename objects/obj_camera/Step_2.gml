@@ -15,6 +15,39 @@ campos.y = clamp(campos.y, 0, room_height - SCREEN_HEIGHT)
 if global.panic.active && !global.secret
 	mag = 1
 
+// CAMERA TILT
+if (global.panic.active && global.option_camTilt)
+{
+	angle_phase += inclination_speed;
+
+	if (angle_phase >= 2 * pi)
+		angle_phase -= 2 * pi;
+
+	var max_inclination = 1.2;
+
+	target_angle = sin(angle_phase) * max_inclination;
+
+	camera_angle = lerp(
+		camera_angle,
+		target_angle,
+		0.05
+	);
+}
+else
+{
+	target_angle = 0;
+
+	camera_angle = lerp(
+		camera_angle,
+		0,
+		0.05
+	);
+
+	if (abs(camera_angle) < 0.01)
+		camera_angle = 0;
+}
+
+// SCREEN SHAKE
 if mag > 0 && global.option_screenshake
 {
 	campos.x += irandom_range(-mag, mag)
@@ -25,5 +58,13 @@ mag = max(mag - mag_decel, 0)
 
 cam_y_offset = approach(cam_y_offset, 0, 4)
 
+// APPLY CAMERA POSITION + TILT
 if !obj_player.secret_exit && obj_player.sprite_index != spr_pizzaportalend
-	camera_set_view_pos(view_camera[0], campos.x, campos.y)
+{
+	camera_set_view_pos(view_camera[0], campos.x, campos.y);
+	camera_set_view_angle(view_camera[0], camera_angle);
+}
+else
+{
+	camera_set_view_angle(view_camera[0], 0);
+}
