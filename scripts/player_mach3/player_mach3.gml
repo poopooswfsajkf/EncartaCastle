@@ -54,15 +54,12 @@ function player_mach3()
 	{
 		if (sprite_index == spr_player_Sjumpcancel)
 			sprite_index = spr_player_mach3
-		
-		// Don't immediately leave Mach 3 if we just landed from wallbounce
-		if (!input_check(INPUTS.dash) && !dashpad && !wallbounce_mach3)
+		if (!input_check(INPUTS.dash) && !dashpad)
 		{
 			reset_anim(spr_player_machslidestart)
 			state = states.slide
 			fmod_studio_event_instance_oneshot_3d("event:/sfx/player/break", x, y)
 		}
-		
 		if (P_MOVE != 0 && P_MOVE != xscale && !dashpad)
 		{
 			reset_anim(spr_player_machslideboost3)
@@ -78,11 +75,6 @@ function player_mach3()
 			state = states.superjump
 			reset_anim(spr_player_superjumpprep)
 		}
-		
-		// Wallbounce has successfully entered Mach 3.
-		// Clear the exception after this frame.
-		if (wallbounce_mach3)
-			wallbounce_mach3 = false;
 	}
 	else
 	{
@@ -146,13 +138,11 @@ function player_mach3()
 	}
 	
 	image_speed = 0.4
-	
 	switch (sprite_index)
 	{
 		case spr_player_crazyrun:
 			image_speed = 0.75
 			break;
-		
 		case spr_player_mach3jump:
 		case spr_player_rollgetup:
 		case spr_player_mach3hit:

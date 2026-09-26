@@ -51,6 +51,7 @@ function particle_create(_x, _y, p_type, _xscale = 1, _yscale = 1, _sprite = spr
 				sprite_index = p_type == particles.gib ? spr_gibs : spr_gibstars
 				image_index = random_range(0, sprite_get_number(p.sprite_index))
 				image_speed = 0
+				gravity = 0.1
 				hsp = irandom_range(-4, 4)
 				vsp = irandom_range(-5, 2)
 				image_angle = random_range(0, 360)

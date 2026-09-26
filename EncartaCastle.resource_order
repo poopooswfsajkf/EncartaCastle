@@ -371,6 +371,8 @@
     {"name":"bg_treasure","order":2,"path":"sprites/bg_treasure/bg_treasure.yy",},
     {"name":"bg2","order":1,"path":"sprites/bg2/bg2.yy",},
     {"name":"fg_tower","order":4,"path":"sprites/fg_tower/fg_tower.yy",},
+    {"name":"light","order":19,"path":"sprites/light/light.yy",},
+    {"name":"light2","order":16,"path":"sprites/light2/light2.yy",},
     {"name":"mask_bigcollect","order":5,"path":"sprites/mask_bigcollect/mask_bigcollect.yy",},
     {"name":"mask_collect","order":5,"path":"sprites/mask_collect/mask_collect.yy",},
     {"name":"mask_parry","order":2,"path":"sprites/mask_parry/mask_parry.yy",},

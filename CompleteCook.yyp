@@ -107,6 +107,9 @@
     {"link":"io.gamemaker.gm_filter_ripples-1.0.0","name":"io.gamemaker.gm_filter_ripples-1.0.0","path":"io.gamemaker.gm_filter_ripples-1.0.0.yyp",},
     {"link":"io.gamemaker.gm_filter_parallax-1.0.0","name":"io.gamemaker.gm_filter_parallax-1.0.0","path":"io.gamemaker.gm_filter_parallax-1.0.0.yyp",},
     {"link":"io.gamemaker.gm_filter_heathaze-1.0.0","name":"io.gamemaker.gm_filter_heathaze-1.0.0","path":"io.gamemaker.gm_filter_heathaze-1.0.0.yyp",},
+    {"link":"io.gamemaker.gm_filter_tintfilter-1.0.0","name":"io.gamemaker.gm_filter_tintfilter-1.0.0","path":"io.gamemaker.gm_filter_tintfilter-1.0.0.yyp",},
+    {"link":"io.gamemaker.gm_filter_zoom_blur-1.0.0","name":"io.gamemaker.gm_filter_zoom_blur-1.0.0","path":"io.gamemaker.gm_filter_zoom_blur-1.0.0.yyp",},
+    {"link":"io.gamemaker.gm_filter_vignette-1.0.0","name":"io.gamemaker.gm_filter_vignette-1.0.0","path":"io.gamemaker.gm_filter_vignette-1.0.0.yyp",},
   ],
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"Master.bank","CopyToMask":-1,"filePath":"datafiles/Banks","name":"Master.bank","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
@@ -451,6 +454,8 @@
     {"id":{"name":"bg","path":"sprites/bg/bg.yy",},},
     {"id":{"name":"bg2","path":"sprites/bg2/bg2.yy",},},
     {"id":{"name":"fg_tower","path":"sprites/fg_tower/fg_tower.yy",},},
+    {"id":{"name":"light","path":"sprites/light/light.yy",},},
+    {"id":{"name":"light2","path":"sprites/light2/light2.yy",},},
     {"id":{"name":"mask_bigcollect","path":"sprites/mask_bigcollect/mask_bigcollect.yy",},},
     {"id":{"name":"mask_collect","path":"sprites/mask_collect/mask_collect.yy",},},
     {"id":{"name":"mask_forkhitbox","path":"sprites/mask_forkhitbox/mask_forkhitbox.yy",},},
