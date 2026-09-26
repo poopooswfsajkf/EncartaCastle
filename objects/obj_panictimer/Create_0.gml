@@ -3,6 +3,7 @@ global.panic = {
 	timer: 0,
 	timer_max: 0
 }
+news_image_index = 0;
 
 john = {
 	image_index: 0,

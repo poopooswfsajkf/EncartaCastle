@@ -78,7 +78,22 @@ draw_set_color(c_white)
 		show_debug_message(textes)
 
 
-draw_sprite(spr_timer_news, 0, x - (SCREEN_WIDTH / 2), y - (SCREEN_HEIGHT - 76))
+news_image_index += 8 / room_speed;
+
+if (news_image_index >= sprite_get_number(spr_timer_news))
+	news_image_index = 0;
+
+draw_sprite_ext(
+	spr_timer_news,
+	floor(news_image_index),
+	x - (SCREEN_WIDTH / 2),
+	y - (SCREEN_HEIGHT - 76),
+	1,
+	1,
+	0,
+	c_white,
+	1
+);
 
 //draw_sprite(spr_timer_john, john.image_index, (x - 150) + barpos, y + 20)
 
