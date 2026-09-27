@@ -34,5 +34,6 @@ function player_wallbounce()
 	
 	image_speed = 0.5;
 	
+	do_grab();
 	do_taunt();
 }
