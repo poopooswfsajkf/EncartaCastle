@@ -14,7 +14,7 @@ if do_particles
 	
 	particle_create(x, y + 20, particles.bang)
 	particle_create(x, y, particles.genericpoof)
-	repeat 20
+	repeat 5
 		particle_create(x, y, particles.gib)
 	fmod_studio_event_instance_oneshot_3d("event:/sfx/misc/kill", x, y)
 	shake_camera(3, 3 / room_speed)

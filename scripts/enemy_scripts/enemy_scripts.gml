@@ -114,7 +114,6 @@ function do_scared()
 		xscale = obj_player.x > x ? 1 : -1
 		scared_timer = 100
 		sprite_index = sprs.scared
-		if irandom(100) <= 5
 			fmod_studio_event_instance_oneshot_3d("event:/sfx/voice/enemyrarescream", x, y)
 	}
 }
