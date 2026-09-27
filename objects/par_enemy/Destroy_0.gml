@@ -12,6 +12,12 @@ if do_particles
 		obj_levelcontroller.killed_enemy = true
 	}
 	
+		instance_create(x, y, obj_omanotopea)
+	{
+		index = 0
+	}
+	
+	
 	particle_create(x, y + 20, particles.bang)
 	particle_create(x, y, particles.genericpoof)
 	repeat 5

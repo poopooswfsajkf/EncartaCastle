@@ -26,8 +26,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Panic",
-    "path":"folders/Sprites/HUD/Panic.yy",
+    "name":"CompleteCook",
+    "path":"CompleteCook.yyp",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

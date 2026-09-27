@@ -2,6 +2,7 @@ function player_punch()
 {
 	hsp = approach(hsp, P_MOVE * 4, 0.4)
 	image_speed = anim_ended() ? 0 : 0.4;
+
 	
 	if vsp < 0
 	{

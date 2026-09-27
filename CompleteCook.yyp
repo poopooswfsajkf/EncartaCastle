@@ -134,7 +134,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.4.222",
+    "IDEVersion":"2026.0.0.16",
   },
   "name":"CompleteCook",
   "resources":[
@@ -227,6 +227,7 @@
     {"id":{"name":"obj_movingplatform","path":"objects/obj_movingplatform/obj_movingplatform.yy",},},
     {"id":{"name":"obj_music","path":"objects/obj_music/obj_music.yy",},},
     {"id":{"name":"obj_negativenumber","path":"objects/obj_negativenumber/obj_negativenumber.yy",},},
+    {"id":{"name":"obj_omanotopea","path":"objects/obj_omanotopea/obj_omanotopea.yy",},},
     {"id":{"name":"obj_onewayblock","path":"objects/obj_onewayblock/obj_onewayblock.yy",},},
     {"id":{"name":"obj_options_buttonconfig","path":"objects/obj_options_buttonconfig/obj_options_buttonconfig.yy",},},
     {"id":{"name":"obj_options_keyconfig","path":"objects/obj_options_keyconfig/obj_options_keyconfig.yy",},},
@@ -465,6 +466,7 @@
     {"id":{"name":"mask_pepperman","path":"sprites/mask_pepperman/mask_pepperman.yy",},},
     {"id":{"name":"mask_player_small","path":"sprites/mask_player_small/mask_player_small.yy",},},
     {"id":{"name":"mask_player","path":"sprites/mask_player/mask_player.yy",},},
+    {"id":{"name":"omanotopea_text0","path":"sprites/omanotopea_text0/omanotopea_text0.yy",},},
     {"id":{"name":"pal_combo","path":"sprites/pal_combo/pal_combo.yy",},},
     {"id":{"name":"pal_peppatterncolors","path":"sprites/pal_peppatterncolors/pal_peppatterncolors.yy",},},
     {"id":{"name":"pal_peppino","path":"sprites/pal_peppino/pal_peppino.yy",},},
