@@ -134,7 +134,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2026.0.0.16",
+    "IDEVersion":"2024.14.4.222",
   },
   "name":"CompleteCook",
   "resources":[
@@ -340,6 +340,7 @@
     {"id":{"name":"test_secret3","path":"rooms/test_secret3/test_secret3.yy",},},
     {"id":{"name":"tile_test","path":"rooms/tile_test/tile_test.yy",},},
     {"id":{"name":"tower_1","path":"rooms/tower_1/tower_1.yy",},},
+    {"id":{"name":"tower_main","path":"rooms/tower_main/tower_main.yy",},},
     {"id":{"name":"tower_testing","path":"rooms/tower_testing/tower_testing.yy",},},
     {"id":{"name":"treasure_room","path":"rooms/treasure_room/treasure_room.yy",},},
     {"id":{"name":"afterimage_util","path":"scripts/afterimage_util/afterimage_util.yy",},},
@@ -1097,6 +1098,7 @@
     {"roomId":{"name":"dm_2","path":"rooms/dm_2/dm_2.yy",},},
     {"roomId":{"name":"logo_credits","path":"rooms/logo_credits/logo_credits.yy",},},
     {"roomId":{"name":"asset_test","path":"rooms/asset_test/asset_test.yy",},},
+    {"roomId":{"name":"tower_main","path":"rooms/tower_main/tower_main.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

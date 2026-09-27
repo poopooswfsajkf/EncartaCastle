@@ -262,6 +262,7 @@
     {"name":"test_secret3","order":4,"path":"rooms/test_secret3/test_secret3.yy",},
     {"name":"tile_test","order":15,"path":"rooms/tile_test/tile_test.yy",},
     {"name":"tower_1","order":6,"path":"rooms/tower_1/tower_1.yy",},
+    {"name":"tower_main","order":20,"path":"rooms/tower_main/tower_main.yy",},
     {"name":"tower_testing","order":1,"path":"rooms/tower_testing/tower_testing.yy",},
     {"name":"treasure_room","order":9,"path":"rooms/treasure_room/treasure_room.yy",},
     {"name":"afterimage_util","order":5,"path":"scripts/afterimage_util/afterimage_util.yy",},
