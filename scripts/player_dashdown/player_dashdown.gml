@@ -26,6 +26,7 @@ function player_dashdown()
 				xscale = P_MOVE
 				hsp = 12 * P_MOVE
 			}
+			// insert some fucking function that destroys the downstart sfx and plays the dashout one
 			sprite_index = spr_player_dashout
 			state = states.dashout
 			vsp = -12

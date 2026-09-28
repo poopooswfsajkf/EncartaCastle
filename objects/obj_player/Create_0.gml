@@ -119,6 +119,7 @@ loop_sounds = {
 	superjumphold: new make_loop_sound(states.superjump, "event:/sfx/player/superjumphold", function() { return obj_player.sprite_index != spr_player_superjump && obj_player.sprite_index != spr_player_Sjumpcancelstart && obj_player.sprite_index != spr_player_presentboxspring}, 
 		[0.64, 1.84]),
 	ball: new make_loop_sound(states.ball, "event:/sfx/player/ball", function() { return obj_player.sprite_index != spr_player_ballend}),
+	wallbounce: new make_loop_sound(states.wallbounce, "event:/sfx/player/wallbouncespin", function() { return obj_player.sprite_index != spr_player_downdashstart}),
 	backslide: new make_loop_sound(states.tumble, "event:/sfx/player/backslide", function() { return obj_player.sprite_index != spr_player_crouchslip && grounded})
 }
 
@@ -129,6 +130,11 @@ mach_snd = fmod_studio_event_description_create_instance(_mach_event_ref)
 
 var _grab_event_ref = fmod_studio_system_get_event("event:/sfx/player/suplexdash")
 grab_snd = fmod_studio_event_description_create_instance(_grab_event_ref)
+
+var _downdash_event_ref = fmod_studio_system_get_event("event:/sfx/player/crusherjump_begin")
+downdash_snd = fmod_studio_event_description_create_instance(_downdash_event_ref)
+
+
 
 var _getup_event_ref = fmod_studio_system_get_event("event:/sfx/player/rollgetup")
 getup_snd = fmod_studio_event_description_create_instance(_getup_event_ref)
@@ -154,7 +160,7 @@ voice_hurt_snd = fmod_studio_event_description_create_instance(_hurt_event_ref)
 
 #endregion
 
-followingsnds = [mach_snd, grab_snd, getup_snd, sjumprelease_snd, fireass_snd, voice_idle_snd, voice_collect_snd, voice_hurt_snd] //what am i doing
+followingsnds = [mach_snd, downdash_snd, grab_snd, getup_snd, sjumprelease_snd, fireass_snd, voice_idle_snd, voice_collect_snd, voice_hurt_snd] //what am i doing
 
 visual_size = 1
 secret_exit = false

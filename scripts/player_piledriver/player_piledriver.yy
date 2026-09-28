@@ -6,7 +6,7 @@
   "name":"player_piledriver",
   "parent":{
     "name":"Player States",
-    "path":"folders/Objects/Scripts/Player States.yy",
+    "path":"folders/Scripts/Player States.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

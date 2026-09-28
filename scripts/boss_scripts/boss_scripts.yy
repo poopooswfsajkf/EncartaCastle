@@ -6,7 +6,7 @@
   "name":"boss_scripts",
   "parent":{
     "name":"Scripts",
-    "path":"folders/Objects/Scripts.yy",
+    "path":"folders/Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
