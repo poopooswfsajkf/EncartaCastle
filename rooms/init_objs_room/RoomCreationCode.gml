@@ -32,6 +32,8 @@ enum states
 	shotgunshoot,
 	ball,
 	slip,
+	downdash,
+	dashout,
 	
 	//enemy states
 	hit,

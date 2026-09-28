@@ -1,18 +1,35 @@
 function player_wallbounce()
 {
-	var _spd = 8;
-	
-	if (P_MOVE != 0)
-	{
-		movespeed = P_MOVE * _spd;
-		xscale = P_MOVE;
-	}
-	
-	hsp = movespeed;
+
 	
 	if (!grounded)
 	{
-		sprite_index = spr_player_mach3;
+		var _spd = 12;
+	
+	if (P_MOVE != 0)
+	{
+		movespeed = _spd * P_MOVE
+		hsp = lerp(hsp,movespeed,0.1)
+	}
+		sprite_index = spr_player_wallbounce;
+		if input_check_pressed(INPUTS.down)
+		{
+			state = states.downdash
+			hsp = 0
+			vsp = 13
+		}
+		if (input_check_pressed(INPUTS.dash))
+		{
+			movespeed = 12;
+			if (P_MOVE)
+		{
+		xscale = P_MOVE
+		hsp = xscale * movespeed;
+		}
+			state = states.dashout
+			vsp = -5
+			sprite_index = spr_player_dashout
+		}
 	}
 	else if (vsp >= 0)
 	{
@@ -27,8 +44,13 @@ function player_wallbounce()
 		// Landing from wallbounce goes directly into Mach 3
 		wallbounce_mach3 = true;
 		state = states.mach3;
-		movespeed = max(abs(movespeed), 12);
+		movespeed = 12;
+		if (P_MOVE != 0)
+		{
+		xscale = P_MOVE
 		hsp = xscale * movespeed;
+		}
+		
 		sprite_index = spr_player_mach3;
 	}
 	
@@ -36,4 +58,5 @@ function player_wallbounce()
 	
 	do_grab();
 	do_taunt();
+	aftimg_timers.mach.do_it = true
 }
