@@ -23,17 +23,25 @@ function player_dashdown()
 		}
 		if anim_ended() && spr_player_downdashend
 		{
+			flash = 8;
+		
+		with (create_effect(x, y, spr_crazyruneffect))
+		{
+			image_xscale = other.xscale;
+			depth = -150;
+		}
 			if P_MOVE != 0
 			{
 				xscale = P_MOVE
 				hsp = 12 * P_MOVE
 			}
-
+			outofcrusher = true
 			sprite_index = spr_player_dashout
 			state = states.dashout
 			vsp = -12
 			grounded = false
 		}
 	}
+	instakill = true
 	aftimg_timers.blur.do_it = true
 }

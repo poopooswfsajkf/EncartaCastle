@@ -66,7 +66,7 @@ wallspeed = 0
 flash = 0
 tauntinv = false
 wallbouncedampen = 0
-
+outofcrusher = false
 aftimg_timers = {
 	mach: {timer: 0, effect: after_images.mach, resetpoint: 5, do_it: false},
 	blur: {timer: 0, effect: after_images.blur, resetpoint: 2, do_it: false}
@@ -201,7 +201,6 @@ supertauntbuffer = 0
 myemitter = noone
 pausestopframe = false
 winding = 0
-
 prev_g_room = 0
 prev_g_door = "a"
 

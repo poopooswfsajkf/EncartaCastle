@@ -19,18 +19,25 @@ function player_wallbounce()
 			state = states.downdash
 			hsp = 0
 			vsp = 15
+			flash = 8;
 		}
-		if (input_check_pressed(INPUTS.dash))
+		if (input_check_pressed(INPUTS.dash) || input_check_pressed(INPUTS.grab))
 		{
+			flash = 8;
+		
+		with (create_effect(x, y, spr_crazyruneffect))
+		{
+			image_xscale = other.xscale;
+			depth = -150;
+		}
 			movespeed = 12;
-			if (P_MOVE)
+			if (P_MOVE != 0)
 		{
 		xscale = P_MOVE
 		hsp = xscale * movespeed;
 		}
-
 			state = states.dashout
-			vsp = -5
+			vsp = -15
 			sprite_index = spr_player_dashout
 		}
 	}
@@ -54,12 +61,13 @@ function player_wallbounce()
 		hsp = xscale * movespeed;
 		}
 		
-		sprite_index = spr_player_mach3;
+		sprite_index = spr_player_mach2;
 	}
 	
 	image_speed = 0.5;
 	
-	do_grab();
 	do_taunt();
+	
 	aftimg_timers.mach.do_it = true
+	instakill = true
 }
