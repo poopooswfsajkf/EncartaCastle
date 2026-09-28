@@ -28,7 +28,13 @@ with (obj_fade)
 draw_surface(application_surface, screen_x, screen_y)
 shader_reset()
 
-shader_set(shd_gui_brighten) //solves an alpha issue
+
+with (obj_fade)
+{
+    shader_set(shd_sonicfade);
+    shader_set_uniform_f(shader_get_uniform(shd_sonicfade, "u_step"), fadeAlpha);
+}
+
 draw_surface(gui_surf, screen_x, screen_y)
 shader_reset()
 

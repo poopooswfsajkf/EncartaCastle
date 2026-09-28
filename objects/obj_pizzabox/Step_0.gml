@@ -7,6 +7,7 @@ with instance_place(x, y - (image_yscale * 16), obj_player)
 {
 	if (state != states.actor && other.live > livemax)
 	{
+		
 		if ((input_direction_check(INPUTS.down) || state == states.groundpound) && place_meeting(x, y + 1, other) && other.image_yscale == 1)
 		{
 			dooryscale = 1
@@ -15,6 +16,7 @@ with instance_place(x, y - (image_yscale * 16), obj_player)
 			vsp = 0
 			movespeed = 0
 			image_speed = 0.35
+			fmod_studio_event_instance_stop(dashdown_snd, FMOD_STUDIO_STOP_MODE.IMMEDIATE)
 			reset_anim(spr_player_downpizzabox)
 			fmod_studio_event_instance_oneshot_3d("event:/sfx/misc/box", other.x, other.y)
 		}
@@ -31,6 +33,7 @@ with instance_place(x, y - (image_yscale * 16), obj_player)
 			image_speed = 0.35
 			reset_anim(spr_player_uppizzabox)
 			fmod_studio_event_instance_oneshot_3d("event:/sfx/misc/box", other.x, other.y)
+			fmod_studio_event_instance_stop(dashdown_snd, FMOD_STUDIO_STOP_MODE.IMMEDIATE)
 		}
 	}
 	
