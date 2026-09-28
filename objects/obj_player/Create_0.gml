@@ -132,7 +132,7 @@ var _grab_event_ref = fmod_studio_system_get_event("event:/sfx/player/suplexdash
 grab_snd = fmod_studio_event_description_create_instance(_grab_event_ref)
 
 var _downdash_event_ref = fmod_studio_system_get_event("event:/sfx/player/crusherjump_begin")
-downdash_snd = fmod_studio_event_description_create_instance(_downdash_event_ref)
+dashdown_snd = fmod_studio_event_description_create_instance(_downdash_event_ref)
 
 
 
@@ -160,7 +160,7 @@ voice_hurt_snd = fmod_studio_event_description_create_instance(_hurt_event_ref)
 
 #endregion
 
-followingsnds = [mach_snd, downdash_snd, grab_snd, getup_snd, sjumprelease_snd, fireass_snd, voice_idle_snd, voice_collect_snd, voice_hurt_snd] //what am i doing
+followingsnds = [mach_snd, dashdown_snd, grab_snd, getup_snd, sjumprelease_snd, fireass_snd, voice_idle_snd, voice_collect_snd, voice_hurt_snd] //what am i doing
 
 visual_size = 1
 secret_exit = false

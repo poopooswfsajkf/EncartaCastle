@@ -14,6 +14,8 @@ function player_wallbounce()
 		sprite_index = spr_player_wallbounce;
 		if input_check_pressed(INPUTS.down)
 		{
+						if fmod_studio_event_instance_get_playback_state(dashdown_snd) != FMOD_STUDIO_PLAYBACK_STATE.PLAYING
+		fmod_studio_event_instance_start(dashdown_snd)
 			state = states.downdash
 			hsp = 0
 			vsp = 15
@@ -26,6 +28,7 @@ function player_wallbounce()
 		xscale = P_MOVE
 		hsp = xscale * movespeed;
 		}
+
 			state = states.dashout
 			vsp = -5
 			sprite_index = spr_player_dashout

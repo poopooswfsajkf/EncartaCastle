@@ -66,7 +66,7 @@ if follow_player
 		if sprite_index == spr_player_swingdingend
 			ixcheck = 1
 			
-		if state == states.punchenemy && floor(image_index) >= ixcheck && other.state != states.hit
+		if state == states.punchenemy || state == states.downdash && floor(image_index) >= ixcheck && other.state != states.hit
 		{
 			vsp = -6
 			shake_camera(3, 3 / room_speed)

@@ -1,5 +1,7 @@
 function player_dashout()
 {
+	if fmod_studio_event_instance_get_playback_state("event:/sfx/player/dashout_slip") != FMOD_STUDIO_PLAYBACK_STATE.PLAYING
+	fmod_studio_event_instance_oneshot_3d("event:/sfx/player/dashout_slip", x, y)
 	if !grounded
 	{
 		if P_MOVE != 0

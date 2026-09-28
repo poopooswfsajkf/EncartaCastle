@@ -17,6 +17,8 @@ function player_dashdown()
 		{
 			image_index = 0
 			sprite_index = spr_player_downdashend
+						fmod_studio_event_instance_stop(dashdown_snd, FMOD_STUDIO_STOP_MODE.IMMEDIATE)
+			fmod_studio_event_instance_oneshot_3d("event:/sfx/player/crusherjump_end", x, y)
 			hsp = 0
 		}
 		if anim_ended() && spr_player_downdashend
@@ -26,7 +28,7 @@ function player_dashdown()
 				xscale = P_MOVE
 				hsp = 12 * P_MOVE
 			}
-			// insert some fucking function that destroys the downstart sfx and plays the dashout one
+
 			sprite_index = spr_player_dashout
 			state = states.dashout
 			vsp = -12
