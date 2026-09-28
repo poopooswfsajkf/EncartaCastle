@@ -16,7 +16,7 @@ function player_wallbounce()
 		{
 			state = states.downdash
 			hsp = 0
-			vsp = 13
+			vsp = 15
 		}
 		if (input_check_pressed(INPUTS.dash))
 		{

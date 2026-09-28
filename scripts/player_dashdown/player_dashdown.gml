@@ -23,13 +23,13 @@ function player_dashdown()
 		{
 			if P_MOVE != 0
 			{
+				xscale = P_MOVE
 				hsp = 12 * P_MOVE
 			}
 			sprite_index = spr_player_dashout
 			state = states.dashout
 			vsp = -12
 			grounded = false
-			xscale = P_MOVE
 		}
 	}
 	aftimg_timers.blur.do_it = true

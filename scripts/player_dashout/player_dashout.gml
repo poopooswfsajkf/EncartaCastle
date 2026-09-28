@@ -29,7 +29,7 @@ function player_dashout()
 	}
 	if input_check_pressed(INPUTS.down)
 	{
-		vsp = 12
+		vsp = 14
 	}
 	aftimg_timers.blur.do_it = true
 }
