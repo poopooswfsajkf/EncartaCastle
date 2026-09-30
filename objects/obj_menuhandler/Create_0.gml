@@ -47,6 +47,8 @@ menu_dark = true
 dark_state = 0
 optionsalpha = 0
 buffer = 0
+char_ix = 0
+char_offset = 0
 	
 function ini_menu_tv_inst(_x, _y, _sproff, _sprnoise, _sprselect, _sprconfirm, _filename) constructor
 {

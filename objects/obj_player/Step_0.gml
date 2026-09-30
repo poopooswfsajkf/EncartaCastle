@@ -105,7 +105,7 @@ if (y > room_height + 300 || y < -800) && state != states.actor && state != stat
 	state = states.actor
 	hsp = 0
 	vsp = 0
-	sprite_index = spr_player_idle
+	sprite_index = spr_playerM_idle
 }
 
 if intransfo || state == states.fireass

@@ -6,7 +6,7 @@ function player_noclip()
 	x += P_MOVE * 5 * s
 	y += v_move * 5 * s
 	
-	sprite_index = spr_player_idle
+	sprite_index = spr_playerM_idle
 	image_speed = 1
 	visible = true
 	

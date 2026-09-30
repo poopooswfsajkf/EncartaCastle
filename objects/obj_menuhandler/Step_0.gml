@@ -38,12 +38,35 @@ if abletoinput
 		instance_create(0, 0, obj_deletesave)
 		abletoinput = false
 	}
+		if input_check_pressed(INPUTS.ui_up) || input_check_pressed(INPUTS.ui_down)
+	{
+		char_offset = input_check_pressed(INPUTS.ui_up) ? -2 : 2
+		alarm[4] = 10
+		scr_sound(input_check_pressed(INPUTS.ui_up) ? sfx_step : sfx_step_1)
+		with obj_player
+		{
+			if char == chars.matt
+			{
+				char = chars.nia
+				charletter = "N"
+			}
+			else if char == chars.nia
+			{
+				char = chars.matt
+				charletter = "M"
+			}
+			asset_player_reset(charletter)
+			with obj_tv
+			{
+				asset_tv_reset(other.charletter)
+				state = states.normal
+				sprite_index = spr_tv_idle
+			}
+		}
+	}
 }
 else
-{
 	obj_menupeppino.painless = true
-	buffer--
-}
 
 for (var i = 0; i < array_length(tvs); i++) 
 {

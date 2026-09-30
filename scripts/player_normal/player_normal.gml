@@ -1,6 +1,6 @@
 function player_normal()
 {
-	var default_idle = spr_player_idle
+	var default_idle = spr_playerM_idle
 	var default_move = spr_player_move
 	var default_jump = spr_player_jump
 	var default_fall = spr_player_fall

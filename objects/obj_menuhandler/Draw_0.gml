@@ -100,5 +100,8 @@ cc_draw_key_arr(712, 449, input_get_bind(INPUTS.ui_delete))
 
 if !tvs[cur_selected - 1].save_exists
 	draw_sprite(spr_menukeyoverlay, 0, 712, 449)
+	
+	draw_sprite(obj_player.char == chars.matt ? spr_playerM_idle : spr_playerN_idle, char_ix, 0, screen_h + char_offset)
+char_ix = wrap(3, char_ix + 0.15)
 
 draw_reset_color(1)

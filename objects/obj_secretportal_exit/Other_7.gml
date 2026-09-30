@@ -2,7 +2,7 @@ if sprite_index == spr_secretportal_spawn
 {
 	alarm[0] = 120
 	reset_anim(spr_secretportal_spawnidle)
-	fmod_studio_event_instance_oneshot_3d("event:/sfx/misc/secretexit", x, y)
+	scr_sound_3d(sfx_secretexit, x, y)
 	with obj_player
 	{
 		/*state = states.groundpound

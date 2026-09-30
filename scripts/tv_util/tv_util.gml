@@ -2,7 +2,7 @@ function tv_expression(spr)
 {
 	switch (spr)
 	{
-		case spr_tv_idle:
+		case spr_tvM_idle:
 			state_togo = tv_states.normal
 			break;
 		case spr_tv_hurt:
@@ -57,4 +57,9 @@ function timer_add_text(_text = "ITS A TEST TEXT!!!"){
 		y : obj_panictimer.y == (SCREEN_HEIGHT - 76) + 212 ? -800 : -100
 	}
 	array_push(obj_panictimer.textes, [text.t, text.y])
+}
+
+function asset_tv_reset(_letter)
+{
+	spr_tv_idle = asset_player_get("idle", _letter, "spr_tv")
 }

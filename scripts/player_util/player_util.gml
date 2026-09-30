@@ -420,8 +420,20 @@ function scr_can_uncrouch()
 }
 
 
-// the asset name minus its number, how many entries there are, and an optional starting point, like 0 instead of 1
-function asset_get_variation(_name, _len, _start = 1)
+//the asset name minus its number, how many entires there are, and an optional starting point, like 0 instead of 1
+function asset_player_get(_action, _letter, _prefix = "spr_player")
 {
-	return asset_get_index(string_concat(_name, irandom_range(_start, _len)));
+	var _asset = asset_get_index(_prefix + _letter + "_" + _action)
+	if _asset != -1
+		return _asset;
+	else
+	{
+		_asset = asset_get_index(_prefix + "F_" + _action) //peppino is the default
+		return _asset; //will be -1 if invalid
+	}
+}
+
+function asset_player_reset(_letter)
+{
+	spr_player_idle = asset_player_get("idle", _letter)
 }

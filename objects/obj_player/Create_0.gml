@@ -5,6 +5,12 @@
 #macro SJUMPHELD (((input_check(INPUTS.up) || gamepad_axis_value(global.pad_device, gp_axislv) <= min(-0.8 + global.option_dzsuperjump, -0.01)) && SJUMPDIR) || input_check(INPUTS.superjump))
 #macro CROUCHHELD ((input_check(INPUTS.down) || gamepad_axis_value(global.pad_device, gp_axislv) >= max(0.8 - global.option_dzcrouchwalk, 0.01)) && GPOUNDDIR)
 
+enum chars
+{
+	matt,
+	nia
+}
+
 collide_init()
 
 #region Player States
@@ -177,8 +183,11 @@ hasgerome = false
 fallingtimer = 0
 depth = -8
 
+char = chars.matt
+charletter = "M"
 pal_select = 1
 pattern_spr = pat_pizza
+asset_player_reset(charletter)
 
 input_buffers = {
 	jump: 0,
