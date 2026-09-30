@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="ParameterPreset" id="{b9b5fbba-580c-4745-8316-a61c8d29e250}">
+		<property name="name">
+			<value>underwater</value>
+		</property>
+		<relationship name="folder">
+			<destination>{b180254c-5841-46fd-8c91-b579904220f1}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{49a10042-6659-4e99-8bd5-3adb2dfc0ab3}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{49a10042-6659-4e99-8bd5-3adb2dfc0ab3}">
+		<property name="isGlobal">
+			<value>true</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+		<relationship name="modulators">
+			<destination>{4a1cd5c1-1703-41b5-9abb-94c1e310090d}</destination>
+		</relationship>
+	</object>
+	<object class="SeekModulator" id="{4a1cd5c1-1703-41b5-9abb-94c1e310090d}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>cursorPosition</value>
+		</property>
+		<property name="speedAscending">
+			<value>2.2000000476837158</value>
+		</property>
+	</object>
+</objects>

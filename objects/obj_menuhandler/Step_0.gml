@@ -42,7 +42,7 @@ if abletoinput
 	{
 		char_offset = input_check_pressed(INPUTS.ui_up) ? -2 : 2
 		alarm[4] = 10
-		scr_sound(input_check_pressed(INPUTS.ui_up) ? sfx_step : sfx_step_1)
+		
 		with obj_player
 		{
 			if char == chars.matt

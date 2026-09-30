@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="ParameterPreset" id="{62ba0096-320b-46f8-9da2-f197ba29d6d2}">
+		<property name="name">
+			<value>boomboxspeed</value>
+		</property>
+		<relationship name="folder">
+			<destination>{b180254c-5841-46fd-8c91-b579904220f1}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{5ad1eff1-c466-4d0b-bde3-82ab7b61563e}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{5ad1eff1-c466-4d0b-bde3-82ab7b61563e}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="velocity">
+			<value>0.0024999999441206455</value>
+		</property>
+		<relationship name="modulators">
+			<destination>{cb05aa7f-177d-4ba9-9713-25f83fc74482}</destination>
+		</relationship>
+	</object>
+	<object class="SeekModulator" id="{cb05aa7f-177d-4ba9-9713-25f83fc74482}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>cursorPosition</value>
+		</property>
+	</object>
+</objects>

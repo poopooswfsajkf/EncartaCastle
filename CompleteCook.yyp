@@ -1059,6 +1059,7 @@
     {"id":{"name":"tsspr_entrance_decor","path":"sprites/tsspr_entrance_decor/tsspr_entrance_decor.yy",},},
     {"id":{"name":"tsspr_entrance_street","path":"sprites/tsspr_entrance_street/tsspr_entrance_street.yy",},},
     {"id":{"name":"tsspr_entrance","path":"sprites/tsspr_entrance/tsspr_entrance.yy",},},
+    {"id":{"name":"velvetLogo_0","path":"sprites/velvetLogo_0/velvetLogo_0.yy",},},
     {"id":{"name":"tile_entrancedeco","path":"tilesets/tile_entrancedeco/tile_entrancedeco.yy",},},
     {"id":{"name":"tile_tower_tileset","path":"tilesets/tile_tower_tileset/tile_tower_tileset.yy",},},
     {"id":{"name":"tileset_entrance","path":"tilesets/tileset_entrance/tileset_entrance.yy",},},
