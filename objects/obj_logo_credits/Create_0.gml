@@ -1,3 +1,33 @@
-fade_alpha = 1
-nextroom = false
-alarm[0] = 180
+logos = [spr_logo1,spr_logo2,spr_logo3]
+vivetkaiframes = 0
+logosappearing = 0
+creditspart = 0
+alpha = 0
+maxlogos = 1
+logoappear = false
+logospeed = 3
+goup = false
+presents = false
+kaicenatpos = 270
+transition = false
+trans1 = false
+trans2 = false
+godown = false
+depth = -9
+alarm[0] = 60
+for (var i = 0; i < array_length(logos); i++)
+{
+	skibidi[i] = 4
+	logopos[i] = 0
+}
+scale = 1
+showlogoframe = 0
+showlogomax = 90
+showlogo = false
+killme = false
+skipped = false
+grow = false
+thisisframes = 0
+thisismax = 140
+shake = 0
+encartacastlelogo = false

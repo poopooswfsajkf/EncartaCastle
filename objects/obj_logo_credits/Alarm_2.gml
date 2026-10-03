@@ -1,0 +1,3 @@
+
+godown = true
+goup = false
