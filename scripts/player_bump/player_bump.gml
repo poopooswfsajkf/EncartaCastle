@@ -24,6 +24,6 @@ function player_bump()
 			state = states.jump
 		}
 		else
-			sprite_index = spr_playerM_idle
+			sprite_index = spr_player_idle
 	}
 }

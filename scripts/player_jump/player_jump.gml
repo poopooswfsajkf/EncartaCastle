@@ -1,7 +1,7 @@
 function player_jump()
 {
 	var default_jump = spr_player_jump
-	var default_fall = spr_player_fall
+	var default_fall = spr_playerM_fall
 	var default_land = spr_player_land
 	var default_landmove = spr_player_landmove
 	
@@ -15,7 +15,7 @@ function player_jump()
 	
 	if sprite_index == spr_player_jump
 		sprite_index = default_jump
-	else if sprite_index == spr_player_fall
+	else if sprite_index == spr_playerM_fall
 		sprite_index = default_fall
 	
 	if (coyote_time && input_buffers.jump > 0)
@@ -74,7 +74,7 @@ function player_jump()
 	{
 		fallingtimer = min(fallingtimer + 1, 100)
 		if fallingtimer >= 50
-			sprite_index = fallingtimer < 100 ? spr_player_fallface : spr_player_freefall
+			sprite_index = fallingtimer < 100 ? spr_playerM_fallface : spr_playerM_freefall
 	}
 	else
 		fallingtimer = 0
@@ -97,7 +97,7 @@ function player_jump()
 		else
 		{
 			state = states.bump
-			reset_anim(spr_player_bodyslamland)
+			reset_anim(spr_playerM_bodyslamland)
 			shake_camera()
 			fmod_studio_event_instance_oneshot_3d("event:/sfx/misc/slam", x, y)
 			create_effect(x, y + 2, spr_groundpoundeffect)
@@ -118,11 +118,11 @@ function player_jump()
 	{
 		case spr_player_jump:
 		case spr_player_piledriverjump:
-			reset_anim_on_end(spr_player_fall)
+			reset_anim_on_end(spr_playerM_fall)
 			break;
 		case spr_player_suplexcancel:
 			image_speed = 0.4
-			reset_anim_on_end(spr_player_fall)
+			reset_anim_on_end(spr_playerM_fall)
 			break;
 		case spr_player_shotgun_jump:
 			reset_anim_on_end(spr_player_shotgun_fall)
@@ -130,7 +130,7 @@ function player_jump()
 		case spr_player_stomp:
 			reset_anim_on_end(spr_player_stomp_loop)
 			break;
-		case spr_player_hurtjump:
+		case spr_playerM_hurtjump:
 			reset_anim_on_end(spr_player_hurtjump_fall)
 			break;
 	}
