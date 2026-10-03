@@ -27,6 +27,17 @@ if sprite_index == spr_player_walkfront
 if (i_frames > 0 && state != states.hurt && state != states.fireass)
 	image_alpha = round(wave(0, 1, 0.01, 0))*/
 
+// Prevent invalid sprite reference
+if sprite_index == -1
+{
+	show_debug_message("INVALID PLAYER SPRITE!");
+	show_debug_message("state = " + string(state));
+	show_debug_message("sprite_index = " + string(sprite_index));
+	show_debug_message("spr_player_mach3 = " + string(spr_player_mach3));
+	show_debug_message("spr_player_wallbounce = " + string(spr_player_wallbounce));
+	exit;
+}
+
 if pal_select == 12
 	pattern_draw(sprite_index, image_index, xx, yy, pattern_spr, xscale * visual_size, image_yscale * visual_size, image_angle, image_blend, image_alpha)
 
