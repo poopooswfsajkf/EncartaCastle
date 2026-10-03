@@ -99,10 +99,6 @@ else
 	grow = true
 }
 }
-else
-{
-	
-}
 
 break;
 }
@@ -124,7 +120,7 @@ if grow = true
 	if scale = 1
 	{
 		grow = false
-		alarm[4] = 60
+		alarm[4] = 90
 	}
 	}
 }
@@ -200,12 +196,13 @@ if keyboard_check_pressed(vk_anykey) || gamepad_check_any()
 		}
 		else
 		{
-			if trans1 = false
+			if trans2 = false && trans1 = false
 			{
+				alarm[0] = -1
+				alarm[1] = -1
 			alarm[4] = -1
 	showlogoframe = 0 
 	showlogo = false
-	skipped = true
 	transition = true
 			}
 		}
