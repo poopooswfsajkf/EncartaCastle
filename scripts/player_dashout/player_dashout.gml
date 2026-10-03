@@ -7,7 +7,7 @@ function player_dashout()
 		if P_MOVE != 0
 		{
 			movespeed = 12 * P_MOVE
-			hsp = lerp(hsp,movespeed,0.07)
+			hsp = approach(hsp,movespeed,1)
 		}
 		if scr_solid(x + xscale,y) && outofcrusher = false
 		{
@@ -44,8 +44,8 @@ function player_dashout()
 		if P_MOVE != 0
 		{
 			xscale = P_MOVE
-			hsp = xscale * movespeed;
 		}
+		hsp = xscale * movespeed;
 	}
 	aftimg_timers.blur.do_it = true
 	instakill = true

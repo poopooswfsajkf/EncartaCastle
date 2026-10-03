@@ -5,7 +5,7 @@ function player_dashdown()
     if P_MOVE != 0 && sprite_index = spr_player_downdashstart
     {
 	movespeed = _evilgubbythis
-	hsp = lerp(hsp,movespeed * P_MOVE,0.08)
+	hsp = approach(hsp,movespeed * P_MOVE,0.7)
     }
 	if !grounded
 	{

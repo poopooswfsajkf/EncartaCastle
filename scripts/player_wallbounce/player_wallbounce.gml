@@ -9,7 +9,7 @@ function player_wallbounce()
 	if (P_MOVE != 0)
 	{
 		movespeed = _spd * P_MOVE
-		hsp = lerp(hsp,movespeed,0.1)
+		hsp = approach(hsp,movespeed,1)
 	}
 		sprite_index = spr_player_wallbounce;
 		if input_check_pressed(INPUTS.down)
@@ -34,8 +34,8 @@ function player_wallbounce()
 			if (P_MOVE != 0)
 		{
 		xscale = P_MOVE
-		hsp = xscale * movespeed;
 		}
+		hsp = xscale * movespeed;
 			state = states.dashout
 			vsp = -15
 			sprite_index = spr_player_dashout
@@ -61,7 +61,7 @@ function player_wallbounce()
 		hsp = xscale * movespeed;
 		}
 		
-		sprite_index = spr_player_mach2;
+		sprite_index = spr_player_mach3;
 	}
 	
 	image_speed = 0.5;
