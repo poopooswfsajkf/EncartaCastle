@@ -1,6 +1,6 @@
 {
   "$GMProject":"v1",
-  "%Name":"CompleteCook",
+  "%Name":"EncartaCastle",
   "AudioGroups":[
     {"$GMAudioGroup":"v1","%Name":"audiogroup_default","exportDir":"","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
     {"$GMAudioGroup":"v1","%Name":"ag_music","exportDir":"","name":"ag_music","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
@@ -139,7 +139,7 @@
   "MetaData":{
     "IDEVersion":"2026.0.0.16",
   },
-  "name":"CompleteCook",
+  "name":"EncartaCastle",
   "resources":[
     {"id":{"name":"FMOD","path":"extensions/FMOD/FMOD.yy",},},
     {"id":{"name":"gameframe_native","path":"extensions/gameframe_native/gameframe_native.yy",},},

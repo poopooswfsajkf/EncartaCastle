@@ -36,7 +36,7 @@
   "origin":4,
   "parent":{
     "name":"fuckyou",
-    "path":"folders/Sprites/Player/fuckyou.yy"
+    "path":"folders/Sprites/Player/fuckyou.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -26,8 +26,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"CompleteCook",
-    "path":"CompleteCook.yyp",
+    "name":"EncartaCastle",
+    "path":"EncartaCastle.yyp",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
