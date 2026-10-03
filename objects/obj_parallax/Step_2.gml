@@ -119,5 +119,10 @@ for (var i = 0; i < array_length(l); i++)
 			layer_x(bg_id, camera_pos.x * -0.1)
 			layer_y(bg_id, camera_pos.y * -0.1)
 			break;
+			        case "Backgrounds_spin":
+            layer_x(bg_id, camera_pos.x + (bg_scroll.x * layer_get_hspeed(bg_id)))
+            layer_y(bg_id, camera_pos.y + (bg_scroll.y * layer_get_vspeed(bg_id)))
+			layer_background_index(layer_background_get_id(bg_id), camera_pos.x / 960)
+            break;
 	}
 }

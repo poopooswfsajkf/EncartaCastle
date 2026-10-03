@@ -457,6 +457,7 @@
     {"id":{"name":"bg_pepperman_clouds","path":"sprites/bg_pepperman_clouds/bg_pepperman_clouds.yy",},},
     {"id":{"name":"bg_pepperman","path":"sprites/bg_pepperman/bg_pepperman.yy",},},
     {"id":{"name":"bg_secret","path":"sprites/bg_secret/bg_secret.yy",},},
+    {"id":{"name":"bg_spintest","path":"sprites/bg_spintest/bg_spintest.yy",},},
     {"id":{"name":"bg_tower","path":"sprites/bg_tower/bg_tower.yy",},},
     {"id":{"name":"bg_tower2","path":"sprites/bg_tower2/bg_tower2.yy",},},
     {"id":{"name":"bg_towerhall","path":"sprites/bg_towerhall/bg_towerhall.yy",},},

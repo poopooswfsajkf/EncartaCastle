@@ -53,7 +53,7 @@ if follow_player
 				other.yscale = -1
 			}
 		}
-		if (image_index >= image_number - 2 && sprite_index == spr_player_piledriverland)
+		if (image_index >= image_number - 2 && sprite_index == obj_player.spr_player_piledriverland)
 		{
 			with (other)
 			{
@@ -63,7 +63,7 @@ if follow_player
 		}
 		
 		var ixcheck = 4
-		if sprite_index == spr_player_swingdingend
+		if sprite_index == obj_player.spr_player_swingdingend
 			ixcheck = 1
 			
 		if state == states.punchenemy || state == states.downdash && floor(image_index) >= ixcheck && other.state != states.hit
@@ -79,7 +79,7 @@ if follow_player
 				state = states.hit
 				hsp = other.xscale * 25
 				vsp = 0
-				if other.sprite_index == spr_player_uppercutfinishingblow
+				if other.sprite_index == obj_player.spr_player_uppercutfinishingblow
 				{
 					hsp = 0
 					vsp = -25
@@ -95,7 +95,7 @@ if follow_player
 				other.x = x
 				other.y = y - 65
 				other.xscale = -xscale
-				if sprite_index == spr_player_haulingrise
+				if sprite_index == obj_player.spr_player_haulingrise
 					other.y += floor(image_number - image_index) * 10
 				break;
 			case states.piledriver:

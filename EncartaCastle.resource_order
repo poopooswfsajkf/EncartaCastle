@@ -373,6 +373,7 @@
     {"name":"bg_pepperman_clouds","order":20,"path":"sprites/bg_pepperman_clouds/bg_pepperman_clouds.yy",},
     {"name":"bg_pepperman","order":2,"path":"sprites/bg_pepperman/bg_pepperman.yy",},
     {"name":"bg_secret","order":9,"path":"sprites/bg_secret/bg_secret.yy",},
+    {"name":"bg_spintest","order":14,"path":"sprites/bg_spintest/bg_spintest.yy",},
     {"name":"bg_tower","order":3,"path":"sprites/bg_tower/bg_tower.yy",},
     {"name":"bg_tower2","order":5,"path":"sprites/bg_tower2/bg_tower2.yy",},
     {"name":"bg_towerhall","order":8,"path":"sprites/bg_towerhall/bg_towerhall.yy",},
