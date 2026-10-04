@@ -24,7 +24,14 @@ for (var i = 0; i < array_length(tvs); i++)
 			save_exists = true
 			ini_open(ini_str)
 			pal_ix = ini_read_real("Clothes", "palette_index", 1)
-			pat_spr = ini_read_real("Clothes", "pattern_sprite", pat_pizza)
+			var _saved_pattern = ini_read_real("Clothes", "pattern_sprite", pat_pizza)
+			if (_saved_pattern == noone || sprite_exists(_saved_pattern))
+				pat_spr = _saved_pattern
+			else
+			{
+				show_debug_message($"Invalid saved pattern sprite {_saved_pattern} in {ini_str}; using pat_pizza.")
+				pat_spr = pat_pizza
+			}
 			ini_close()
 		}
 	}
