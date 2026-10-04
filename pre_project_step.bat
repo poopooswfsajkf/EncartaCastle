@@ -1,9 +1,11 @@
 @echo off
 
-if not exist "%~dp0datafiles\Banks" (
-    md "%~dp0datafiles\Banks"
+set "PROJECT=%~dp0"
+
+if not exist "%PROJECT%datafiles\Banks" (
+    md "%PROJECT%datafiles\Banks"
 )
 
-copy "%~dp0FMOD\Build\Desktop\*" "%~dp0datafiles\Banks\"
+xcopy "%PROJECT%Encarta-FMOD\Build\Desktop\*" "%PROJECT%datafiles\Banks\" /E /I /Y
 
 exit /b 0
