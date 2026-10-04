@@ -124,6 +124,7 @@
 		</property>
 		<relationship name="modulators">
 			<destination>{777f9360-f6c0-4b67-9422-82b93129f8c9}</destination>
+			<destination>{c14456ed-e647-4b10-a7ac-e1ab579a1041}</destination>
 		</relationship>
 	</object>
 	<object class="SpatialiserEffect" id="{29ffbca2-97d3-481d-9fc2-b933ba9678e1}">
@@ -140,6 +141,23 @@
 		</property>
 		<property name="amount">
 			<value>8</value>
+		</property>
+	</object>
+	<object class="LFOModulator" id="{c14456ed-e647-4b10-a7ac-e1ab579a1041}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>pitch</value>
+		</property>
+		<property name="clockSource">
+			<value>1</value>
+		</property>
+		<property name="shape">
+			<value>6</value>
+		</property>
+		<property name="rate">
+			<value>3.60000014</value>
+		</property>
+		<property name="depth">
+			<value>23</value>
 		</property>
 	</object>
 </objects>

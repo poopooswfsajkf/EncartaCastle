@@ -122,6 +122,7 @@
 		</property>
 		<relationship name="modulators">
 			<destination>{80c7aab9-ce46-4cde-ac3a-03dc9579c76e}</destination>
+			<destination>{5e9bc8f0-8f33-4c81-b604-601edce6a36c}</destination>
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{964bc504-90fb-4197-9ad1-fe2d337f3b27}">
@@ -145,6 +146,17 @@
 		</property>
 		<property name="amount">
 			<value>26.5</value>
+		</property>
+	</object>
+	<object class="LFOModulator" id="{5e9bc8f0-8f33-4c81-b604-601edce6a36c}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>pitch</value>
+		</property>
+		<property name="rate">
+			<value>0.239999995</value>
+		</property>
+		<property name="depth">
+			<value>54.5</value>
 		</property>
 	</object>
 </objects>

@@ -5,7 +5,7 @@
 			<value>ui_step</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{8ebcabe8-b1b3-4776-bba5-0b4ddcd22829}</destination>
@@ -107,11 +107,8 @@
 	</object>
 	<object class="MixerBusPanner" id="{9b68f48f-a963-43fa-a8b3-e9d8fe22494e}" />
 	<object class="SingleSound" id="{4a76fcf4-9496-430b-bc52-6289caba20a9}">
-		<property name="startOffset">
-			<value>13.5</value>
-		</property>
 		<relationship name="audioFile">
-			<destination>{a3589816-4543-46bd-85e2-476a2378e4f0}</destination>
+			<destination>{8b29b544-4360-4730-b8dd-3070a5309f5c}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{04843f72-cd63-42f8-a74a-5d9a71d08277}" />

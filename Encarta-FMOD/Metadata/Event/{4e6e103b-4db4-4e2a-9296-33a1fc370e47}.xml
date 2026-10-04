@@ -133,6 +133,9 @@
 		<property name="length">
 			<value>0.5</value>
 		</property>
+		<property name="volume">
+			<value>3.5</value>
+		</property>
 		<relationship name="event">
 			<destination>{4e3c9b14-5954-4f45-8527-55daef6cfa17}</destination>
 		</relationship>

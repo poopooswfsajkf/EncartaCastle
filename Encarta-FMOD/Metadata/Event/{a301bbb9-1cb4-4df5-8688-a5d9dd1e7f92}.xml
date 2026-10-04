@@ -5,7 +5,7 @@
 			<value>ui_frog</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>5</value>
 		</property>
 		<relationship name="folder">
 			<destination>{8ebcabe8-b1b3-4776-bba5-0b4ddcd22829}</destination>
@@ -38,6 +38,9 @@
 		</relationship>
 	</object>
 	<object class="MasterTrack" id="{53d4976d-9b59-40cf-a224-cf1a5cd8ea21}">
+		<relationship name="modules">
+			<destination>{1aa3b915-ddd6-4844-b60c-e2b3ba1bbc49}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{92d0dc8f-d50f-4614-8984-e494e63cd214}</destination>
 		</relationship>
@@ -63,6 +66,9 @@
 	</object>
 	<object class="MarkerTrack" id="{5c006ea3-e2c8-4038-af49-0edb529b628f}" />
 	<object class="Timeline" id="{a9e7561d-d758-4a49-97dc-eeaaae98b66a}">
+		<relationship name="modules">
+			<destination>{1aa3b915-ddd6-4844-b60c-e2b3ba1bbc49}</destination>
+		</relationship>
 		<relationship name="markers">
 			<destination>{ce672420-76bf-4a15-b14f-bd1fe03c5b79}</destination>
 		</relationship>
@@ -78,6 +84,14 @@
 			<destination>{700479e2-b18d-4722-9755-747618cfcd10}</destination>
 		</relationship>
 	</object>
+	<object class="SingleSound" id="{1aa3b915-ddd6-4844-b60c-e2b3ba1bbc49}">
+		<property name="length">
+			<value>2.8794557823129252</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{7dced81d-4e27-4e5f-b823-76fd51fbff1c}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusEffectChain" id="{ae8e5124-10dd-4e86-9258-858edca9a396}">
 		<relationship name="effects">
 			<destination>{ed692eb3-7e71-4baf-8163-6dd25a5d33e6}</destination>
@@ -86,10 +100,10 @@
 	<object class="MixerBusPanner" id="{f73dc69c-a59f-4cbf-a7f2-7ad6b204e053}" />
 	<object class="LoopRegion" id="{ce672420-76bf-4a15-b14f-bd1fe03c5b79}">
 		<property name="position">
-			<value>0.55000000000000004</value>
+			<value>0</value>
 		</property>
 		<property name="length">
-			<value>1.4000000000000004</value>
+			<value>1.9500000000000008</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{a9e7561d-d758-4a49-97dc-eeaaae98b66a}</destination>
@@ -100,22 +114,43 @@
 	</object>
 	<object class="MixerBusEffectChain" id="{1b3fdf52-bc8f-441e-98a6-df4615e5917a}">
 		<relationship name="effects">
+			<destination>{07c0acb2-0488-46ec-8261-878e4beb0869}</destination>
 			<destination>{64f498e4-4a3d-47f5-a229-3c7ba9f3a5d0}</destination>
 			<destination>{9353b180-a0e1-4fdd-9d10-b0d54ce7b849}</destination>
+			<destination>{425c2290-4533-481b-9560-479125f992c4}</destination>
+			<destination>{71fc484b-7164-43d4-9db8-ffce9a3bc202}</destination>
 		</relationship>
 	</object>
-	<object class="MixerBusPanner" id="{4e5d0aa9-bd13-4c98-b24a-df35f8e67eeb}" />
+	<object class="MixerBusPanner" id="{4e5d0aa9-bd13-4c98-b24a-df35f8e67eeb}">
+		<property name="overridingOutputFormat">
+			<value>5</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{ed692eb3-7e71-4baf-8163-6dd25a5d33e6}" />
+	<object class="FlangerEffect" id="{07c0acb2-0488-46ec-8261-878e4beb0869}">
+		<property name="rate">
+			<value>0.049999997</value>
+		</property>
+		<property name="mix">
+			<value>100</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{64f498e4-4a3d-47f5-a229-3c7ba9f3a5d0}" />
 	<object class="PitchShifterEffect" id="{9353b180-a0e1-4fdd-9d10-b0d54ce7b849}">
 		<property name="pitch">
 			<value>1.43999994</value>
 		</property>
 		<relationship name="modulators">
-			<destination>{9757d44e-1d2e-4db4-96a4-9b2a0c95a96d}</destination>
+			<destination>{b4669274-b8a8-4127-86e7-674183c9f424}</destination>
 		</relationship>
 	</object>
-	<object class="RandomizerModulator" id="{9757d44e-1d2e-4db4-96a4-9b2a0c95a96d}">
+	<object class="ChorusEffect" id="{425c2290-4533-481b-9560-479125f992c4}">
+		<property name="rate">
+			<value>0.819999993</value>
+		</property>
+	</object>
+	<object class="SFXReverbEffect" id="{71fc484b-7164-43d4-9db8-ffce9a3bc202}" />
+	<object class="RandomizerModulator" id="{b4669274-b8a8-4127-86e7-674183c9f424}">
 		<property name="nameOfPropertyBeingModulated">
 			<value>pitch</value>
 		</property>

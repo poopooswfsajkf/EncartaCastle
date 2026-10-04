@@ -151,7 +151,6 @@
 	<object class="MixerBusEffectChain" id="{38af6dfe-8a18-4ce3-8222-f3c18ccaf1d7}">
 		<relationship name="effects">
 			<destination>{87003de9-5a66-407c-b42b-dd35c66d9a48}</destination>
-			<destination>{51dddf0e-9d77-4cd9-8e38-596e531af7b1}</destination>
 			<destination>{10bf1609-9e72-4714-afe3-d1f9cc1793a6}</destination>
 		</relationship>
 	</object>
@@ -191,20 +190,6 @@
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{87003de9-5a66-407c-b42b-dd35c66d9a48}" />
-	<object class="PitchShifterEffect" id="{51dddf0e-9d77-4cd9-8e38-596e531af7b1}">
-		<property name="pitch">
-			<value>1</value>
-		</property>
-		<property name="fftSize">
-			<value>280</value>
-		</property>
-		<property name="overlap">
-			<value>3.60000014</value>
-		</property>
-		<relationship name="modulators">
-			<destination>{b5635b5f-c196-4766-8fa6-6747f14c6eec}</destination>
-		</relationship>
-	</object>
 	<object class="SpatialiserEffect" id="{10bf1609-9e72-4714-afe3-d1f9cc1793a6}">
 		<property name="minimumDistance">
 			<value>1.35000002</value>
@@ -217,14 +202,6 @@
 		</property>
 		<property name="soundSize">
 			<value>2000</value>
-		</property>
-	</object>
-	<object class="RandomizerModulator" id="{b5635b5f-c196-4766-8fa6-6747f14c6eec}">
-		<property name="nameOfPropertyBeingModulated">
-			<value>pitch</value>
-		</property>
-		<property name="amount">
-			<value>8</value>
 		</property>
 	</object>
 </objects>
