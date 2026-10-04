@@ -119,6 +119,8 @@
     {"$GMIncludedFile":"","%Name":"Master.strings.bank","CopyToMask":-1,"filePath":"datafiles/Banks","name":"Master.strings.bank","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"Music.bank","CopyToMask":-1,"filePath":"datafiles/Banks","name":"Music.bank","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"SFX.bank","CopyToMask":-1,"filePath":"datafiles/Banks","name":"SFX.bank","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"fmodL.dll","CopyToMask":-1,"filePath":"datafiles","name":"fmodL.dll","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"fmodstudioL.dll","CopyToMask":-1,"filePath":"datafiles","name":"fmodstudioL.dll","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"Text.json","CopyToMask":-1,"filePath":"datafiles/Language/English","name":"Text.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"spr_comboend.png","CopyToMask":-1,"filePath":"datafiles/Language/Latam Español/Sprites","name":"spr_comboend.png","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"spr_combotitles.json","CopyToMask":-1,"filePath":"datafiles/Language/Latam Español/Sprites","name":"spr_combotitles.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
@@ -133,11 +135,12 @@
     {"$GMIncludedFile":"","%Name":"spr_menustatus.png","CopyToMask":-1,"filePath":"datafiles/Language/Latam Español/Sprites","name":"spr_menustatus.png","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"template.json","CopyToMask":-1,"filePath":"datafiles/Language/Latam Español/Sprites","name":"template.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"Text.json","CopyToMask":-1,"filePath":"datafiles/Language/Latam Español","name":"Text.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"YYFMOD_x64.dll","CopyToMask":-1,"filePath":"datafiles","name":"YYFMOD_x64.dll","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.4.221",
+    "IDEVersion":"2026.0.0.16",
   },
   "name":"EncartaCastle",
   "resources":[
