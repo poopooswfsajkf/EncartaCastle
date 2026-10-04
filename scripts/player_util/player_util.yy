@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"player_util",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"EncartaCastle",
+    "path":"EncartaCastle.yyp",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
