@@ -140,11 +140,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-<<<<<<< Updated upstream
     "IDEVersion":"2026.0.0.16",
-=======
-    "IDEVersion":"2024.14.4.222",
->>>>>>> Stashed changes
   },
   "name":"EncartaCastle",
   "resources":[
@@ -914,7 +910,6 @@
     {"id":{"name":"spr_playerM_walljumpstart","path":"sprites/spr_playerM_walljumpstart/spr_playerM_walljumpstart.yy",},},
     {"id":{"name":"spr_playerM_wallsplat","path":"sprites/spr_playerM_wallsplat/spr_playerM_wallsplat.yy",},},
     {"id":{"name":"spr_playerM_winding","path":"sprites/spr_playerM_winding/spr_playerM_winding.yy",},},
-<<<<<<< Updated upstream
     {"id":{"name":"spr_playerN_backslide_loop","path":"sprites/spr_playerN_backslide_loop/spr_playerN_backslide_loop.yy",},},
     {"id":{"name":"spr_playerN_backslide","path":"sprites/spr_playerN_backslide/spr_playerN_backslide.yy",},},
     {"id":{"name":"spr_playerN_ball","path":"sprites/spr_playerN_ball/spr_playerN_ball.yy",},},
@@ -971,11 +966,6 @@
     {"id":{"name":"spr_playerN_hurt","path":"sprites/spr_playerN_hurt/spr_playerN_hurt.yy",},},
     {"id":{"name":"spr_playerN_hurtbehind","path":"sprites/spr_playerN_hurtbehind/spr_playerN_hurtbehind.yy",},},
     {"id":{"name":"spr_playerN_hurtidle","path":"sprites/spr_playerN_hurtidle/spr_playerN_hurtidle.yy",},},
-=======
-    {"id":{"name":"spr_playerN_dashout","path":"sprites/spr_playerN_dashout/spr_playerN_dashout.yy",},},
-    {"id":{"name":"spr_playerN_downdashend","path":"sprites/spr_playerN_downdashend/spr_playerN_downdashend.yy",},},
-    {"id":{"name":"spr_playerN_downdashstart","path":"sprites/spr_playerN_downdashstart/spr_playerN_downdashstart.yy",},},
->>>>>>> Stashed changes
     {"id":{"name":"spr_playerN_hurtjump_fall","path":"sprites/spr_playerN_hurtjump_fall/spr_playerN_hurtjump_fall.yy",},},
     {"id":{"name":"spr_playerN_hurtjump","path":"sprites/spr_playerN_hurtjump/spr_playerN_hurtjump.yy",},},
     {"id":{"name":"spr_playerN_hurtmove","path":"sprites/spr_playerN_hurtmove/spr_playerN_hurtmove.yy",},},
