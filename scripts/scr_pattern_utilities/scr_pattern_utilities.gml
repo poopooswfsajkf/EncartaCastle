@@ -16,7 +16,7 @@ function pattern_set_colors(palette_sprite)
 
 function pattern_draw(_spr, _ix, _x, _y, _pattern_spr, _xscale = 1, _yscale = 1, _rot = 0, _col = c_white, _alpha = 1)
 {
-	if _pattern_spr == noone
+	if _pattern_spr == noone || !sprite_exists(_pattern_spr)
 		exit;
 	
 	//original variables
