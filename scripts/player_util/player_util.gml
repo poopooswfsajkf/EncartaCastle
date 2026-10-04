@@ -278,13 +278,13 @@ function do_hurt(obj = noone)
 		
 		var facing = xscale == -goto_xscale;
 		hsp = 8 * goto_xscale;
-		sprite_index = facing ? spr_playerM_hurt : spr_playerM_hurtbehind;
+		sprite_index = facing ? spr_player_hurt : spr_player_hurtbehind;
 		
 		if (obj.object_index == obj_outlet || obj.object_index == obj_pizzardelectricity)
 			fmod_studio_event_instance_oneshot_3d("event:/sfx/misc/electricity", x, y);
 	}
 	else
-		sprite_index = spr_playerM_hurt;
+		sprite_index = spr_player_hurt;
 	
 	flash = 8;
 	state = states.hurt;
@@ -630,4 +630,5 @@ function asset_player_reset(_letter)
 	spr_player_superjumpmove = asset_player_get("superjumpmove", _letter)
 	pal_spr = asset_get_index("pal_player" + _letter)
 	pattern_colors = asset_get_index("pal_playerpattenrcolors" + _letter)
+	sprite_index = spr_player_idle
 }

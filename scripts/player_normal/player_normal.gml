@@ -1,9 +1,9 @@
 function player_normal()
 {
-	var default_idle = spr_playerM_idle
+	var default_idle = spr_player_idle
 	var default_move = spr_player_move
 	var default_jump = spr_player_jump
-	var default_fall = spr_playerM_fall
+	var default_fall = spr_player_fall
 	
 	if has_shotgun
 	{
@@ -31,7 +31,7 @@ function player_normal()
 		
 		if global.panic.timer <= 0
 		{
-			default_idle = spr_playerM_hurtidle
+			default_idle = spr_player_hurtidle
 			default_move = spr_player_hurtmove
 		}
 	}
@@ -56,7 +56,7 @@ function player_normal()
 			movespeed = 0
 		if particle_timer > 0
 			particle_timer--
-		else if sprite_index != spr_playerM_breakdance
+		else if sprite_index != spr_player_breakdance
 		{
 			particle_timer = 12
 			fmod_studio_event_instance_oneshot_3d("event:/sfx/player/step", x, y)
@@ -109,7 +109,7 @@ function player_normal()
 				}
 			}
 			
-			if (sprite_index != spr_player_machslideend && sprite_index != spr_player_land && sprite_index != spr_playerM_bodyslamland && sprite_index != spr_playerM_facehurt && sprite_index != spr_player_shotgun_land && idletimer > 0)
+			if (sprite_index != spr_player_machslideend && sprite_index != spr_player_land && sprite_index != spr_player_bodyslamland && sprite_index != spr_player_facehurt && sprite_index != spr_player_shotgun_land && idletimer > 0)
 				sprite_index = default_idle
 		}
 	}
@@ -122,7 +122,7 @@ function player_normal()
 			breakdance_secret.buffer++
 		else
 		{
-			sprite_index = spr_playerM_breakdance
+			sprite_index = spr_player_breakdance
 			breakdance_secret.spd = approach(breakdance_secret.spd, 0.6, 0.005)
 			if P_MOVE != 0
 			{
@@ -150,7 +150,7 @@ function player_normal()
 	
 	if (input_direction_check(INPUTS.down) || !scr_can_uncrouch())
 	{
-		reset_anim(!has_shotgun ? spr_playerM_crouchdown : spr_player_shotgun_crouchstart)
+		reset_anim(!has_shotgun ? spr_player_crouchdown : spr_player_shotgun_crouchstart)
 		state = states.crouch
 	}
 	
@@ -197,7 +197,7 @@ function player_normal()
 		case spr_player_machslideend:
 		case spr_player_land:
 		case spr_player_shotgun_land:
-		case spr_playerM_facehurt:
+		case spr_player_facehurt:
 			reset_anim_on_end(default_idle)
 			break;
 		case spr_player_landmove:

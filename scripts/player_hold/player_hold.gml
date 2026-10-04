@@ -28,9 +28,9 @@ function player_hold()
 	if grounded
 	{
 		if (sprite_index == spr_player_haulingjump || sprite_index == spr_player_haulingfall)
-			reset_anim(spr_playerM_haulingland)
-		if (sprite_index != spr_playerM_haulingland && sprite_index != spr_playerM_haulingrise)
-			sprite_index = P_MOVE != 0 ? spr_playerM_haulingmove : spr_player_haulingidle
+			reset_anim(spr_player_haulingland)
+		if (sprite_index != spr_player_haulingland && sprite_index != spr_player_haulingrise)
+			sprite_index = P_MOVE != 0 ? spr_player_haulingmove : spr_player_haulingidle
 	}
 	else
 	{
@@ -57,8 +57,8 @@ function player_hold()
 	image_speed = 0.35
 	switch (sprite_index)
 	{
-		case spr_playerM_haulingland:
-		case spr_playerM_haulingrise:
+		case spr_player_haulingland:
+		case spr_player_haulingrise:
 			reset_anim_on_end(spr_player_haulingidle)
 			break;
 		case spr_player_haulingjump:
