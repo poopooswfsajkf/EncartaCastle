@@ -4,7 +4,7 @@ if (other.bbox_bottom <= bbox_bottom + 1 && other.bbox_bottom >= bbox_bottom - 1
 		fmod_studio_event_instance_oneshot("event:/sfx/misc/transition")
 	with other
 	{
-		reset_anim(spr_player_lookdoor)
+		reset_anim(obj_player.spr_player_lookdoor)
 		state = states.actor
 		hsp = 0
 		movespeed = 0

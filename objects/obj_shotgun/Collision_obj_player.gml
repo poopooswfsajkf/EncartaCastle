@@ -4,7 +4,7 @@ if other.state == states.grab || other.state == states.punch
 	fmod_studio_event_instance_oneshot_3d("event:/sfx/player/shotgunload", x, y)
 	with other
 	{
-		reset_anim(spr_player_shotgun_pickup)
+		reset_anim(obj_player.spr_player_shotgun_pickup)
 		image_speed = 0.35
 		state = states.actor
 		has_shotgun = true

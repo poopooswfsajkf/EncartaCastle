@@ -4,7 +4,7 @@ with obj_player
 	state = states.parry
 	movespeed = -8
 	flash = 10
-	reset_anim(asset_get_variation("spr_player_parry", 3))
+	reset_anim(obj_player.spr_player_parry3)
 	create_effect(x, y, spr_parryflash).depth = -100
 }
 

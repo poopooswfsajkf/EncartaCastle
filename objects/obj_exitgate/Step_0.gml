@@ -1,9 +1,9 @@
 with instance_place(x, y, obj_player)
 {
-	if (!global.panic.active && anim_ended() && sprite_index == spr_player_walkfront && !global.panic.active)
+	if (!global.panic.active && anim_ended() && sprite_index == obj_player.spr_player_walkfront && !global.panic.active)
 	{
 		shake_camera()
-		reset_anim(spr_player_timesup)
+		reset_anim(obj_player.spr_player_timesup)
 		other.image_index = 1
 		fmod_studio_event_instance_oneshot_3d("event:/sfx/misc/slam", x, y)
 		global.doorshut = true
@@ -14,7 +14,7 @@ with instance_place(x, y, obj_player)
 		hsp = 0
 		movespeed = 0
 		state = states.actor
-		reset_anim(spr_player_lookdoor)
+		reset_anim(obj_player.spr_player_lookdoor)
 		
 		var s = round(global.score + obj_levelcontroller.combo_score)
 		

@@ -5,7 +5,8 @@ with obj_player
 {
 	state = states.parry
 	var ix = irandom_range(1, 3)
-	reset_anim(asset_get_index($"spr_player_parry{ix}"))
+	var parry_sprites = [obj_player.spr_player_parry1, obj_player.spr_player_parry2, obj_player.spr_player_parry3]
+	reset_anim(parry_sprites[ix - 1])
 	movespeed = -5
 	flash = 10
 	create_effect(x, y, spr_parryflash).depth = -100
