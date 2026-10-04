@@ -1,45 +1,22 @@
-// =====================================================
-// CREATE EVENT
-// =====================================================
-persistent = true;
-state = 0;
-// 0 = Spawn
-// 1 = Change Room
-// 2 = Hold
-// 3 = Fade Up
-
-room_changed = false;
-
-sticker_count = 175;
-stickers = [];
-
-
-// 1.5 seconds at 60 FPS
-spawn_timer = 0;
-spawn_delay = 90;
-
-spawned = 0;
-
-
-// 1 second at 60 FPS
-hold_timer = 0;
-hold_time = 60;
-
-
-// Create sticker data
-for (var i = 0; i < sticker_count; i++)
+stickers = []
+targetRoom  = 0
+state = 0
+sticker_count = 175
+addStick = function()
 {
-    stickers[i] =
-    {
-        x: 0,
-        y: 0,
-targetSpeed: irandom_range(-5, -15),
-vspeed: 0,
-        image: irandom(sprite_get_number(spr_secret_transition_stickers) - 1),
-
-        scale: 1.2,
-        alpha: 0,
-
-        active: false
-    };
+	var StickerStruct = 
+	{
+		x: irandom_range(-32,SCREEN_WIDTH + 32),
+		y: irandom_range(-32,SCREEN_HEIGHT + 32),
+		scale: 1.25,
+		vspeed: 0,
+		image_index: irandom_range(0,sprite_get_number(spr_secret_transition_stickers) - 1),
+		image_alpha: 1,
+		spd: irandom_range(-1.6,-3)
+	}
+	array_push(stickers,StickerStruct)
 }
+		sticktime =90
+		addStick()
+		doalarm = 0
+		alarm0 = 0
