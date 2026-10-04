@@ -139,7 +139,7 @@ function do_taunt()
 			taunttimer = 20;
 			fmod_studio_event_instance_oneshot_3d("event:/sfx/player/supertaunt", x, y);
 			tauntinv = true;
-			reset_anim(asset_get_index($"spr_player_supertaunt{irandom_range(1, 4)}"));
+			reset_anim(choose(spr_player_supertaunt1, spr_player_supertaunt2, spr_player_supertaunt3, spr_player_supertaunt4));
 			
 			var spds = [
 				[0, -1],
@@ -431,6 +431,14 @@ function asset_player_get(_action, _letter, _prefix = "spr_player")
 		_asset = asset_get_index(_prefix + "N_" + _action) //peppino is the default
 		return _asset; //will be -1 if invalid
 	}
+}
+
+function player_is_supertaunt(_player, _sprite_index)
+{
+	return _sprite_index == _player.spr_player_supertaunt1
+		|| _sprite_index == _player.spr_player_supertaunt2
+		|| _sprite_index == _player.spr_player_supertaunt3
+		|| _sprite_index == _player.spr_player_supertaunt4
 }
 
 function asset_player_reset(_letter)
