@@ -1,6 +1,6 @@
-if (sprite_index == spr_player_lookdoor || sprite_index == spr_player_entergate || sprite_index == spr_player_enterkeydoor)
+if (sprite_index == obj_player.spr_player_lookdoor || sprite_index == obj_player.spr_player_entergate || sprite_index == obj_player.spr_player_enterkeydoor)
 {
-	reset_anim(spr_player_walkfront)
+	reset_anim(obj_player.spr_player_walkfront)
 	image_speed = 0.35
 }
 

@@ -124,7 +124,7 @@ loop_sounds = {
 	piledriver: new make_loop_sound(states.piledriver, "event:/sfx/player/groundpound", function() { return obj_player.sprite_index != obj_player.spr_player_piledriverland}),
 	superjumphold: new make_loop_sound(states.superjump, "event:/sfx/player/superjumphold", function() { return obj_player.sprite_index != obj_player.spr_player_superjump && obj_player.sprite_index != obj_player.spr_player_Sjumpcancelstart && obj_player.sprite_index != obj_player.spr_player_presentboxspring}, 
 		[0.64, 1.84]),
-	ball: new make_loop_sound(states.ball, "event:/sfx/player/ball", function() { return obj_player.sprite_index != spr_player_ballend}),
+	ball: new make_loop_sound(states.ball, "event:/sfx/player/ball", function() { return obj_player.sprite_index != obj_player.spr_player_ballend}),
 	wallbounce: new make_loop_sound(states.wallbounce, "event:/sfx/player/wallbouncespin", function() { return obj_player.sprite_index != obj_player.spr_player_downdashstart}),
 	backslide: new make_loop_sound(states.tumble, "event:/sfx/player/backslide", function() { return obj_player.sprite_index != obj_player.spr_player_crouchslip && grounded})
 }

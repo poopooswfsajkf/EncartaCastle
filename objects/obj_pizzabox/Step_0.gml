@@ -17,7 +17,7 @@ with instance_place(x, y - (image_yscale * 16), obj_player)
 			movespeed = 0
 			image_speed = 0.35
 			fmod_studio_event_instance_stop(dashdown_snd, FMOD_STUDIO_STOP_MODE.IMMEDIATE)
-			reset_anim(spr_player_downpizzabox)
+			reset_anim(obj_player.spr_player_downpizzabox)
 			fmod_studio_event_instance_oneshot_3d("event:/sfx/misc/box", other.x, other.y)
 		}
 		else if ((input_direction_check(INPUTS.up) || state == states.superjump || state == states.climbwall) && place_meeting(x, y - 10, other) && other.image_yscale == -1)
@@ -31,7 +31,7 @@ with instance_place(x, y - (image_yscale * 16), obj_player)
 			movespeed = 0
 			y = other.bbox_bottom - 8
 			image_speed = 0.35
-			reset_anim(spr_player_uppizzabox)
+			reset_anim(obj_player.spr_player_uppizzabox)
 			fmod_studio_event_instance_oneshot_3d("event:/sfx/misc/box", other.x, other.y)
 			fmod_studio_event_instance_stop(dashdown_snd, FMOD_STUDIO_STOP_MODE.IMMEDIATE)
 		}

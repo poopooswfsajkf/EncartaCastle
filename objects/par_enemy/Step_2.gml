@@ -45,7 +45,7 @@ if follow_player
 			}
 			if (!grounded && (state == states.hold || state == states.swingding))
 			{
-				sprite_index = spr_player_piledriver
+				sprite_index = obj_player.spr_player_piledriver
 				movespeed = abs(hsp)
 				state = states.piledriver
 				vsp = -5
