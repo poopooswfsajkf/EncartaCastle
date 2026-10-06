@@ -388,6 +388,7 @@
     {"name":"bg_towerhall","order":8,"path":"sprites/bg_towerhall/bg_towerhall.yy",},
     {"name":"bg_treasure","order":2,"path":"sprites/bg_treasure/bg_treasure.yy",},
     {"name":"bg2","order":1,"path":"sprites/bg2/bg2.yy",},
+    {"name":"Bulb_Corridor","order":36,"path":"sprites/Bulb_Corridor/Bulb_Corridor.yy",},
     {"name":"fg_tower","order":4,"path":"sprites/fg_tower/fg_tower.yy",},
     {"name":"foid","order":31,"path":"sprites/foid/foid.yy",},
     {"name":"light","order":30,"path":"sprites/light/light.yy",},

@@ -140,7 +140,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2026.0.0.16",
+    "IDEVersion":"2024.14.4.222",
   },
   "name":"EncartaCastle",
   "resources":[
@@ -476,6 +476,7 @@
     {"id":{"name":"bg_treasure","path":"sprites/bg_treasure/bg_treasure.yy",},},
     {"id":{"name":"bg","path":"sprites/bg/bg.yy",},},
     {"id":{"name":"bg2","path":"sprites/bg2/bg2.yy",},},
+    {"id":{"name":"Bulb_Corridor","path":"sprites/Bulb_Corridor/Bulb_Corridor.yy",},},
     {"id":{"name":"fg_tower","path":"sprites/fg_tower/fg_tower.yy",},},
     {"id":{"name":"foid","path":"sprites/foid/foid.yy",},},
     {"id":{"name":"light","path":"sprites/light/light.yy",},},
