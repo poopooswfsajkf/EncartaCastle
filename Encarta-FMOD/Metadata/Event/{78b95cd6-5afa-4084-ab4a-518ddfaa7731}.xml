@@ -43,6 +43,7 @@
 	<object class="MasterTrack" id="{dad66933-5410-4e4e-b012-e5a0b86e5825}">
 		<relationship name="automationTracks">
 			<destination>{33bed6b4-4169-4401-b780-9d6854dd5d98}</destination>
+			<destination>{6431df4b-25b0-438a-80dc-22f623f0890a}</destination>
 		</relationship>
 		<relationship name="modules">
 			<destination>{2266d53a-8e75-42dd-b27a-b219c205b92e}</destination>
@@ -101,6 +102,11 @@
 	<object class="AutomationTrack" id="{33bed6b4-4169-4401-b780-9d6854dd5d98}">
 		<relationship name="automator">
 			<destination>{ed014cfe-a81a-4c40-94bb-bd1de79ca064}</destination>
+		</relationship>
+	</object>
+	<object class="AutomationTrack" id="{6431df4b-25b0-438a-80dc-22f623f0890a}">
+		<relationship name="automator">
+			<destination>{cee649d1-3536-4e77-84f4-48a36a2f62d7}</destination>
 		</relationship>
 	</object>
 	<object class="MultiSound" id="{2266d53a-8e75-42dd-b27a-b219c205b92e}">
@@ -163,6 +169,7 @@
 		</property>
 		<relationship name="modulators">
 			<destination>{496a6064-51b0-4f09-a6c7-96bce011f882}</destination>
+			<destination>{21697a24-63fa-4ce0-ae19-f306fb820b71}</destination>
 		</relationship>
 	</object>
 	<object class="SpatialiserEffect" id="{d6881bf1-7aec-4d90-8c13-88d7c59e8316}">
@@ -186,6 +193,9 @@
 		<property name="value">
 			<value>0</value>
 		</property>
+		<property name="curveShape">
+			<value>0.442565739</value>
+		</property>
 	</object>
 	<object class="AutomationPoint" id="{cc7e0b74-e4f2-4af1-b79e-303d67747057}">
 		<property name="position">
@@ -201,6 +211,25 @@
 		</property>
 		<property name="amount">
 			<value>7</value>
+		</property>
+		<relationship name="automators">
+			<destination>{cee649d1-3536-4e77-84f4-48a36a2f62d7}</destination>
+		</relationship>
+	</object>
+	<object class="LFOModulator" id="{21697a24-63fa-4ce0-ae19-f306fb820b71}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>pitch</value>
+		</property>
+		<property name="rate">
+			<value>2.60000014</value>
+		</property>
+		<property name="depth">
+			<value>21</value>
+		</property>
+	</object>
+	<object class="Automator" id="{cee649d1-3536-4e77-84f4-48a36a2f62d7}">
+		<property name="nameOfPropertyBeingAutomated">
+			<value>amount</value>
 		</property>
 	</object>
 </objects>

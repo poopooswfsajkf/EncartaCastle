@@ -131,7 +131,7 @@
   "name":"catacombs_1",
   "parent":{
     "name":"Catacombs",
-    "path":"folders/Rooms/Catacombs.yy",
+    "path":"folders/Rooms/World/Floor 1/Catacombs.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
