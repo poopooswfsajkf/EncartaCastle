@@ -1,2 +1,0 @@
-transition = true
-godown = false

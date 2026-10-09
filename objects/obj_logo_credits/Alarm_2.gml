@@ -1,3 +1,0 @@
-
-godown = true
-goup = false

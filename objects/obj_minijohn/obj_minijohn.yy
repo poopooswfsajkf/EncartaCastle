@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_pillarblock_awake",
-    "path":"sprites/spr_pillarblock_awake/spr_pillarblock_awake.yy",
+    "name":"spr_monkey_stun",
+    "path":"sprites/spr_monkey_stun/spr_monkey_stun.yy",
   },
   "spriteMaskId":null,
   "visible":true,
