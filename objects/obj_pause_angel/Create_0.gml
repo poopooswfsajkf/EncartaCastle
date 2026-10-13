@@ -5,3 +5,4 @@ image_xscale = choose(-1, 1)
 vspeed = random_range(-0.5, -1.5)
 depth = obj_pause.depth - 25
 dying = false
+uniform_alpha = shader_get_uniform(shdr_opacityDithering, "dAlpha");

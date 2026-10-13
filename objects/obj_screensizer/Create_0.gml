@@ -36,8 +36,8 @@ global.option_res_strings = [
     "2880X2160",
     "3200X2400"
 ];
-global.option_chosen_res = ini_read_real("options", "chosen_res", 1)
-global.option_texturefilter = ini_read_real("options", "texturefilter", 1)
+global.option_chosen_res = ini_read_real("options", "chosen_res", 5);
+global.option_texturefilter = ini_read_real("options", "texturefilter", 0)
 
 display_reset(0, ini_read_real("options", "vsync", 1))
 

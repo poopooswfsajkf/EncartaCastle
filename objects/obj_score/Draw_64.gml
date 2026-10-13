@@ -71,7 +71,11 @@ for (var i = 0; i < len; i++)
 	var yy = (((i + 1) % 2) == 0) ? -5 : 0
 	//var c = color_array[i]
 	//pal_swap_set(spr_font_palette, c, false)
-	draw_text(floor(xx), floor((y - 56) + text_y + yy), string_char_at(str, i + 1))
+	    draw_text(
+        floor(xx) + (sin(xx + yy + (current_time / 350)) * 3),
+        floor((y - 56) + text_y + yy) + (sin((xx - yy) + (current_time / 220)) * 3),
+        string_char_at(str, i + 1)
+    );
 	xx += (w / len)
 }
 
