@@ -95,7 +95,7 @@
 			<destination>{ed1ed832-b2ac-4952-8124-40f85d783646}</destination>
 		</relationship>
 		<relationship name="audioFile">
-			<destination>{a898dd34-3332-4ab8-8db9-8592d6abd5c0}</destination>
+			<destination>{38f83b8f-629d-4320-b047-0dc56995f114}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{071cbd75-3dae-48e0-b348-acc0fa38d2a7}">
@@ -109,7 +109,7 @@
 			<value>0</value>
 		</property>
 		<property name="tempo">
-			<value>109</value>
+			<value>125</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{b42024d7-679b-4f9c-8d5c-4ca9b8990790}</destination>
@@ -123,7 +123,7 @@
 			<value>0</value>
 		</property>
 		<property name="length">
-			<value>235</value>
+			<value>155.55918367346939</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{b42024d7-679b-4f9c-8d5c-4ca9b8990790}</destination>

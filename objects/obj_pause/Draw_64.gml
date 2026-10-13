@@ -1,4 +1,4 @@
-draw_set_color(c_white)
+draw_set_color(c_red)
 
 if pause
 {
@@ -14,7 +14,28 @@ if pause_alpha > 0
 	draw_rectangle(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, false)
 
 	draw_set_alpha(pause_alpha)
+}
+
+for (i = 0; i < array_length(screen_assets); i++) {
 	
+	with screen_assets[i]
+	{
+		if (sprite_index == spr_pause_vines)
+		{
+			
+              x = startx + wave(-20, 20, 8, 20)
+		}
+		else
+		{
+		x = lerp(x, other.pause ? endx : startx, 0.1)
+		}
+		y = lerp(y, other.pause ? endy : starty, 0.1)
+		draw_sprite_ext(sprite_index, 0, x, y, image_xscale, image_yscale, 0, c_white, 1)
+	}
+}
+
+if pause_alpha > 0
+{
 	if global.in_level
 	{
 		var tx = 180
@@ -73,13 +94,3 @@ if pause_alpha > 0
 }
 
 draw_reset_color()
-
-for (i = 0; i < array_length(screen_assets); i++) {
-	
-	with screen_assets[i]
-	{
-		x = lerp(x, other.pause ? endx : startx, 0.1)
-		y = lerp(y, other.pause ? endy : starty, 0.1)
-		draw_sprite_ext(sprite_index, 0, x, y, image_xscale, image_yscale, 0, c_white, 1)
-	}
-}

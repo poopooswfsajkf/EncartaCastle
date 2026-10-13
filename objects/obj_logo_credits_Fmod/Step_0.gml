@@ -4,7 +4,7 @@ if !nextroom
 else
 {
 	if fade_alpha == 1
-		room_goto(init_objs_room)
+		room_goto(logo_credits_completecook)
 	fade_alpha = min(fade_alpha + _speed, 1)
 }
 

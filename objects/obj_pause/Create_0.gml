@@ -5,6 +5,7 @@ create_pause_option = function(_name = "", _type = optiontypes.both, _icon_index
 	o_func = _func
 	icon_index = _icon_index
 	iconalpha = 0
+	
 }
 
 create_pause_screen_asset = function(_spr, _startx = 0, _starty = 0, _endx = 0, _endy = 0, _xscale = 1, _yscale = 1) constructor
@@ -116,7 +117,7 @@ cursor = {
 screen_assets = [
 	new create_pause_screen_asset(spr_pause_border, -160, SCREEN_HEIGHT + 188, 0, SCREEN_HEIGHT), //left border
 	new create_pause_screen_asset(spr_pause_border, SCREEN_WIDTH + 160, SCREEN_HEIGHT + 188, SCREEN_WIDTH, SCREEN_HEIGHT, -1), //right border
-	new create_pause_screen_asset(spr_pause_vines, SCREEN_WIDTH / 2, -117, SCREEN_WIDTH / 2, 0), //vines
+	new create_pause_screen_asset(spr_pause_vines, SCREEN_WIDTH / 2, -481, SCREEN_WIDTH / 2, 0), //vines
 ]
 
 angel_timer = 240
