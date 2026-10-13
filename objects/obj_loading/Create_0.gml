@@ -1,4 +1,4 @@
-#macro SCREEN_WIDTH 960
+#macro SCREEN_WIDTH 720
 #macro SCREEN_HEIGHT 540
 
 draw_flush()

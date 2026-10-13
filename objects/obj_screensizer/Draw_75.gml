@@ -7,15 +7,24 @@ if ratio != SCREEN_WIDTH / SCREEN_HEIGHT
 
 gpu_set_blendmode_normal_fixed()
 draw_reset_color()
-draw_rectangle(-1, -1, SCREEN_WIDTH, SCREEN_HEIGHT, false)
+var _width = 200;
+var _height = 100;
+
+draw_rectangle(
+    (SCREEN_WIDTH - _width) / 2,
+    (SCREEN_HEIGHT - _height) / 2,
+    (SCREEN_WIDTH + _width) / 2,
+    (SCREEN_HEIGHT + _height) / 2,
+    false
+);
 
 var screen_x = 0
 var screen_y = 0
 
 if global.option_texturefilter && 
 	!(
-		(window_get_width() == 960 && window_get_height() == 540) || //default res
-		(window_get_width() == 1920 && window_get_height() == 1080) //res x2
+		(window_get_width() == 960 && window_get_height() == 720) || //default res
+		(window_get_width() == 1920 && window_get_height() == 1440) //res x2
 	)
 	gpu_set_texfilter(global.option_texturefilter)
 

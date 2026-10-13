@@ -17,7 +17,25 @@ ini_open("globalsave.ini")
 lb_pos = ini_read_real("options", "letterbox_index", 0)
 
 global.option_windowmode = ini_read_real("options", "windowmode", windowmode.windowed)
-global.option_res_strings = ["480X270", "960X540", "1024X576", "1280X720", "1600X900", "1920X1080"]
+global.option_res_strings = [
+    "320X240",
+    "400X300",
+    "480X360",
+    "512X384",
+    "640X480",
+    "720X540",
+    "800X600",
+    "960X720",
+    "1024X768",
+    "1152X864",
+    "1280X960",
+    "1440X1080",
+    "1600X1200",
+    "1920X1440",
+    "2560X1920",
+    "2880X2160",
+    "3200X2400"
+];
 global.option_chosen_res = ini_read_real("options", "chosen_res", 1)
 global.option_texturefilter = ini_read_real("options", "texturefilter", 1)
 
@@ -40,4 +58,4 @@ application_surface_draw_enable(false)
 
 gameframe_init()
 
-display_set_gui_size(960, 540)
+display_set_gui_size(720, 540)

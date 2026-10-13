@@ -9,6 +9,8 @@ for (var inst = 0; inst < array_length(aftimg_list); inst++)
 			case after_images.mach:
 				var s  = obj_player.state
 				
+				
+				
 				var m = 1
 				if (s == states.mach2 || s == states.mach3)
 					m = (obj_player.movespeed / 12)
