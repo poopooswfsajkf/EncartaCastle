@@ -1,0 +1,1 @@
+gameframe_caption_text = "encarta castle's first and shitty level"

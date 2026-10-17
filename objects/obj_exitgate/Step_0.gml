@@ -11,6 +11,7 @@ with instance_place(x, y, obj_player)
 	else if (global.panic.active && input_direction_check(INPUTS.up) && grounded && scr_can_enter_door(state))
 	{
 		global.panic.active = false
+		global.panic.lap2 = false
 		hsp = 0
 		movespeed = 0
 		state = states.actor

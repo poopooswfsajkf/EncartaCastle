@@ -105,23 +105,27 @@
 	<object class="MixerBusPanner" id="{519d8aa5-046d-477d-99e2-9a12186e39be}" />
 	<object class="MixerBusEffectChain" id="{d209ded4-88b7-4237-bb02-f2478d857c7c}">
 		<relationship name="effects">
+			<destination>{22afa8fc-99cb-4e00-8df8-df6069aaba35}</destination>
 			<destination>{8732c620-cfda-44e3-bcd4-c767874fb0be}</destination>
-			<destination>{9bdc305d-e8bb-463c-8bc9-c05349087868}</destination>
 			<destination>{9799e23f-96fa-44bc-9125-b1683c0bfd8e}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{58bfb184-1ba8-4f68-b59e-848edff99445}" />
 	<object class="SingleSound" id="{b0926ab6-6a33-4f37-99f6-eaae51598dfb}">
-		<property name="pitch">
-			<value>12</value>
-		</property>
 		<relationship name="audioFile">
 			<destination>{62bfcc0c-094d-4026-9767-a5566a1a84bd}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{457629e6-961b-4d3b-bef1-45e343f8c276}" />
+	<object class="PitchShifterEffect" id="{22afa8fc-99cb-4e00-8df8-df6069aaba35}">
+		<property name="pitch">
+			<value>1</value>
+		</property>
+		<relationship name="modulators">
+			<destination>{b3a1a4b9-a885-4099-895a-45ec10eb41a3}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusFader" id="{8732c620-cfda-44e3-bcd4-c767874fb0be}" />
-	<object class="PitchShifterEffect" id="{9bdc305d-e8bb-463c-8bc9-c05349087868}" />
 	<object class="SpatialiserEffect" id="{9799e23f-96fa-44bc-9125-b1683c0bfd8e}">
 		<property name="minimumDistance">
 			<value>1.35000002</value>
@@ -134,6 +138,17 @@
 		</property>
 		<property name="soundSize">
 			<value>2000</value>
+		</property>
+	</object>
+	<object class="LFOModulator" id="{b3a1a4b9-a885-4099-895a-45ec10eb41a3}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>pitch</value>
+		</property>
+		<property name="rate">
+			<value>4</value>
+		</property>
+		<property name="depth">
+			<value>7.5</value>
 		</property>
 	</object>
 </objects>

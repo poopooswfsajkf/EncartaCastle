@@ -111,15 +111,12 @@
 		<property name="triggerProbabilityEnabled">
 			<value>true</value>
 		</property>
-		<property name="triggerProbability">
-			<value>9.5</value>
-		</property>
 		<relationship name="fadeOutCurve">
 			<destination>{7359a373-138d-487d-bc12-7ae9afcde36e}</destination>
 		</relationship>
 		<relationship name="sounds">
-			<destination>{4128aab9-857d-4b6e-bebd-fadd77873f3a}</destination>
 			<destination>{7f5be56f-8dcb-42f5-9fd6-6baa17837845}</destination>
+			<destination>{63ee5772-a999-4ac2-a03a-ca922603b3b8}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{f005b8a9-40d5-4b00-a6ac-187ba4e8a530}">
@@ -153,16 +150,12 @@
 			<destination>{ae6ecfe6-f818-4628-9c94-f3bee46dece4}</destination>
 		</relationship>
 	</object>
-	<object class="SingleSound" id="{4128aab9-857d-4b6e-bebd-fadd77873f3a}">
-		<relationship name="audioFile">
-			<destination>{ee73b5ef-f252-4a73-a581-e3ad6e8dc0f1}</destination>
-		</relationship>
-	</object>
 	<object class="SingleSound" id="{7f5be56f-8dcb-42f5-9fd6-6baa17837845}">
 		<relationship name="audioFile">
 			<destination>{c3644b45-e561-4539-bdb0-325eefd23c66}</destination>
 		</relationship>
 	</object>
+	<object class="SingleSound" id="{63ee5772-a999-4ac2-a03a-ca922603b3b8}" />
 	<object class="MixerBusEffectChain" id="{7e198993-ad35-4002-b1cd-c031051559ed}">
 		<relationship name="effects">
 			<destination>{c5b067af-d597-4a47-a561-f02616e6bfdc}</destination>

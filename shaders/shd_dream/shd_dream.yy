@@ -1,0 +1,12 @@
+{
+  "$GMShader":"",
+  "%Name":"shd_dream",
+  "name":"shd_dream",
+  "parent":{
+    "name":"EncartaCastle",
+    "path":"EncartaCastle.yyp",
+  },
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
+}

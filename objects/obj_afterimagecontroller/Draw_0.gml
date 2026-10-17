@@ -9,9 +9,11 @@ for (var inst = 0; inst < array_length(aftimg_list); inst++)
 			case after_images.blur:
 				if player_sprite
 				{
+					shader_set(shdr_opacityDithering)
 					if obj_player.pal_select == 12
 						pattern_draw(sprite_index, image_index, x, y, obj_player.pattern_spr, image_xscale, image_yscale, image_angle, image_blend, image_alpha)
 					pal_swap_set(pal_peppino, obj_player.pal_select, false)
+					quick_shader_set_uniform_f(shdr_opacityDithering, "dAlpha", image_alpha)
 				}
 				break;
 			case after_images.solid_color:
@@ -19,8 +21,10 @@ for (var inst = 0; inst < array_length(aftimg_list); inst++)
 				quick_shader_set_uniform_f(shd_solidcolor, "red", r / 255)
 				quick_shader_set_uniform_f(shd_solidcolor, "green", g / 255)
 				quick_shader_set_uniform_f(shd_solidcolor, "blue", b / 255)
+				quick_shader_set_uniform_f(shd_solidcolor, "dAlpha", image_alpha)
 				break;
 		}
+		
 		draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha)
 	}
 	if shader_current() != -1

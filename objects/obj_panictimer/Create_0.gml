@@ -1,7 +1,8 @@
 global.panic = {
 	active: false,
 	timer: 0,
-	timer_max: 0
+	timer_max: 0,
+	lap2: false
 }
 news_image_index = 0;
 

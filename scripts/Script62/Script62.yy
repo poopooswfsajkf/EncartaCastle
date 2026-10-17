@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Script62",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Script62",
+  "parent":{
+    "name":"EncartaCastle",
+    "path":"EncartaCastle.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

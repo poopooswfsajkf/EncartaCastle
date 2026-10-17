@@ -1,7 +1,7 @@
 {
   "$GMRoom":"v1",
   "%Name":"tower_1",
-  "creationCodeFile":"",
+  "creationCodeFile":"rooms/tower_1/RoomCreationCode.gml",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
@@ -46,7 +46,7 @@
         {"$GMRInstance":"v4","%Name":"inst_71846B19","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_71846B19","objectId":{"name":"obj_solid","path":"objects/obj_solid/obj_solid.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":41.0,"scaleY":2.0,"x":352.0,"y":672.0,},
         {"$GMRInstance":"v4","%Name":"inst_73E52338","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_73E52338","objectId":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"propertyId":{"name":"t_door","path":"objects/obj_door/obj_door.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"b\"",},
-            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"propertyId":{"name":"t_room","path":"objects/obj_door/obj_door.yy",},"resource":{"name":"tower_testing","path":"rooms/tower_testing/tower_testing.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"tower_testing",},
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"propertyId":{"name":"t_room","path":"objects/obj_door/obj_door.yy",},"resource":{"name":"StaffRoll","path":"rooms/StaffRoll/StaffRoll.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"StaffRoll",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":576.0,"y":576.0,},
         {"$GMRInstance":"v4","%Name":"inst_204572DF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_204572DF","objectId":{"name":"obj_doorpoint","path":"objects/obj_doorpoint/obj_doorpoint.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_doorpoint","path":"objects/obj_doorpoint/obj_doorpoint.yy",},"propertyId":{"name":"spawn","path":"objects/obj_doorpoint/obj_doorpoint.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"b\"",},

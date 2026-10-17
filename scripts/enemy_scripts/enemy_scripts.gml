@@ -94,6 +94,7 @@ function enemy_hit()
 	if (place_meeting(x + hsp, y + vsp, obj_solid) && !place_meeting(x + hsp, y + vsp, obj_destroyable))
 	{
 		y -= 20
+		fmod_studio_event_instance_oneshot_3d("event:/sfx/voice/enemyscream", x, y)
 		instance_destroy()
 	}
 }
@@ -114,7 +115,7 @@ function do_scared()
 		xscale = obj_player.x > x ? 1 : -1
 		scared_timer = 100
 		sprite_index = sprs.scared
-			fmod_studio_event_instance_oneshot_3d("event:/sfx/voice/enemyrarescream", x, y)
+			fmod_studio_event_instance_oneshot_3d("event:/sfx/voice/enemyscare", x, y)
 	}
 }
 
