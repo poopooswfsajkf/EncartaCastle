@@ -300,6 +300,7 @@ function create_follower(_x, _y, spr_idle = noone, spr_move = noone, spr_panic =
 function reset_level()
 {
 	global.panic.active = false
+	global.panic.lap2 = false;
 	global.combo.count = 0
 	global.combo.timer = 0
 	global.score = 0

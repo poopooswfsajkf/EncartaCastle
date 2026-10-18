@@ -22,10 +22,10 @@ if (global.panic.active && !global.secret)
 
 if (global.panic.active && global.panic.timer > 0)
 {
-	if !global.secret
-		y = approach(y, ystart, 1)
-	else
-		y = approach(y, ystart + 212, 4)
+if (!global.secret && !global.panic.lap2)
+    y = approach(y, ystart, 1);
+else
+    y = approach(y, ystart + 212, 4);
 }
 else if global.panic.active
 {
@@ -38,4 +38,16 @@ else
 {
 	pizzaface.sprite_index = spr_timer_pizzaface_sleep
 	y = ystart + 212
+}
+
+if (global.panic.lap2)
+{
+    if (!global.secret)
+        flower_y = approach(flower_y, ystart, 1);
+    else
+        flower_y = approach(flower_y, ystart + 212, 4);
+}
+else
+{
+	flower_y =  ystart + 212;
 }

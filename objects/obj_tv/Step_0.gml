@@ -138,7 +138,7 @@ if global.combo.timer <= 0
 	combo.state = -1
 
 var y_goto = ystart
-if (obj_player.x > room_width - 250 && obj_player.y < 175)
+if (obj_player.x > room_width - 250 && obj_player.y < 175 || global.panic.lap2)
 	y_goto = -500
 	
-y = approach(y, y_goto, 25)
+y = approach(y, y_goto, global.panic.lap2 ? 1 : 25);

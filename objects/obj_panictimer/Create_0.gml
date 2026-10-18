@@ -23,9 +23,13 @@ showtime_buffer = 0
 
 xstart = SCREEN_WIDTH / 2
 ystart = SCREEN_HEIGHT - 76
+timer_x = xstart - 165;
+timer_y = ystart + 30;
 x = xstart
 y = ystart + 212
 
+flower_x = SCREEN_WIDTH / 2
+flower_y = SCREEN_HEIGHT - 76
 depth = -200
 
 textes = []

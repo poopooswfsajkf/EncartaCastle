@@ -79,10 +79,7 @@ for (var i = 0; i < len; i++)
 	xx += (w / len)
 }
 
-var r_pos = {
-	x: x + 142,
-	y: y - 22
-}
+
 
 if (prev_rank_ix != rank_ix)
 {

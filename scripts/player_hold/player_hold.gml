@@ -66,13 +66,23 @@ function player_hold()
 			break;
 	}
 	
-	if input_buffers.grab > 0
-	{
-		input_buffers.grab = 0
-		state = states.punchenemy
-		var str = $"spr_player_finishingblow{string(irandom_range(1, 5))}"
-		reset_anim(asset_get_index(str))
-		if (input_direction_check(INPUTS.up))
-			reset_anim(spr_player_uppercutfinishingblow)
-	}
+if (input_buffers.grab > 0)
+{
+    input_buffers.grab = 0
+    state = states.punchenemy
+
+    if (input_direction_check(INPUTS.up))
+        reset_anim(spr_player_uppercutfinishingblow)
+    else
+    {
+        var finishingblows = [
+            spr_player_finishingblow1,
+            spr_player_finishingblow2,
+            spr_player_finishingblow3,
+            spr_player_finishingblow4,
+            spr_player_finishingblow5
+        ]
+        reset_anim(finishingblows[irandom(4)])
+    }
+}
 }
