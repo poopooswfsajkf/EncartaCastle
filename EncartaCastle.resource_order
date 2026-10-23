@@ -382,6 +382,7 @@
     {"name":"shd_sdf_premultiply","order":18,"path":"shaders/shd_sdf_premultiply/shd_sdf_premultiply.yy",},
     {"name":"shd_smudge","order":19,"path":"shaders/shd_smudge/shd_smudge.yy",},
     {"name":"shd_solidcolor","order":4,"path":"shaders/shd_solidcolor/shd_solidcolor.yy",},
+    {"name":"shd_sonicfade_1","order":31,"path":"shaders/shd_sonicfade_1/shd_sonicfade_1.yy",},
     {"name":"shd_sonicfade","order":20,"path":"shaders/shd_sonicfade/shd_sonicfade.yy",},
     {"name":"shd_transparent","order":21,"path":"shaders/shd_transparent/shd_transparent.yy",},
     {"name":"shd_twotone","order":22,"path":"shaders/shd_twotone/shd_twotone.yy",},

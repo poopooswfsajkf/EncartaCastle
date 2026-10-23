@@ -1,4 +1,4 @@
-if (!global.panic.lap2)
+if (!global.panic.lap2 && !global.option_vfx)
     return;
 
 // Create the dream surface

@@ -45,6 +45,7 @@
     "option_hud": "SHOW HUD",
 "option_camTilt": "CAMERA TILT",
     "option_vsync": "VSYNC",
+    "option_vfx": "SCREEN EFFECTS",
 
     "option_confirm": "CONFIRM SETTINGS",
     "option_revert": "REVERTING IN %...",
