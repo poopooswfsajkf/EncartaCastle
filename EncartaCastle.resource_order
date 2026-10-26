@@ -248,15 +248,9 @@
     {"name":"par_options_config","order":17,"path":"objects/par_options_config/par_options_config.yy",},
     {"name":"asset_test","order":19,"path":"rooms/asset_test/asset_test.yy",},
     {"name":"boss_test","order":12,"path":"rooms/boss_test/boss_test.yy",},
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
     {"name":"catacombers_1","order":1,"path":"rooms/catacombers_1/catacombers_1.yy",},
-    {"name":"catacombers_lap","order":2,"path":"rooms/catacombers_lap/catacombers_lap.yy",},
-=======
->>>>>>> Stashed changes
     {"name":"catacombers_2","order":2,"path":"rooms/catacombers_2/catacombers_2.yy",},
-    {"name":"catacombers_lap","order":1,"path":"rooms/catacombers_lap/catacombers_lap.yy",},
+    {"name":"catacombers_lap","order":2,"path":"rooms/catacombers_lap/catacombers_lap.yy",},
     {"name":"catacombs_2","order":1,"path":"rooms/catacombs_2/catacombs_2.yy",},
     {"name":"catacombs_3","order":3,"path":"rooms/catacombs_3/catacombs_3.yy",},
     {"name":"catacombs_4","order":4,"path":"rooms/catacombs_4/catacombs_4.yy",},
@@ -266,7 +260,6 @@
     {"name":"catacombs_lap","order":2,"path":"rooms/catacombs_lap/catacombs_lap.yy",},
     {"name":"catacombs_secret1","order":6,"path":"rooms/catacombs_secret1/catacombs_secret1.yy",},
     {"name":"catacombs_secret2","order":9,"path":"rooms/catacombs_secret2/catacombs_secret2.yy",},
->>>>>>> 03f579d497149c709811cdc93c1ed2a3978b6eb2
     {"name":"depth_test","order":13,"path":"rooms/depth_test/depth_test.yy",},
     {"name":"dm_2","order":1,"path":"rooms/dm_2/dm_2.yy",},
     {"name":"enemy_extreme_mass","order":16,"path":"rooms/enemy_extreme_mass/enemy_extreme_mass.yy",},

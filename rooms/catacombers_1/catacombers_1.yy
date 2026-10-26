@@ -40,18 +40,10 @@
     {"name":"inst_5F359CFA","path":"rooms/catacombers_1/catacombers_1.yy",},
     {"name":"inst_4ECD0482","path":"rooms/catacombers_1/catacombers_1.yy",},
     {"name":"inst_523690C7","path":"rooms/catacombers_1/catacombers_1.yy",},
-<<<<<<< Updated upstream
     {"name":"inst_1023EA12","path":"rooms/catacombers_1/catacombers_1.yy",},
     {"name":"inst_1A101FD1","path":"rooms/catacombers_1/catacombers_1.yy",},
-=======
-<<<<<<< HEAD
     {"name":"inst_1F30C72F","path":"rooms/catacombers_1/catacombers_1.yy",},
     {"name":"inst_4DF29B56","path":"rooms/catacombers_1/catacombers_1.yy",},
-=======
-    {"name":"inst_1023EA12","path":"rooms/catacombers_1/catacombers_1.yy",},
-    {"name":"inst_1A101FD1","path":"rooms/catacombers_1/catacombers_1.yy",},
->>>>>>> 03f579d497149c709811cdc93c1ed2a3978b6eb2
->>>>>>> Stashed changes
   ],
   "isDnd":false,
   "layers":[
@@ -104,13 +96,8 @@
         {"$GMRInstance":"v4","%Name":"inst_5F359CFA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5F359CFA","objectId":{"name":"obj_cheeseslime","path":"objects/obj_cheeseslime/obj_cheeseslime.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1504.0,"y":384.0,},
         {"$GMRInstance":"v4","%Name":"inst_4ECD0482","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4ECD0482","objectId":{"name":"obj_forknight","path":"objects/obj_forknight/obj_forknight.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2368.0,"y":640.0,},
         {"$GMRInstance":"v4","%Name":"inst_523690C7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_523690C7","objectId":{"name":"obj_metalblock","path":"objects/obj_metalblock/obj_metalblock.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2208.0,"y":480.0,},
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
         {"$GMRInstance":"v4","%Name":"inst_1F30C72F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1F30C72F","objectId":{"name":"obj_solid","path":"objects/obj_solid/obj_solid.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":13.0,"scaleY":7.0,"x":1920.0,"y":256.0,},
         {"$GMRInstance":"v4","%Name":"inst_4DF29B56","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4DF29B56","objectId":{"name":"obj_slope","path":"objects/obj_slope/obj_slope.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":-180.0,"scaleX":-3.0,"scaleY":3.0,"x":1824.0,"y":352.0,},
-=======
->>>>>>> Stashed changes
         {"$GMRInstance":"v4","%Name":"inst_1023EA12","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1023EA12","objectId":{"name":"obj_hallway","path":"objects/obj_hallway/obj_hallway.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_hallway","path":"objects/obj_hallway/obj_hallway.yy",},"propertyId":{"name":"t_room","path":"objects/obj_hallway/obj_hallway.yy",},"resource":{"name":"catacombers_2","path":"rooms/catacombers_2/catacombers_2.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"catacombers_2",},
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_hallway","path":"objects/obj_hallway/obj_hallway.yy",},"propertyId":{"name":"t_door","path":"objects/obj_hallway/obj_hallway.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"c\"",},
@@ -118,10 +105,6 @@
         {"$GMRInstance":"v4","%Name":"inst_1A101FD1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1A101FD1","objectId":{"name":"obj_doorpoint","path":"objects/obj_doorpoint/obj_doorpoint.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_doorpoint","path":"objects/obj_doorpoint/obj_doorpoint.yy",},"propertyId":{"name":"spawn","path":"objects/obj_doorpoint/obj_doorpoint.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"c\"",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3136.0,"y":672.0,},
-<<<<<<< Updated upstream
-=======
->>>>>>> 03f579d497149c709811cdc93c1ed2a3978b6eb2
->>>>>>> Stashed changes
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Backgrounds_H1","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Backgrounds_H1","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"bg_ancient_Pillars","path":"sprites/bg_ancient_Pillars/bg_ancient_Pillars.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
     {"$GMRBackgroundLayer":"","%Name":"Backgrounds_2_1","animationFPS":30.0,"animationSpeedType":0,"colour":1040187391,"depth":100,"effectEnabled":true,"effectType":"_filter_linear_blur","gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Backgrounds_2_1","properties":[
