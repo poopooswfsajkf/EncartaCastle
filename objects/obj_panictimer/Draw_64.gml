@@ -95,6 +95,18 @@ draw_sprite_ext(
 	1
 );
 
+draw_sprite_ext(
+    spr_timer_flowers,
+    0,
+    flower_x - (SCREEN_WIDTH / 2),
+    flower_y - (SCREEN_HEIGHT - 76),
+    1,
+    1,
+    0,
+    c_white,
+    1
+);
+
 //draw_sprite(spr_timer_john, john.image_index, (x - 150) + barpos, y + 20)
 
 //draw_sprite(pizzaface.sprite_index, pizzaface.image_index, x + 150, y + 10)
@@ -113,4 +125,15 @@ if (seconds < 10)
 else
 	seconds = string(seconds)
 
-draw_text(x - 165, y + 30, string_concat(minutes, ":", seconds))
+
+if (!global.panic.lap2)
+{
+    draw_text(x - 165, y + 30, string_concat(minutes, ":", seconds));
+}
+else
+{
+    timer_x = approach(timer_x, SCREEN_WIDTH / 2, 1);
+    
+
+    draw_text(timer_x, timer_y, string_concat(minutes, ":", seconds));
+}

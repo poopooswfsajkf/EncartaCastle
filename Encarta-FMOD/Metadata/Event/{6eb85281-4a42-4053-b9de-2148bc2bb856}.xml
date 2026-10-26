@@ -96,10 +96,10 @@
 	</object>
 	<object class="SingleSound" id="{be1a3378-104e-4d91-bc75-4d4165fa9df4}">
 		<property name="length">
-			<value>46.344172335600909</value>
+			<value>178.12897959183672</value>
 		</property>
 		<relationship name="audioFile">
-			<destination>{e27164ca-667f-4db4-9d1a-78a017e3c2bf}</destination>
+			<destination>{7145a9e8-57cb-4a71-9960-4557f7eb4996}</destination>
 		</relationship>
 	</object>
 	<object class="TransitionSourceSound" id="{724b7069-99a1-44e1-96d0-f4fefcd4c4e9}">
@@ -120,10 +120,10 @@
 	<object class="MixerBusPanner" id="{c560e0df-d953-4415-a31a-9a4b41f9de00}" />
 	<object class="LoopRegion" id="{d3af547c-bc4a-4f44-9218-d98333c867f5}">
 		<property name="position">
-			<value>0</value>
+			<value>21.328104889623454</value>
 		</property>
 		<property name="length">
-			<value>46.344172335600909</value>
+			<value>151.43662427704319</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{a37b4637-c590-4c4c-99cb-a7436d61a534}</destination>

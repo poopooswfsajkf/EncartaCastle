@@ -108,6 +108,12 @@ list_arr = [
 			function(_val) {
 				global.option_showhud = _val
 				quick_ini_write_real("globalsave.ini", "options", "showhud", _val)
+			}),
+				
+			new add_option("option_vfx", types.onoff, global.option_vfx,
+			function(_val) {
+				global.option_vfx = _val
+				quick_ini_write_real("globalsave.ini", "options", "vfx", _val)
 			})
 	],
 	[ //3 game

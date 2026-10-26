@@ -142,9 +142,11 @@ function instance_create(_x, _y, obj)
 
 function sleep(ms)
 {
-	var t = current_time + ms;
-	while current_time < t
-		do {};
+    var t = current_time + ms;
+    while (current_time < t)
+    {
+        // Wait
+    }
 }
 
 enum toppin_enum {
@@ -171,6 +173,7 @@ function set_globals()
 	global.option_sfx_volume = ini_read_real("options", "sfx_volume", 1)
 	global.option_unfocus_mute = ini_read_real("options", "unfocus_mute", true)
 	global.option_vsync = ini_read_real("options", "vsync", true)
+	global.option_vfx = ini_read_real("options", "vfx", true)
 	global.option_showhud = ini_read_real("options", "showhud", true)
 	global.option_rumble = ini_read_real("options", "rumble", true)
 	global.option_camTilt = ini_read_real("options", "camTilt", true)
@@ -300,6 +303,7 @@ function create_follower(_x, _y, spr_idle = noone, spr_move = noone, spr_panic =
 function reset_level()
 {
 	global.panic.active = false
+	global.panic.lap2 = false;
 	global.combo.count = 0
 	global.combo.timer = 0
 	global.score = 0

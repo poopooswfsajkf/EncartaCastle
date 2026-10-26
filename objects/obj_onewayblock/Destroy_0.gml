@@ -1,5 +1,6 @@
 if (ds_list_find_index(global.ds_saveroom, id) == -1)
 {
+	hit = true;
 	with (instance_create(x, y, obj_enemycorpse))
 	{
 		sprite_index = spr_onewaydead
@@ -9,4 +10,4 @@ if (ds_list_find_index(global.ds_saveroom, id) == -1)
 	ds_list_add(global.ds_saveroom, id)
 }
 
-instance_destroy(solidid)
+

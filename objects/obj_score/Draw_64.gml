@@ -28,7 +28,12 @@ else
 
 draw_set_align(fa_left, fa_top)
 
-draw_sprite(spr_pizzascore, image_index, x, y)
+draw_sprite(
+    spr_pizzascore,
+    image_index,
+    x + (sin(x + y + (current_time / 350)) * 3),
+    y + (sin((x - y) + (current_time / 220)) * 3)
+);
 
 var text_offsets = [0, 1, 1, 1, 0, -1, -2, -3, -5, -2, -1, 0]
 
@@ -79,10 +84,7 @@ for (var i = 0; i < len; i++)
 	xx += (w / len)
 }
 
-var r_pos = {
-	x: x + 142,
-	y: y - 22
-}
+
 
 if (prev_rank_ix != rank_ix)
 {

@@ -90,6 +90,7 @@ baseoptions = [
 			spawn = noone
 			state = states.backtohub
 			vsp = 0
+			
 			sprite_index = obj_player.spr_player_slipbanana1
 			x = return_location.x
 			y = return_location.y
