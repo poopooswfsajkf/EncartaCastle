@@ -100,8 +100,8 @@
   ],
   "name":"catacombers_2",
   "parent":{
-    "name":"Remake",
-    "path":"folders/Rooms/World/Floor 1/Catacombs/Remake.yy",
+    "name":"Catacombs",
+    "path":"folders/Rooms/World/Floor 1/Catacombs.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
