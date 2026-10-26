@@ -56,37 +56,49 @@ else
     }
 }
 
-var flick = false
-with instance_place(x, y, obj_player)
+var flick = false;
+
+with (instance_place(x, y, obj_player))
 {
-	if (sprite_index == obj_player.spr_player_entergate && !obj_fade.fade && image_speed > 0 && anim_ended())
-	{
-		flick = true
-		image_speed = 0
-	}
+    if (sprite_index == obj_player.spr_player_entergate
+    && !obj_fade.fade
+    && image_speed > 0
+    && anim_ended())
+    {
+        flick = true;
+        image_speed = 0;
+    }
 }
 
-if flick
+if (flick)
 {
-	var d = { //readable title data
-		music: title_data[0],
-		card_index: title_data[1],
-		title_index: title_data[2]
-	}
-	
-	with instance_create(0, 0, obj_titlecard)
-	{
-		music = d.music
-		card_index = d.card_index
-		title_index = d.title_index
-		t_room = other.t_room
-		t_door = other.t_door
-	}
-	
-	global.start_room = t_room
-	global.level_data.level_name = self.level_name
-	
-	obj_score.prev_rank_ix = 0
-	
-	set_rank_milestones(rank_scores[0], rank_scores[1], rank_scores[2], rank_scores[3])
+    var _room = t_room;
+    var _door = t_door;
+    var _level_name = level_name;
+
+    var d = {
+        music: title_data[0],
+        card_index: title_data[1],
+        title_index: title_data[2]
+    };
+
+    var _card = instance_create(0, 0, obj_titlecard);
+
+    _card.music = d.music;
+    _card.card_index = d.card_index;
+    _card.title_index = d.title_index;
+    _card.t_room = _room;
+    _card.t_door = _door;
+
+    global.start_room = _room;
+    global.level_data.level_name = _level_name;
+
+    obj_score.prev_rank_ix = 0;
+
+    set_rank_milestones(
+        rank_scores[0],
+        rank_scores[1],
+        rank_scores[2],
+        rank_scores[3]
+    );
 }
