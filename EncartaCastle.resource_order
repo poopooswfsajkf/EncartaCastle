@@ -248,6 +248,7 @@
     {"name":"par_options_config","order":17,"path":"objects/par_options_config/par_options_config.yy",},
     {"name":"asset_test","order":19,"path":"rooms/asset_test/asset_test.yy",},
     {"name":"boss_test","order":12,"path":"rooms/boss_test/boss_test.yy",},
+    {"name":"catacombers_2","order":2,"path":"rooms/catacombers_2/catacombers_2.yy",},
     {"name":"catacombers_lap","order":1,"path":"rooms/catacombers_lap/catacombers_lap.yy",},
     {"name":"catacombs_2","order":1,"path":"rooms/catacombs_2/catacombs_2.yy",},
     {"name":"catacombs_3","order":3,"path":"rooms/catacombs_3/catacombs_3.yy",},

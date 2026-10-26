@@ -328,6 +328,7 @@
     {"id":{"name":"asset_test","path":"rooms/asset_test/asset_test.yy",},},
     {"id":{"name":"boss_test","path":"rooms/boss_test/boss_test.yy",},},
     {"id":{"name":"catacombers_1","path":"rooms/catacombers_1/catacombers_1.yy",},},
+    {"id":{"name":"catacombers_2","path":"rooms/catacombers_2/catacombers_2.yy",},},
     {"id":{"name":"catacombers_lap","path":"rooms/catacombers_lap/catacombers_lap.yy",},},
     {"id":{"name":"catacombs_1","path":"rooms/catacombs_1/catacombs_1.yy",},},
     {"id":{"name":"catacombs_2","path":"rooms/catacombs_2/catacombs_2.yy",},},
@@ -1368,6 +1369,7 @@
     {"roomId":{"name":"StaffRoll","path":"rooms/StaffRoll/StaffRoll.yy",},},
     {"roomId":{"name":"catacombers_1","path":"rooms/catacombers_1/catacombers_1.yy",},},
     {"roomId":{"name":"catacombers_lap","path":"rooms/catacombers_lap/catacombers_lap.yy",},},
+    {"roomId":{"name":"catacombers_2","path":"rooms/catacombers_2/catacombers_2.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
