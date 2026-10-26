@@ -28,10 +28,12 @@ for (var i = 0; i < array_length(l); i++)
 			layer_x(bg_id, offsets[i].x + (camera_pos.x * 0.25))
 			layer_y(bg_id, offsets[i].y + (camera_pos.y * 0.25))
 			break;
+			case "Backgrounds_2_1":
 		case "Backgrounds_2":
 			layer_x(bg_id, offsets[i].x + (camera_pos.x * 0.2))
 			layer_y(bg_id, offsets[i].y + (camera_pos.y * 0.2))
 			break;
+			
 		case "Backgrounds_3":
 			layer_x(bg_id, offsets[i].x + (camera_pos.x * 0.15))
 			layer_y(bg_id, offsets[i].y + (camera_pos.y * 0.15))

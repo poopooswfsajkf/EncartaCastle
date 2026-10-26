@@ -6,6 +6,7 @@ reset_anim(spr_pizzaportalend)
 other.sprite_index = spr_pizzaportalend
 other.visible = false
 other.state = states.actor
+global.panic.lap2 = true;
 
 fmod_studio_event_instance_oneshot_3d("event:/sfx/misc/lapportal", x, y)
 

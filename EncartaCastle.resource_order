@@ -31,7 +31,6 @@
     {"name":"World","order":23,"path":"folders/Rooms/World.yy",},
     {"name":"Floor 1","order":1,"path":"folders/Rooms/World/Floor 1.yy",},
     {"name":"Catacombs","order":1,"path":"folders/Rooms/World/Floor 1/Catacombs.yy",},
-    {"name":"Remake","order":10,"path":"folders/Rooms/World/Floor 1/Catacombs/Remake.yy",},
     {"name":"Scripts","order":36,"path":"folders/Scripts.yy",},
     {"name":"Player States","order":12,"path":"folders/Scripts/Player States.yy",},
     {"name":"Shaders","order":23,"path":"folders/Shaders.yy",},
@@ -88,6 +87,7 @@
     {"name":"Tower","order":3,"path":"folders/Tile Sets/Tower.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"ac_camera_focus","order":18,"path":"animcurves/ac_camera_focus/ac_camera_focus.yy",},
     {"name":"FMOD","order":5,"path":"extensions/FMOD/FMOD.yy",},
     {"name":"gameframe_native","order":2,"path":"extensions/gameframe_native/gameframe_native.yy",},
     {"name":"fnt_caption","order":3,"path":"fonts/fnt_caption/fnt_caption.yy",},
@@ -248,6 +248,13 @@
     {"name":"par_options_config","order":17,"path":"objects/par_options_config/par_options_config.yy",},
     {"name":"asset_test","order":19,"path":"rooms/asset_test/asset_test.yy",},
     {"name":"boss_test","order":12,"path":"rooms/boss_test/boss_test.yy",},
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+    {"name":"catacombers_1","order":1,"path":"rooms/catacombers_1/catacombers_1.yy",},
+    {"name":"catacombers_lap","order":2,"path":"rooms/catacombers_lap/catacombers_lap.yy",},
+=======
+>>>>>>> Stashed changes
     {"name":"catacombers_2","order":2,"path":"rooms/catacombers_2/catacombers_2.yy",},
     {"name":"catacombers_lap","order":1,"path":"rooms/catacombers_lap/catacombers_lap.yy",},
     {"name":"catacombs_2","order":1,"path":"rooms/catacombs_2/catacombs_2.yy",},
@@ -259,6 +266,7 @@
     {"name":"catacombs_lap","order":2,"path":"rooms/catacombs_lap/catacombs_lap.yy",},
     {"name":"catacombs_secret1","order":6,"path":"rooms/catacombs_secret1/catacombs_secret1.yy",},
     {"name":"catacombs_secret2","order":9,"path":"rooms/catacombs_secret2/catacombs_secret2.yy",},
+>>>>>>> 03f579d497149c709811cdc93c1ed2a3978b6eb2
     {"name":"depth_test","order":13,"path":"rooms/depth_test/depth_test.yy",},
     {"name":"dm_2","order":1,"path":"rooms/dm_2/dm_2.yy",},
     {"name":"enemy_extreme_mass","order":16,"path":"rooms/enemy_extreme_mass/enemy_extreme_mass.yy",},
@@ -392,6 +400,9 @@
     {"name":"shd_wind","order":24,"path":"shaders/shd_wind/shd_wind.yy",},
     {"name":"shdr_dynaDither","order":30,"path":"shaders/shdr_dynaDither/shdr_dynaDither.yy",},
     {"name":"shdr_opacityDithering","order":29,"path":"shaders/shdr_opacityDithering/shdr_opacityDithering.yy",},
+    {"name":"bg_ancient_Pillars","order":39,"path":"sprites/bg_ancient_Pillars/bg_ancient_Pillars.yy",},
+    {"name":"bg_ancient_windowlight","order":54,"path":"sprites/bg_ancient_windowlight/bg_ancient_windowlight.yy",},
+    {"name":"bg_ancient_windows","order":53,"path":"sprites/bg_ancient_windows/bg_ancient_windows.yy",},
     {"name":"bg_arena_pepperman","order":3,"path":"sprites/bg_arena_pepperman/bg_arena_pepperman.yy",},
     {"name":"bg_bossversus","order":5,"path":"sprites/bg_bossversus/bg_bossversus.yy",},
     {"name":"bg_dragonlair","order":6,"path":"sprites/bg_dragonlair/bg_dragonlair.yy",},
@@ -413,10 +424,10 @@
     {"name":"bg_towerhall","order":8,"path":"sprites/bg_towerhall/bg_towerhall.yy",},
     {"name":"bg_treasure","order":2,"path":"sprites/bg_treasure/bg_treasure.yy",},
     {"name":"bg2","order":1,"path":"sprites/bg2/bg2.yy",},
-    {"name":"Bulb_Corridor","order":39,"path":"sprites/Bulb_Corridor/Bulb_Corridor.yy",},
     {"name":"CCLogo","order":42,"path":"sprites/CCLogo/CCLogo.yy",},
     {"name":"fg_tower","order":4,"path":"sprites/fg_tower/fg_tower.yy",},
     {"name":"foid","order":34,"path":"sprites/foid/foid.yy",},
+    {"name":"gcngfjdf","order":51,"path":"sprites/gcngfjdf/gcngfjdf.yy",},
     {"name":"light","order":33,"path":"sprites/light/light.yy",},
     {"name":"light2","order":16,"path":"sprites/light2/light2.yy",},
     {"name":"mask_bigcollect","order":5,"path":"sprites/mask_bigcollect/mask_bigcollect.yy",},
@@ -1166,6 +1177,7 @@
     {"name":"tile_tower_tileset","order":7,"path":"tilesets/tile_tower_tileset/tile_tower_tileset.yy",},
     {"name":"tile_tutorial","order":9,"path":"tilesets/tile_tutorial/tile_tutorial.yy",},
     {"name":"tileset_entrance","order":8,"path":"tilesets/tileset_entrance/tileset_entrance.yy",},
+    {"name":"TileSet10","order":52,"path":"tilesets/TileSet10/TileSet10.yy",},
     {"name":"ts_entrance_decor","order":4,"path":"tilesets/ts_entrance_decor/ts_entrance_decor.yy",},
     {"name":"ts_entrance_street","order":2,"path":"tilesets/ts_entrance_street/ts_entrance_street.yy",},
     {"name":"ts_tower","order":1,"path":"tilesets/ts_tower/ts_tower.yy",},

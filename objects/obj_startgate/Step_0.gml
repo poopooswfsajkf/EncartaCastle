@@ -28,6 +28,34 @@ if (place_meeting(x, y, obj_player) && scr_can_enter_door(obj_player.state) && i
 		fmod_studio_event_instance_stop(obj_music.mu, FMOD_STUDIO_STOP_MODE.ALLOWFADEOUT)
 }
 
+
+if (place_meeting(x, y, obj_player)
+&& scr_can_enter_door(obj_player.state))
+{
+    with (obj_camera)
+    {
+        if (target_door == noone || target_door == other.id)
+        {
+            target_door = other.id;
+            state = 2;
+
+            target_x = other.x;
+            target_y = other.y - 90;
+        }
+    }
+}
+else
+{
+    with (obj_camera)
+    {
+        if (target_door == other.id)
+        {
+            target_door = noone;
+            state = 1;
+        }
+    }
+}
+
 var flick = false
 with instance_place(x, y, obj_player)
 {
