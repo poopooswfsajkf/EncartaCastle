@@ -47,7 +47,7 @@ function player_superjump()
 		jumpstop = true
 		vsp = -4
 		flash = 8
-		movespeed = 12
+		movespeed = 16
 		image_speed = 0.35
 		with particle_create(x, y, particles.genericpoof, xscale, 1, spr_crazyruneffect)
 			depth = -150

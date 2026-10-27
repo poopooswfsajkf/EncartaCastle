@@ -22,12 +22,12 @@ function player_climbwall()
 		if (wallspeed < 6)
 			wallspeed = 6
 		railmovespeed = 0
-		if (wallspeed >= 6 && wallspeed < 12)
+		if (wallspeed >= 6 && wallspeed < 16)
 		{
 			state = states.mach2
 			movespeed = wallspeed
 		}
-		else if (wallspeed >= 12)
+		else if (wallspeed >= 16)
 		{
 			flash = 8
 			state = states.mach3
@@ -70,13 +70,16 @@ function player_climbwall()
 	if (input_buffers.jump > 0)
 	{
 		input_buffers.jump = 0
-		movespeed = 10
-		railmovespeed = 0
-		state = states.mach2
-		vsp = -11
-		xscale *= -1
-		jumpstop = false
-		reset_anim(spr_player_walljumpstart)
+			movespeed = 16;
+			if (P_MOVE != 0)
+		{
+		xscale = P_MOVE
+		}
+		hsp = xscale * movespeed;
+			vsp = -17 + wallbouncedampen
+			wallbouncedampen += 2.55
+			state = states.wallbounce
+			sprite_index = spr_player_mach3
 		fmod_studio_event_instance_oneshot_3d("event:/sfx/player/jump", x, y)
 	}
 	

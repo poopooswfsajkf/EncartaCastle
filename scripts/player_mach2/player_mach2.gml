@@ -34,7 +34,7 @@ function player_mach2()
 				reset_anim(spr_player_machslideboost)
 			}
 		}
-		if movespeed < 12
+		if movespeed < 16
 			movespeed += 0.1
 		else
 		{
@@ -93,11 +93,13 @@ function player_mach2()
 	}
 	if ((!grounded || scr_slope(x, y + 1)) && scr_hitwall(x + xscale, y))
 	{
-			movespeed = 0
-			vsp = -17 + wallbouncedampen
-			wallbouncedampen += 2.55
-			state = states.wallbounce
-			sprite_index = spr_player_mach3
+				wallspeed = movespeed
+		if (movespeed < 1)
+			wallspeed = 1
+		else
+			movespeed = wallspeed
+		state = states.climbwall
+
 	}
 	else if (grounded && scr_hitwall(x + xscale, y))
 	{

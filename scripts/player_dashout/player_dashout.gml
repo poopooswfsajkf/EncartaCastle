@@ -6,7 +6,7 @@ function player_dashout()
 	{
 		if P_MOVE != 0
 		{
-			movespeed = 12 * P_MOVE
+			movespeed = 16 * P_MOVE
 			hsp = approach(hsp,movespeed,1)
 		}
 		if scr_solid(x + xscale,y) && outofcrusher = false
@@ -28,7 +28,7 @@ function player_dashout()
 		}
 		wallbounce_mach3 = true;
 		state = states.mach3;
-		movespeed = 12;
+		movespeed = 16;
 		if (P_MOVE != 0)
 		{
 		xscale = P_MOVE
@@ -40,7 +40,7 @@ function player_dashout()
 	{
 		outofcrusher = true
 		vsp = 14
-		movespeed = 12
+		movespeed = 16
 		if P_MOVE != 0
 		{
 			xscale = P_MOVE

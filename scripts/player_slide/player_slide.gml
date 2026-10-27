@@ -55,7 +55,7 @@ function player_slide()
 	{
 		sprite_index = ismach2 ? spr_player_mach2 : spr_player_mach3
 		state = ismach2 ? states.mach2 : states.mach3
-		movespeed = ismach2 ? 8 : 12
+		movespeed = ismach2 ? 8 : 16
 		xscale *= -1
 	}
 	
