@@ -1,7 +1,7 @@
 function player_mach3() 
 {
 	hsp = xscale * movespeed
-	mach4mode = movespeed > 20
+	mach4mode = movespeed > 16
 	
 	var dashpad = sprite_index == spr_player_dashpad
 	
@@ -107,13 +107,12 @@ function player_mach3()
 	if ((!grounded || scr_slope(x, y + 1)) && scr_hitwall(x + xscale, y))
 	{
 		{
-				wallspeed = movespeed
-		if (movespeed < 1)
-			wallspeed = 1
-		else
-			movespeed = wallspeed
-		state = states.climbwall
-
+			flash = 8
+			movespeed = 0
+			vsp = -14
+			wallbouncedampen += 2.55
+			state = states.wallbounce
+			sprite_index = spr_player_mach3
 		}
 	}
 	else if grounded && scr_hitwall(x + xscale, y) && !place_meeting(x + xscale, y, obj_metalblock)

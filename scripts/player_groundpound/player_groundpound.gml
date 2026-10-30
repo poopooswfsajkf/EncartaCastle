@@ -86,7 +86,7 @@ function player_groundpound()
 			state = states.tumble
 			sprite_index = spr_player_crouchslip
 			if freefallsmash > 20
-				movespeed = 16
+				movespeed = 12
 			else
 				movespeed = 8
 			particle_create(x, y, particles.genericpoof, xscale, 1, spr_jumpdust)

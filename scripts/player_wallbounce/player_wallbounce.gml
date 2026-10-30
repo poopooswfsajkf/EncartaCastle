@@ -30,7 +30,7 @@ function player_wallbounce()
 			image_xscale = other.xscale;
 			depth = -150;
 		}
-			movespeed = 16;
+			movespeed = 12;
 			if (P_MOVE != 0)
 		{
 		xscale = P_MOVE
@@ -40,20 +40,6 @@ function player_wallbounce()
 			vsp = -15
 			sprite_index = spr_player_dashout
 		}
-		
-
-	}
-	else if ((!grounded || scr_slope(x, y + 1)) && scr_hitwall(x + xscale, y))
-	{
-					movespeed = 16;
-			if (P_MOVE != 0)
-		{
-		xscale = P_MOVE
-		}
-		hsp = xscale * movespeed;
-			state = states.dashout
-			vsp = -15
-			sprite_index = spr_player_dashout
 	}
 	else if (vsp >= 0)
 	{
@@ -68,7 +54,7 @@ function player_wallbounce()
 		// Landing from wallbounce goes directly into Mach 3
 		wallbounce_mach3 = true;
 		state = states.mach3;
-		movespeed = 16;
+		movespeed = 12;
 		if (P_MOVE != 0)
 		{
 		xscale = P_MOVE
