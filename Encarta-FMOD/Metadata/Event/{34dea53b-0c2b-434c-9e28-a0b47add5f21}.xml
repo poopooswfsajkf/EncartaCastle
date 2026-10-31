@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.03.00">
+<objects serializationModel="Studio.02.04.00">
 	<object class="Event" id="{34dea53b-0c2b-434c-9e28-a0b47add5f21}">
 		<property name="name">
 			<value>parry</value>

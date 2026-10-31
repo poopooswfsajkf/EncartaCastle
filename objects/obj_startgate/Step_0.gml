@@ -28,54 +28,18 @@ if (place_meeting(x, y, obj_player) && scr_can_enter_door(obj_player.state) && i
 		fmod_studio_event_instance_stop(obj_music.mu, FMOD_STUDIO_STOP_MODE.ALLOWFADEOUT)
 }
 
-
-if (place_meeting(x, y, obj_player)
-&& scr_can_enter_door(obj_player.state))
+var flick = false
+with instance_place(x, y, obj_player)
 {
-    with (obj_camera)
-    {
-        if (target_door == noone || target_door == other.id)
-        {
-            target_door = other.id;
-            state = 2;
-
-            target_x = other.x;
-            target_y = other.y - 90;
-        }
-    }
-}
-else
-{
-    with (obj_camera)
-    {
-        if (target_door == other.id)
-        {
-            target_door = noone;
-            state = 1;
-        }
-    }
-}
-
-var flick = false;
-
-with (instance_place(x, y, obj_player))
-{
-    if (sprite_index == obj_player.spr_player_entergate
-    && !obj_fade.fade
-    && image_speed > 0
-    && anim_ended())
-    {
-        flick = true;
-        image_speed = 0;
-    }
+	if (sprite_index == obj_player.spr_player_entergate && !obj_fade.fade && image_speed > 0 && anim_ended())
+	{
+		flick = true
+		image_speed = 0
+	}
 }
 
 if (flick)
 {
-    var _room = t_room;
-    var _door = t_door;
-    var _level_name = level_name;
-
     var d = {
         music: title_data[0],
         card_index: title_data[1],
@@ -87,11 +51,11 @@ if (flick)
     _card.music = d.music;
     _card.card_index = d.card_index;
     _card.title_index = d.title_index;
-    _card.t_room = _room;
-    _card.t_door = _door;
+    _card.t_room = t_room;
+    _card.t_door = t_door;
 
-    global.start_room = _room;
-    global.level_data.level_name = _level_name;
+    global.start_room = t_room;
+    global.level_data.level_name = level_name;
 
     obj_score.prev_rank_ix = 0;
 

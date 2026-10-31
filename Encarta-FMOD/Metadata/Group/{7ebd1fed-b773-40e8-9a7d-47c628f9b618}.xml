@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.03.00">
+<objects serializationModel="Studio.02.04.00">
 	<object class="MixerGroup" id="{7ebd1fed-b773-40e8-9a7d-47c628f9b618}">
 		<property name="name">
 			<value>Music</value>
@@ -33,12 +33,12 @@
 	</object>
 	<object class="MixerBusPanner" id="{4291ca2b-efb0-415c-b728-3d116c4b2c6e}" />
 	<object class="AutomationCurve" id="{de472936-58d3-48ec-a2d4-e9cab6f89eed}">
-		<relationship name="parameter">
-			<destination>{ddc43375-bfd3-485b-a3ec-f16f4ad98003}</destination>
-		</relationship>
 		<relationship name="automationPoints">
 			<destination>{ce6d92d7-c4f9-4d76-80a9-aebb69ad20d5}</destination>
 			<destination>{20752acc-d744-4645-b320-e1c8d8a65f64}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{ddc43375-bfd3-485b-a3ec-f16f4ad98003}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{38c5197a-e716-4a07-925f-01fd094d4dd0}" />
@@ -81,21 +81,21 @@
 		</relationship>
 	</object>
 	<object class="AutomationCurve" id="{758e76da-482b-4cad-8493-3c1e6135db79}">
-		<relationship name="parameter">
-			<destination>{49a10042-6659-4e99-8bd5-3adb2dfc0ab3}</destination>
-		</relationship>
 		<relationship name="automationPoints">
 			<destination>{d6360c09-3856-4324-9d0c-4db95c15e42b}</destination>
 			<destination>{b53f25ab-9177-4503-ae39-a5e5c5c63094}</destination>
 		</relationship>
-	</object>
-	<object class="AutomationCurve" id="{007ca7ed-62f9-4f2a-a107-ed6bdbbf87e9}">
 		<relationship name="parameter">
 			<destination>{49a10042-6659-4e99-8bd5-3adb2dfc0ab3}</destination>
 		</relationship>
+	</object>
+	<object class="AutomationCurve" id="{007ca7ed-62f9-4f2a-a107-ed6bdbbf87e9}">
 		<relationship name="automationPoints">
 			<destination>{9169de3f-944d-4bce-a6e2-89750b96e96a}</destination>
 			<destination>{3c3495c5-ae4a-440b-8a7d-dc42a338cdd4}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{49a10042-6659-4e99-8bd5-3adb2dfc0ab3}</destination>
 		</relationship>
 	</object>
 	<object class="AutomationPoint" id="{d6360c09-3856-4324-9d0c-4db95c15e42b}">

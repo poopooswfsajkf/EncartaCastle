@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.03.00">
+<objects serializationModel="Studio.02.04.00">
 	<object class="Event" id="{accb88af-7690-4599-8747-89fe507b4ee0}">
 		<property name="name">
 			<value>ballhitwall</value>

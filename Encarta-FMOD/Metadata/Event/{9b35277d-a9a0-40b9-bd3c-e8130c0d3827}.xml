@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.03.00">
+<objects serializationModel="Studio.02.04.00">
 	<object class="Event" id="{9b35277d-a9a0-40b9-bd3c-e8130c0d3827}">
 		<property name="name">
 			<value>dashout_slip</value>

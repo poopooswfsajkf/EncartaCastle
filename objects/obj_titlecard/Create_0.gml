@@ -6,3 +6,8 @@ t_door = ""
 card_index = 0
 title_index = 0
 music = noone
+title2 = false
+transitionRadius = 960;
+transitionRadiusSpeed = 0;
+// CREATE EVENT
+zoom_progress = 0;

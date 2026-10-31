@@ -4,15 +4,11 @@ if ((sprite_index == spr_secretportal_enter || sprite_index == spr_secretportal_
 	{
 		image_index = image_number - 1
 		image_speed = 0
-		if !did 
-		{
-			did = 1
-        var _transition = instance_create(x, y, obj_secrettransition);
-        _transition.targetRoom = t_room;
-		}
+
 		ds_list_add(global.ds_saveroom, id)
 		global.secret = !global.secret
 	}
+	
 	else 
 		instance_destroy()
 
@@ -28,4 +24,5 @@ if sprite_index == spr_secretportal_spawn
 		secret_exit = false
 		secret_cutscene = false
 	}
+	secret_cutscene = false
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.03.00">
+<objects serializationModel="Studio.02.04.00">
 	<object class="Event" id="{cb55ca41-c8d7-4000-b930-9186b6158e6e}">
 		<property name="name">
 			<value>escapecollectbig</value>

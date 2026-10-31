@@ -44,6 +44,7 @@
     "option_texfilter": "TEXTURE FILTERING",
     "option_hud": "SHOW HUD",
 "option_camTilt": "CAMERA TILT",
+"option_camZoom": "CAMERA ZOOM",
     "option_vsync": "VSYNC",
     "option_vfx": "SCREEN EFFECTS",
 

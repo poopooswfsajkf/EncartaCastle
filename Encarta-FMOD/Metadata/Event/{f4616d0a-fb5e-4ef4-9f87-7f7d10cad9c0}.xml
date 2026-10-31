@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.03.00">
+<objects serializationModel="Studio.02.04.00">
 	<object class="Event" id="{f4616d0a-fb5e-4ef4-9f87-7f7d10cad9c0}">
 		<property name="name">
 			<value>idle</value>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.03.00">
+<objects serializationModel="Studio.02.04.00">
 	<object class="Event" id="{c4fb0822-f1e5-4fb9-a10d-65b45ff9faa2}">
 		<property name="name">
 			<value>checkpoint</value>

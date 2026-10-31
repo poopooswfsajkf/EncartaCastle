@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.03.00">
+<objects serializationModel="Studio.02.04.00">
 	<object class="Event" id="{b0197a55-783a-4213-a805-e193033504dc}">
 		<property name="name">
 			<value>pause</value>

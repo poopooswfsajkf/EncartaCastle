@@ -153,6 +153,12 @@ list_arr = [
 				global.option_camTilt = _val
 				display_reset(0, _val)
 				quick_ini_write_real("globalsave.ini", "options", "camTilt", _val)
+			}),
+								new add_option("option_camZoom", types.onoff, global.option_camZoom,
+			function(_val) {
+				global.option_camZoom = _val
+				display_reset(0, _val)
+				quick_ini_write_real("globalsave.ini", "options", "camZoom", _val)
 			})
 	],
 	[ //4 controls

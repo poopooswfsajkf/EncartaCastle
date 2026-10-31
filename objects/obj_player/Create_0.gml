@@ -214,11 +214,12 @@ prev_g_room = 0
 prev_g_door = "a"
 
 uparrow = {
-	yoffset: -50,
-	visible: false,
-	sprite_index: spr_uparrow,
-	image_speed: 0.35,
-	image_index: 0
-}
+    progress: 0,
+    yoffset: -50,
+    visible: false,
+    sprite_index: spr_uparrow,
+    image_speed: 0.35,
+    image_index: 0
+};
 
-
+uparrowadd = 0;

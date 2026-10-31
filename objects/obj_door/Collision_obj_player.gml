@@ -13,5 +13,6 @@ if (other.bbox_bottom <= bbox_bottom + 1 && other.bbox_bottom >= bbox_bottom - 1
 	do_fade(t_room, t_door, fade_types.door)
 }
 
-//if (other.sprite_index = spr_player_lookdoor)
-//	other.x = approach(other.x, x + sprite_width / 2, 2)
+if (other.sprite_index = obj_player.spr_player_lookdoor)
+other.x = approach(other.x, x + sprite_width / 2, 2)
+

@@ -9,7 +9,8 @@ if state == states.normal
 		tv_expression(spr_tv_collect)
 	
 	fmod_studio_event_instance_oneshot_3d("event:/sfx/misc/collectbig", x, y)
-	
+	  repeat (10)
+            instance_create(x + irandom_range(-50, 50), y + irandom_range(-50, 50), obj_memoryproj);
 	sprite_index = throwspr;
 	image_index = 0;
 	alarm[0] = 50;

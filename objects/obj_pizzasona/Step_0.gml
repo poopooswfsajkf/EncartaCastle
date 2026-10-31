@@ -24,33 +24,20 @@ switch (state)
 			}
 			if scoretogive == 0
 			{
-				state = states.transition;
-				sprite_index = transitionspr;
+				state = states.jump;
+				sprite_index = throwspr;
+				repeat (10)
+            instance_create(x + irandom_range(-50, 50), y + irandom_range(-50, 50), obj_memoryproj);
 				image_index = 0;
 			}
 		}
 		break;
 	case states.transition:
-		if anim_ended()
-		{
-			state = states.jump;
-			sprite_index = idlespr;
-			movespeed = 4;
-			with create_ghost_obj()
-				y = other.adjusted_y
-			with create_ghost_obj() //platform ghost
-			{
-				sprite_index = spr_movingplatform
-				image_index = other.otherindex
-				x = other.x - 49
-				y = other.adjusted_y + 46
-			}
-		}
+
+
 		break;
 	case states.jump:
-		movespeed += 0.25;
-		y -= movespeed;
-		if (y < -500)
+
 			instance_destroy();
 		break;
 }

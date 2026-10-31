@@ -12,6 +12,7 @@ if sprite_index == spr_secretportal_spawn
 		secret_cutscene = false
 		secret_exit = false
 	}
+	secret_cutscene = false
 }
 
 if sprite_index == spr_secretportal_spawnclose

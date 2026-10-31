@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.03.00">
+<objects serializationModel="Studio.02.04.00">
 	<object class="Event" id="{0eaab8d6-c90d-4e15-8dfd-18a043da4c9a}">
 		<property name="name">
 			<value>ratdead</value>

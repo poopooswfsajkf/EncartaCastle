@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.03.00">
+<objects serializationModel="Studio.02.04.00">
 	<object class="Event" id="{3223e07a-f0a0-43c3-b7fa-238260cc4a95}">
 		<property name="name">
 			<value>pizzatime</value>
@@ -66,8 +66,8 @@
 		</relationship>
 		<relationship name="markers">
 			<destination>{29af151d-fe90-4e11-9d36-b205e7a0579f}</destination>
-			<destination>{ab228ee0-6c65-4056-aa0e-3c48e5309431}</destination>
 			<destination>{3e47e553-a2d3-43c6-a9c5-feaffd8c57df}</destination>
+			<destination>{ab228ee0-6c65-4056-aa0e-3c48e5309431}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{94a18b61-12b1-45a8-a304-f76b7a54eaf3}">
@@ -115,12 +115,12 @@
 			<destination>{b2abb21b-ab07-46f6-8f88-0852aaa944e6}</destination>
 		</relationship>
 	</object>
-	<object class="TempoMarker" id="{ab228ee0-6c65-4056-aa0e-3c48e5309431}">
+	<object class="NamedMarker" id="{3e47e553-a2d3-43c6-a9c5-feaffd8c57df}">
 		<property name="position">
-			<value>0</value>
+			<value>181.75612500000008</value>
 		</property>
-		<property name="tempo">
-			<value>151.25</value>
+		<property name="name">
+			<value>Pinch</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{5aa5db83-5ca7-48c9-bd00-b494fb8ae2d1}</destination>
@@ -129,12 +129,12 @@
 			<destination>{cf5a22be-c422-4dc8-8004-3364816fbd33}</destination>
 		</relationship>
 	</object>
-	<object class="NamedMarker" id="{3e47e553-a2d3-43c6-a9c5-feaffd8c57df}">
+	<object class="TempoMarker" id="{ab228ee0-6c65-4056-aa0e-3c48e5309431}">
 		<property name="position">
-			<value>181.75612500000008</value>
+			<value>0</value>
 		</property>
-		<property name="name">
-			<value>Pinch</value>
+		<property name="tempo">
+			<value>151.25</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{5aa5db83-5ca7-48c9-bd00-b494fb8ae2d1}</destination>

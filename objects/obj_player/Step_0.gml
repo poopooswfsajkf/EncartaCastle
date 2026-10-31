@@ -25,6 +25,25 @@ else if vsp < 0
 instakill = false
 intransfo = false
 
+// UP ARROW
+var yaya = uparrow.visible ? 1 : 0;
+
+uparrowadd = lerp(uparrowadd, (yaya - uparrow.progress) * 0.15, 0.5);
+
+if (uparrow.visible)
+{
+    if (sprite_index == spr_player_entergate)
+        uparrow.progress = approach(uparrow.progress, 1, 0.2);
+    else
+        uparrow.progress += uparrowadd;
+}
+else
+{
+    uparrow.progress += uparrowadd;
+}
+
+uparrow.progress = clamp(uparrow.progress, 0, 1);
+
 prevstate = state
 
 if warping

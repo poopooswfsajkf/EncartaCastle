@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.03.00">
+<objects serializationModel="Studio.02.04.00">
 	<object class="Event" id="{b5f86198-3b28-4856-807d-f397181618e5}">
 		<property name="name">
 			<value>crouchslip</value>

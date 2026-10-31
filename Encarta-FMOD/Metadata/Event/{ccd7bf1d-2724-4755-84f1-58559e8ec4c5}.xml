@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.03.00">
+<objects serializationModel="Studio.02.04.00">
 	<object class="Event" id="{ccd7bf1d-2724-4755-84f1-58559e8ec4c5}">
 		<property name="name">
 			<value>ui_back</value>

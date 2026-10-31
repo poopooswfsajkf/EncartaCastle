@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.03.00">
+<objects serializationModel="Studio.02.04.00">
 	<object class="Event" id="{601d264d-f4fb-465f-b0ab-840ca68dc1a9}">
 		<property name="name">
 			<value>breakblock</value>

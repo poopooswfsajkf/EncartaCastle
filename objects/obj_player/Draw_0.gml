@@ -60,9 +60,21 @@ if flash > 0
 	shader_reset()
 }
 
-with uparrow
+// UP ARROW
+if (uparrow.visible)
 {
-	if visible
-		draw_sprite(sprite_index, image_index, other.x, other.y + yoffset)
-	image_index += image_speed
+    draw_sprite_ext(
+        uparrow.sprite_index,
+        uparrow.image_index,
+        x,
+        y + uparrow.yoffset - abs(sin(current_time / 200) * 10)
+            - lerp(40, 55, uparrow.progress),
+        lerp(0, 1, uparrow.progress),
+        lerp(0, 1, uparrow.progress),
+        lerp(0, 360, uparrow.progress) + sin(current_time / 200) * 20,
+        c_white,
+        3 - uparrow.progress
+    );
 }
+
+uparrow.image_index += uparrow.image_speed;

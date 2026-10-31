@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.03.00">
+<objects serializationModel="Studio.02.04.00">
 	<object class="Event" id="{62f77d75-0870-4327-aeb3-5c19c10a852e}">
 		<property name="name">
 			<value>pizzafacemove</value>

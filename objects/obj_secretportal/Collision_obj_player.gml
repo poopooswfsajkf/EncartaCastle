@@ -4,6 +4,7 @@ if ds_list_find_index(global.ds_saveroom, id) != -1 && !did
 if sprite_index != spr_secretportal_enter
 {
 	reset_anim(spr_secretportal_enter)
+	secret_cutscene = true
 	fmod_studio_event_instance_oneshot_3d("event:/sfx/misc/secretenter", x, y)
 }
 

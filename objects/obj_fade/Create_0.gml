@@ -8,3 +8,4 @@ depth = -10
 fadeAlpha = 30;
 fade = false;
 fadeadd = 2;
+zoom_progress = 0;

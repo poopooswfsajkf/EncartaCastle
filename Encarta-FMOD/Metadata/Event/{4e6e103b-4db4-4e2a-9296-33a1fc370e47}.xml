@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.03.00">
+<objects serializationModel="Studio.02.04.00">
 	<object class="Event" id="{4e6e103b-4db4-4e2a-9296-33a1fc370e47}">
 		<property name="name">
 			<value>outsidetowerpeople</value>
