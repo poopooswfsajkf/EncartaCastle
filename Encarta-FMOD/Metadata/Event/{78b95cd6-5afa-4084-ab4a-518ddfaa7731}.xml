@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.04.00">
+<objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{78b95cd6-5afa-4084-ab4a-518ddfaa7731}">
 		<property name="name">
 			<value>taunt</value>
@@ -154,12 +154,12 @@
 	</object>
 	<object class="MixerBusFader" id="{01ae644e-946a-41f8-a659-682dee26acd5}" />
 	<object class="AutomationCurve" id="{6e758502-a9fd-419b-a96d-3c1859c787f3}">
+		<relationship name="parameter">
+			<destination>{5ae24ca4-cf33-4d01-b1d0-804859c49783}</destination>
+		</relationship>
 		<relationship name="automationPoints">
 			<destination>{6fbfdccd-686c-4abf-a49e-1e7105b937a2}</destination>
 			<destination>{cc7e0b74-e4f2-4af1-b79e-303d67747057}</destination>
-		</relationship>
-		<relationship name="parameter">
-			<destination>{5ae24ca4-cf33-4d01-b1d0-804859c49783}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{06974d32-21ad-4b2b-9b77-0d9b5dcb37e7}" />
@@ -168,8 +168,8 @@
 			<value>1</value>
 		</property>
 		<relationship name="modulators">
-			<destination>{21697a24-63fa-4ce0-ae19-f306fb820b71}</destination>
 			<destination>{496a6064-51b0-4f09-a6c7-96bce011f882}</destination>
+			<destination>{21697a24-63fa-4ce0-ae19-f306fb820b71}</destination>
 		</relationship>
 	</object>
 	<object class="SpatialiserEffect" id="{d6881bf1-7aec-4d90-8c13-88d7c59e8316}">
@@ -205,17 +205,6 @@
 			<value>3</value>
 		</property>
 	</object>
-	<object class="LFOModulator" id="{21697a24-63fa-4ce0-ae19-f306fb820b71}">
-		<property name="nameOfPropertyBeingModulated">
-			<value>pitch</value>
-		</property>
-		<property name="rate">
-			<value>2.60000014</value>
-		</property>
-		<property name="depth">
-			<value>21</value>
-		</property>
-	</object>
 	<object class="RandomizerModulator" id="{496a6064-51b0-4f09-a6c7-96bce011f882}">
 		<property name="nameOfPropertyBeingModulated">
 			<value>pitch</value>
@@ -226,6 +215,17 @@
 		<relationship name="automators">
 			<destination>{cee649d1-3536-4e77-84f4-48a36a2f62d7}</destination>
 		</relationship>
+	</object>
+	<object class="LFOModulator" id="{21697a24-63fa-4ce0-ae19-f306fb820b71}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>pitch</value>
+		</property>
+		<property name="rate">
+			<value>2.60000014</value>
+		</property>
+		<property name="depth">
+			<value>21</value>
+		</property>
 	</object>
 	<object class="Automator" id="{cee649d1-3536-4e77-84f4-48a36a2f62d7}">
 		<property name="nameOfPropertyBeingAutomated">

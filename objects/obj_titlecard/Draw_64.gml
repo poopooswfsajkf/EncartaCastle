@@ -1,6 +1,6 @@
 if (state != 0)
 {
-    draw_sprite(spr_titlecards, card_index, 0, 0);
+    draw_sprite(spr_titlecards, card_index, 0, titleY);
     draw_sprite(
         spr_titlecard_titles,
         title_index,

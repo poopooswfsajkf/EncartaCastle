@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.04.00">
+<objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{bdea4512-35bb-4abd-83d3-724bf473468f}">
 		<property name="name">
 			<value>rollgetup</value>

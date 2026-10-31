@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.04.00">
+<objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{96cc3cbe-b3bd-4698-9a82-bab9db58217d}">
 		<property name="name">
 			<value>sticker</value>

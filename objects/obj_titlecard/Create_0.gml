@@ -11,3 +11,4 @@ transitionRadius = 960;
 transitionRadiusSpeed = 0;
 // CREATE EVENT
 zoom_progress = 0;
+titleY = SCREEN_HEIGHT

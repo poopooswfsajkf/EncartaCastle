@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.04.00">
+<objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{7c0a14f9-6bb2-43a8-96c1-88dcf764638d}">
 		<property name="name">
 			<value>collectbig</value>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.04.00">
-	<object class="AudioFile" id="{dfe6c2b2-ec09-4537-b3e3-01b4c9f63e77}">
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{5d8f7dc7-97d4-487e-b315-a6ad09b938b5}">
 		<property name="assetPath">
 			<value>piece1.wav</value>
 		</property>
 		<property name="frequencyInKHz">
-			<value>44.100000000000001</value>
+			<value>44.0999985</value>
 		</property>
 		<property name="channelCount">
 			<value>2</value>

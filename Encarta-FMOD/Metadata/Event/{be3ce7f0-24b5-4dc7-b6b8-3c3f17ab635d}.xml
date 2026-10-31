@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.04.00">
+<objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{be3ce7f0-24b5-4dc7-b6b8-3c3f17ab635d}">
 		<property name="name">
 			<value>beatbox</value>
@@ -151,12 +151,12 @@
 	</object>
 	<object class="MixerBusFader" id="{0562b4fe-993c-4a24-b9f5-9a08a187514a}" />
 	<object class="AutomationCurve" id="{4c8f4186-bc24-4830-ba67-45e5309a86f7}">
+		<relationship name="parameter">
+			<destination>{5ad1eff1-c466-4d0b-bde3-82ab7b61563e}</destination>
+		</relationship>
 		<relationship name="automationPoints">
 			<destination>{7c7cbdcc-7730-449c-8e56-8baab4d7ed95}</destination>
 			<destination>{2de88567-317e-4953-a446-1337556d4fc3}</destination>
-		</relationship>
-		<relationship name="parameter">
-			<destination>{5ad1eff1-c466-4d0b-bde3-82ab7b61563e}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{90cc6f75-149e-42a5-b376-4889906b242f}" />

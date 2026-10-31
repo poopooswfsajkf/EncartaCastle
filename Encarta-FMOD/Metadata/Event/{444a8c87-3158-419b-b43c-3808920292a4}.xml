@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.04.00">
+<objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{444a8c87-3158-419b-b43c-3808920292a4}">
 		<property name="name">
 			<value>uppercut</value>

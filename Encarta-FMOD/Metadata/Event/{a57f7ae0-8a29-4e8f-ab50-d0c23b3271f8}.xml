@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.04.00">
+<objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{a57f7ae0-8a29-4e8f-ab50-d0c23b3271f8}">
 		<property name="name">
 			<value>oink</value>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.04.00">
+<objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{c4af10dc-6f1b-41cf-911f-e27ee1a7c89c}">
 		<property name="name">
 			<value>bump</value>

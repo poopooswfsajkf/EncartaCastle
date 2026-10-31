@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.04.00">
+<objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{13bd6802-51cc-4ffe-8f42-7859c5a3650a}">
 		<property name="name">
 			<value>outtransfo</value>

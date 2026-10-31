@@ -2,18 +2,23 @@
 
 var _zoom = global.option_camZoom ? zoom : 1;
 
-// Smoothly approach target zoom.
 camzoom = lerp(camzoom, _zoom, camzoom_speed);
 
-// Snap when close enough.
 if (abs(camzoom - _zoom) < 0.002)
 {
     camzoom = _zoom;
 }
 
-// Calculate zoomed camera dimensions.
-var cam_width = SCREEN_WIDTH * camzoom;
-var cam_height = SCREEN_HEIGHT * camzoom;
+// Camera dimensions
+var cam_width = 720 * camzoom;
+var cam_height = 540 * camzoom;
+
+
+// =====================================================
+// CAMERA OFFSETS
+// =====================================================
+
+cam_y_offset = approach(cam_y_offset, 0, 4);
 
 
 // =====================================================
@@ -31,7 +36,7 @@ if (obj_player.state == states.backtohub)
 _cam_x += cam_charge;
 _cam_y += cam_y_offset;
 
-// Clamp camera to room boundaries.
+// Clamp camera to room boundaries
 _cam_x = clamp(_cam_x, 0, max(0, room_width - cam_width));
 _cam_y = clamp(_cam_y, 0, max(0, room_height - cam_height));
 
@@ -77,30 +82,30 @@ mag = max(mag - mag_decel, 0);
 
 
 // =====================================================
-// CAMERA OFFSETS
-// =====================================================
-
-cam_y_offset = approach(cam_y_offset, 0, 4);
-
-
-// =====================================================
 // APPLY CAMERA POSITION, SIZE AND TILT
 // =====================================================
 
 if (!obj_player.secret_exit && obj_player.sprite_index != spr_pizzaportalend)
 {
+    // Apply camera size
     camera_set_view_size(
         view_camera[0],
         cam_width,
         cam_height
     );
 
+    // Calculate actual camera position
+    campos.x = _cam_x + _shake_x;
+    campos.y = _cam_y + _shake_y;
+
+    // Apply camera position
     camera_set_view_pos(
         view_camera[0],
-        _cam_x + _shake_x,
-        _cam_y + _shake_y
+        campos.x,
+        campos.y
     );
 
+    // Apply camera rotation
     camera_set_view_angle(
         view_camera[0],
         camera_angle

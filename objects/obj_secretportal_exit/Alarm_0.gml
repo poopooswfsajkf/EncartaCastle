@@ -1,2 +1,2 @@
-reset_anim(spr_secretportal_spawnclose)
-secret_cutscene = true
+reset_anim(spr_secretportal_spawnclose);
+secret_cutscene = true;

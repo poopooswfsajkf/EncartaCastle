@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.04.00">
+<objects serializationModel="Studio.02.03.00">
 	<object class="MixerGroup" id="{ce35c7bf-db41-4131-acf8-25226bcd5234}">
 		<property name="name">
 			<value>SFX</value>

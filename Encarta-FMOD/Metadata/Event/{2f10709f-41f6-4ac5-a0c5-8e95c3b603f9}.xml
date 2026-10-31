@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.04.00">
+<objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{2f10709f-41f6-4ac5-a0c5-8e95c3b603f9}">
 		<property name="name">
 			<value>backslide</value>

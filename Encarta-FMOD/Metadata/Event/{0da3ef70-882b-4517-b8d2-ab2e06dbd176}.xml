@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.04.00">
+<objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{0da3ef70-882b-4517-b8d2-ab2e06dbd176}">
 		<property name="name">
 			<value>slipend</value>

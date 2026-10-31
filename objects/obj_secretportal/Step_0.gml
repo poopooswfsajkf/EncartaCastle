@@ -1,7 +1,4 @@
-// =====================================================
-// VALIDATION
-// =====================================================
-
+// Only process activated portals.
 if (ds_list_find_index(global.ds_saveroom, id) == -1)
     exit;
 
@@ -10,38 +7,22 @@ if (ds_list_find_index(global.ds_saveroom, id) == -1)
 // PLAYER GROUNDPOUND
 // =====================================================
 
-if (obj_player.visual_size < 1 && state == 1)
+if (state == 1)
 {
-    do_hold_player(false);
-}
-else if (state == 1)
-{
-    state++;
-
-    with (obj_player)
+    if (obj_player.visual_size < 1)
     {
-        state = states.groundpound;
-        movespeed = 0;
-        vsp = 10;
+        do_hold_player(false);
     }
-}
-
-
-// =====================================================
-// SECRET CUTSCENE ACTIVATION
-// =====================================================
-
-if (!secret_cutscene)
-{
-    if (sprite_index != spr_secretportal_enter)
+    else
     {
-        reset_anim(spr_secretportal_enter);
+        state++;
 
-        secret_cutscene = true;
-
-        fmod_studio_event_instance_oneshot_3d(
-            "event:/sfx/misc/secretenter", x, y
-        );
+        with (obj_player)
+        {
+            state = states.groundpound;
+            movespeed = 0;
+            vsp = 10;
+        }
     }
 }
 
@@ -57,19 +38,14 @@ if (!secret_cutscene)
 }
 else
 {
-    // Wait for the enter animation to finish
-    if (sprite_index == spr_secretportal_enter && anim_ended())
-    {
-        reset_anim(spr_secretportal_spawnclose);
-    }
 
-    // Close the portal
-    if (sprite_index == spr_secretportal_spawnclose)
+sprite_index = spr_secretportal_enter
+    // Close the portal.
+    if (sprite_index == spr_secretportal_enter)
     {
         xscaleMulti = approach(xscaleMulti, 0, 0.05);
         yscaleMulti = approach(yscaleMulti, 0, 0.05);
 
-        // Create transition when fully closed
         if (xscaleMulti <= 0 && yscaleMulti <= 0 && !did)
         {
             did = true;
@@ -90,6 +66,7 @@ else
 // PLAYER HOLD
 // =====================================================
 
-other.target_room = "secret";
-
-do_hold_player(true);
+if (secret_cutscene && !did)
+{
+    do_hold_player(true);
+}

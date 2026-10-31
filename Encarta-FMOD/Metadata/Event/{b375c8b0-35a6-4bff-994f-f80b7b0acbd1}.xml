@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.04.00">
+<objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{b375c8b0-35a6-4bff-994f-f80b7b0acbd1}">
 		<property name="name">
 			<value>slip</value>

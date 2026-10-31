@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.04.00">
+<objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{f8f1f04b-6c74-4e54-9cff-a1b46014ee2a}">
 		<property name="name">
 			<value>transition</value>

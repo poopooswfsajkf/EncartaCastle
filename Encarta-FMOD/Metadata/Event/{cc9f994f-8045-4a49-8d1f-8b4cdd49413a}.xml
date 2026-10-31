@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.04.00">
+<objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{cc9f994f-8045-4a49-8d1f-8b4cdd49413a}">
 		<property name="name">
 			<value>techdiff</value>

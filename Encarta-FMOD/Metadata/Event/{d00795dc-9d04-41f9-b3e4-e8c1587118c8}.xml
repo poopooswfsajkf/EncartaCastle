@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.04.00">
+<objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{d00795dc-9d04-41f9-b3e4-e8c1587118c8}">
 		<property name="name">
 			<value>v_enemyhurt_calculator</value>

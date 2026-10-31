@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.04.00">
+<objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{5cc79d85-7945-4d8d-925a-bb28bab839c8}">
 		<property name="name">
 			<value>viacomtalk</value>
@@ -125,8 +125,8 @@
 			<value>256</value>
 		</property>
 		<relationship name="modulators">
-			<destination>{9bbe8224-c938-4464-8289-2d1d3dd6383d}</destination>
 			<destination>{b029af5b-abb8-40f3-9aeb-ac6d50994fc7}</destination>
+			<destination>{9bbe8224-c938-4464-8289-2d1d3dd6383d}</destination>
 		</relationship>
 	</object>
 	<object class="SpatialiserEffect" id="{8b0fb9df-7758-4a00-8a04-d2c448e0375f}" />
@@ -154,6 +154,14 @@
 			<destination>{48fab5e6-51c7-448c-a5ba-f6c5800f3520}</destination>
 		</relationship>
 	</object>
+	<object class="RandomizerModulator" id="{b029af5b-abb8-40f3-9aeb-ac6d50994fc7}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>pitch</value>
+		</property>
+		<property name="amount">
+			<value>24</value>
+		</property>
+	</object>
 	<object class="LFOModulator" id="{9bbe8224-c938-4464-8289-2d1d3dd6383d}">
 		<property name="nameOfPropertyBeingModulated">
 			<value>pitch</value>
@@ -166,14 +174,6 @@
 		</property>
 		<property name="depth">
 			<value>17</value>
-		</property>
-	</object>
-	<object class="RandomizerModulator" id="{b029af5b-abb8-40f3-9aeb-ac6d50994fc7}">
-		<property name="nameOfPropertyBeingModulated">
-			<value>pitch</value>
-		</property>
-		<property name="amount">
-			<value>24</value>
 		</property>
 	</object>
 </objects>

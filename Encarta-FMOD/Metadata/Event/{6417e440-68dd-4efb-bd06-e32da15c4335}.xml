@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.04.00">
+<objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{6417e440-68dd-4efb-bd06-e32da15c4335}">
 		<property name="name">
 			<value>geromecollect</value>

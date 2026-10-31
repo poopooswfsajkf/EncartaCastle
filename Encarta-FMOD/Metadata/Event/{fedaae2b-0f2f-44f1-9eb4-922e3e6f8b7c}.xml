@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.04.00">
+<objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{fedaae2b-0f2f-44f1-9eb4-922e3e6f8b7c}">
 		<property name="name">
 			<value>dashpad</value>

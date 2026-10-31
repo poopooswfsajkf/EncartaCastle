@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.04.00">
+<objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{71db2f0a-748a-4097-a7c0-6523cc27eda7}">
 		<property name="name">
 			<value>crusherjump_end</value>

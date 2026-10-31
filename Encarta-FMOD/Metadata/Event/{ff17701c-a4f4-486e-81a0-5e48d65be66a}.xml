@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.04.00">
+<objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{ff17701c-a4f4-486e-81a0-5e48d65be66a}">
 		<property name="name">
 			<value>escapecollect</value>

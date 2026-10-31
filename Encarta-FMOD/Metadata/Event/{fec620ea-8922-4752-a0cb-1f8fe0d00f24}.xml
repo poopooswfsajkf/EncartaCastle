@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.04.00">
+<objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{fec620ea-8922-4752-a0cb-1f8fe0d00f24}">
 		<property name="name">
 			<value>pillarspawn</value>

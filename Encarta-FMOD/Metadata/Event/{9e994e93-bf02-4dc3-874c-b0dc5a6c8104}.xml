@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.04.00">
+<objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{9e994e93-bf02-4dc3-874c-b0dc5a6c8104}">
 		<property name="name">
 			<value>fuse</value>

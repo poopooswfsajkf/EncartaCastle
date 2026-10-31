@@ -1,45 +1,81 @@
+// =====================================================
+// GENERAL
+// =====================================================
+
 otherindex += 0.35;
 
-if (x != obj_player.x)
+if (instance_exists(obj_player) && x != obj_player.x)
 {
-	image_xscale = sign(obj_player.x - x);
+    image_xscale = sign(obj_player.x - x);
 }
+
+adjusted_y = y - 42;
+
+
+// =====================================================
+// STATES
+// =====================================================
 
 switch (state)
 {
-	case states.normal:
-		sprite_index = idlespr;
-		break;
-	case states.throwing:
-		if anim_ended()
-		{
-			image_index = image_number - 1;
-		}
-		if (floor(image_index) >= 3)
-		{
-			if !throwingcollects
-			{
-				alarm[1] = 1
-				throwingcollects = true
-			}
-			if scoretogive == 0
-			{
-				state = states.jump;
-				sprite_index = throwspr;
-				repeat (10)
-            instance_create(x + irandom_range(-50, 50), y + irandom_range(-50, 50), obj_memoryproj);
-				image_index = 0;
-			}
-		}
-		break;
-	case states.transition:
+    case states.normal:
+    {
+        if (sprite_index != idlespr)
+        {
+            sprite_index = idlespr;
+            image_index = 0;
+            image_speed = 0.35;
+        }
+
+        break;
+    }
+
+    case states.throwing:
+    {
+        if (sprite_index != throwspr)
+        {
+            sprite_index = throwspr;
+            image_index = 0;
+            image_speed = 0.35;
+        }
 
 
-		break;
-	case states.jump:
 
-			instance_destroy();
-		break;
+            if (!throwingcollects)
+            {
+                alarm[1] = 1;
+                throwingcollects = true;
+            }
+
+            // Finish when all collectibles are processed.
+            if (scoretogive <= 0)
+            {
+                state = states.jump;
+                image_speed = 0.35;
+                image_index = 0;
+
+                repeat (10)
+                {
+                    instance_create(
+                        x + irandom_range(-50, 50),
+                        y + irandom_range(-50, 50),
+                        obj_memoryproj
+                    );
+                }
+            }
+        
+
+        break;
+    }
+
+    case states.transition:
+    {
+        break;
+    }
+
+    case states.jump:
+    {
+        instance_destroy();
+        break;
+    }
 }
-
-adjusted_y = y - 42

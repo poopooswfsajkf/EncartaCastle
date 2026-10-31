@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.04.00">
+<objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{c9bdcfb6-7260-4933-a015-ba1132d9fab3}">
 		<property name="name">
 			<value>timesupsfx</value>

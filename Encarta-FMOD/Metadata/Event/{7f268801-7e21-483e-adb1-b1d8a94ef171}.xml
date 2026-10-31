@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.04.00">
+<objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{7f268801-7e21-483e-adb1-b1d8a94ef171}">
 		<property name="name">
 			<value>lighton</value>
@@ -43,8 +43,8 @@
 	</object>
 	<object class="MasterTrack" id="{8a3c11c6-55c7-47ed-84a1-4d45f1b27e99}">
 		<relationship name="modules">
-			<destination>{bef6b4f2-87ed-41bd-889e-e8f5522c53ed}</destination>
 			<destination>{0fdff792-7cc2-461b-a75c-21660bedaeac}</destination>
+			<destination>{bef6b4f2-87ed-41bd-889e-e8f5522c53ed}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{5ad25e55-3365-4cef-8d3e-3c214ca25d22}</destination>
@@ -99,15 +99,15 @@
 			<destination>{415c9fc8-b25a-44a5-a633-90927582566a}</destination>
 		</relationship>
 	</object>
+	<object class="MultiSound" id="{0fdff792-7cc2-461b-a75c-21660bedaeac}">
+		<relationship name="sounds">
+			<destination>{05f5abd2-f31b-4713-9874-cac7289573cf}</destination>
+		</relationship>
+	</object>
 	<object class="MultiSound" id="{bef6b4f2-87ed-41bd-889e-e8f5522c53ed}">
 		<relationship name="sounds">
 			<destination>{7d2862e6-c9be-4819-a911-28eafb2b05e1}</destination>
 			<destination>{838a604f-206d-489f-8227-6752b30f1cde}</destination>
-		</relationship>
-	</object>
-	<object class="MultiSound" id="{0fdff792-7cc2-461b-a75c-21660bedaeac}">
-		<relationship name="sounds">
-			<destination>{05f5abd2-f31b-4713-9874-cac7289573cf}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{cbb6cb18-6321-41bd-86f8-669a8ebbdd07}">
@@ -122,6 +122,11 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{1c0916c5-e375-430f-b6c2-bf26430f84c7}" />
+	<object class="SingleSound" id="{05f5abd2-f31b-4713-9874-cac7289573cf}">
+		<relationship name="audioFile">
+			<destination>{9153a5ff-e3f9-40fa-adb6-4da973d198af}</destination>
+		</relationship>
+	</object>
 	<object class="SilenceSound" id="{7d2862e6-c9be-4819-a911-28eafb2b05e1}">
 		<property name="duration">
 			<value>100</value>
@@ -133,11 +138,6 @@
 		</property>
 		<relationship name="audioFile">
 			<destination>{4707a370-4c14-4d20-b0d7-9d3ffb2dd7fe}</destination>
-		</relationship>
-	</object>
-	<object class="SingleSound" id="{05f5abd2-f31b-4713-9874-cac7289573cf}">
-		<relationship name="audioFile">
-			<destination>{9153a5ff-e3f9-40fa-adb6-4da973d198af}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{1ec22496-7072-4b49-b38e-29dbc1508723}" />

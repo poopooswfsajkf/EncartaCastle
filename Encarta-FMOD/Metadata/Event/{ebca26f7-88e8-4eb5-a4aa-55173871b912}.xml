@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.04.00">
+<objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{ebca26f7-88e8-4eb5-a4aa-55173871b912}">
 		<property name="name">
 			<value>suplexdash</value>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.04.00">
+<objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{900b0fd1-6163-41fb-82fb-e98800897094}">
 		<property name="name">
 			<value>secretenter</value>

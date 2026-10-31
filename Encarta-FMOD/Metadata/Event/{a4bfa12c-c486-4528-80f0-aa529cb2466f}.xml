@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.04.00">
+<objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{a4bfa12c-c486-4528-80f0-aa529cb2466f}">
 		<property name="name">
 			<value>ui_accept</value>
