@@ -58,13 +58,11 @@ function player_climbwall()
 	
 	if (!input_check(INPUTS.dash) && grabclimbbuffer <= 0)
 	{
-		state = states.jump
-		sprite_index = spr_player_fall
-		movespeed = 0
-		railmovespeed = 6;
-        raildir = -xscale;
-		jumpstop = false
-		dir = xscale
+			movespeed = 0
+			vsp = -17 + wallbouncedampen
+			wallbouncedampen += 2.55
+			state = states.wallbounce
+			sprite_index = spr_player_mach3
 	}
 	
 	if (input_buffers.jump > 0)
