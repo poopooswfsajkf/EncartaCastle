@@ -1,18 +1,21 @@
-# Encarta Castle
+# HELLO THANK YOU FOR CHECKING THIS OUT I LOVE YTOU
 
-Source code and FSPRO for encarta castle
+HERE'S WHAT I USE AS INSPO AND TOOLS
+https://segaretro.org/Craig\_Stitt
 
+https://setteidreams.net/settei/
 
+https://meodai.github.io/poline/
 
-
-
-i just dont think this is for me man
-
-i'll still do work on the strange world of lucas Gabriel
-
+https://screenmusings.org/
 
 
 
 
-https://imgur.com/a/fRiynAT full response
+
+ok bye have fun making your revival idk
+
+im unsure if anyone cares
+
+
 
