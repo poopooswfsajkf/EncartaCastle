@@ -28,3 +28,13 @@ ok you can finally check it out
 
 **i can even revive this by making someone's revival canon**
 
+
+
+
+
+game design document:
+
+
+
+https://docs.google.com/document/d/1HRjKcw5CgjKQU8mzaTnpLuFE-pFFxqKOoYCpDWzatDs/edit?tab=t.0
+
