@@ -331,6 +331,8 @@
     {"id":{"name":"boss_test","path":"rooms/boss_test/boss_test.yy",},},
     {"id":{"name":"catacombers_1","path":"rooms/catacombers_1/catacombers_1.yy",},},
     {"id":{"name":"catacombers_2","path":"rooms/catacombers_2/catacombers_2.yy",},},
+    {"id":{"name":"catacombers_3","path":"rooms/catacombers_3/catacombers_3.yy",},},
+    {"id":{"name":"catacombers_4","path":"rooms/catacombers_4/catacombers_4.yy",},},
     {"id":{"name":"catacombers_lap","path":"rooms/catacombers_lap/catacombers_lap.yy",},},
     {"id":{"name":"depth_test","path":"rooms/depth_test/depth_test.yy",},},
     {"id":{"name":"dm_1","path":"rooms/dm_1/dm_1.yy",},},
@@ -1370,7 +1372,9 @@
     {"roomId":{"name":"StaffRoll","path":"rooms/StaffRoll/StaffRoll.yy",},},
     {"roomId":{"name":"catacombers_1","path":"rooms/catacombers_1/catacombers_1.yy",},},
     {"roomId":{"name":"catacombers_lap","path":"rooms/catacombers_lap/catacombers_lap.yy",},},
+    {"roomId":{"name":"catacombers_3","path":"rooms/catacombers_3/catacombers_3.yy",},},
     {"roomId":{"name":"catacombers_2","path":"rooms/catacombers_2/catacombers_2.yy",},},
+    {"roomId":{"name":"catacombers_4","path":"rooms/catacombers_4/catacombers_4.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
