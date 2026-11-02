@@ -4,6 +4,8 @@ Source code and FSPRO for encarta castle
 
 <img width="546" height="546" alt="i hate you all" src="https://github.com/user-attachments/assets/f23e3a79-99fd-4711-8deb-cbafc46f01fc" />
 
+<img width="1599" height="466" alt="Captura de tela 2026-11-01 165924" src="https://github.com/user-attachments/assets/fbf13a81-9f35-4006-ada6-37887e96f2b2" />
+
 # keep in mind that i dont care about revivals besides if its made to mock me
 # i can even revive this by making someone's revival canon
 
@@ -17,7 +19,7 @@ i just dont think this is for me man
 
 
 
-https://imgur.com/a/fRiynAT full response
+
 
 
 
